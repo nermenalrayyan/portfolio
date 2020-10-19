@@ -1,0 +1,238 @@
+/* start global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    /*  -webkit-box-sizing, -moz-box-sizing, box-sizing يضبط ال margin و  padding الموجودة تلقائيا في الصفحة*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+
+body {
+    line-height: 1.5;
+}
+
+.container {
+    width: 1200px;
+    width: 95%;
+    max-width: 1024px;
+    margin: 29px auto;
+}
+
+/* end global */
+
+
+
+
+/* start framework */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li, button, a, .submit {
+    cursor: pointer; /* يجعل الماوس على شكل يد عند الوقوف عن شئ معين */
+}
+
+.my-button {
+    background: none;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+/* start framework */
+
+
+
+
+/* strat heading style */
+P {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+h2 {
+    text-transform: uppercase; /*يجعل النص كبير*/
+    font-size: 30px;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+/* strat heading style */
+
+
+
+
+/* start text alignment */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center {
+    text-align: right;
+}
+
+.text-justify {
+  text-align: justify; /* يجعل السطور متساوية */
+}
+/* end text alignment */
+
+
+
+
+/* start text color */
+.Red50{
+    color:#FFEBEE;
+}    
+.Red-100{
+    color:#FFCDD2;
+}   
+
+.Red-200{
+    color:#EF9A9A;
+}   
+
+.Red-300{
+    color:#E57373;
+}   
+
+.Red-400{
+    color:#EF5350;
+}   
+
+.Red-500{
+    color:#F44336;
+}   
+
+.Red-600{
+    color:#E53935;
+}   
+
+.Red-700{
+    color:#D32F2F;
+}   
+
+.Red-800{
+    color:#C62828;
+}   
+
+.Red-900{
+    color:#B71C1C;
+}   
+
+.Red-A100{
+    color:#FF8A80;
+}   
+
+.RedA200{
+    color:#FF5252;
+}   
+
+
+.Red-A400{
+    color:#FF1744;
+}   
+
+
+.Red-A700{
+    color:#D50000;
+}   
+
+
+
+
+.text-aquamarine {
+    color: aquamarine;
+}
+.text-aqua {
+    color: aqua;
+}
+
+.text-bisque {
+    color: bisque;
+}
+.text-black {
+    color: black;
+}
+.text-blue {
+    color: blue;
+}
+.text-blueviolet {
+    color: blueviolet;
+}
+.text-brown {
+    color: brown;
+}
+.text-burlywood {
+    color: burlywood;
+}
+
+.text-c {
+    color: cadetblue;
+    color: chartreuse;
+    color: chocolate;
+    color: coral;
+    color: cornflowerblue;
+    color: crimson;
+    color: cyan;
+}
+
+.text-d {
+    color: d;
+}
+
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-rebeccapurple {
+    color: rebeccapurple;
+}
+
+
+.text-aquamarine {
+    color: rosybrown;
+    color: royalblue;
+    
+    color: tomato;
+    color: thistle;
+    color: teal;
+    color: tan;
+    color: turquoise;
+}
+
+/* end text color */
