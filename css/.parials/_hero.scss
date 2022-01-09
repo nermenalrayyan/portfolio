@@ -1,0 +1,29 @@
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/bg-programming.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+
+    .hero-items
+    {
+        position: absolute;
+        top: 43%;
+
+        h2, h4
+        {
+            color: var(--color2);
+        }
+
+        p
+        {
+            color: var(--color6);
+            text-align: left;
+            font-size: 1.2em;
+        }
+    }
+}

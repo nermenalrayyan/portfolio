@@ -1,0 +1,172 @@
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold !important;
+  font-family: inherit;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+
+/* Start Link */
+a {
+  text-decoration: none !important;
+  color: var(--font-color2);
+  font-size: 17px;
+}
+a:hover {
+  color: var(--font-color4);
+}
+
+.link {
+  padding: 10px;
+}
+
+.more {
+  text-align: center;
+}
+
+/* End Link */
+/* Start Text */
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 18px;
+  letter-spacing: 1px;
+  color: var(--font-color3);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+h5 {
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  font-size: x-large;
+}
+
+h6 {
+  color: var(--font-color2);
+  margin-top: 5%;
+}
+
+/* End Text */
+button, select {
+  outline: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+a, button {
+  transition: 0.6s;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.social-links {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+.social-links li {
+  margin-right: 1.5rem;
+  width: 30px;
+  transition: 0.3s ease;
+}
+.social-links li a {
+  font-size: 28px !important;
+}
+.social-links li a:hover {
+  font-size: 40px !important;
+}
+
+header {
+  background-color: var(--color10);
+  position: fixed;
+  z-index: 1000;
+}
+header .header-items .logo {
+  color: var(--color1);
+  font-family: initial;
+  font-size: 1.3em;
+}
+header .header-items .logo span {
+  color: var(--color3);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+header .header-items nav {
+  min-height: 70px;
+}
+header .header-items nav ul a {
+  color: var(--color1);
+  padding: 15px;
+}
+header .header-items nav ul a:hover {
+  color: var(--color6);
+}
+header .header-items nav ul .active {
+  color: var(--color6);
+}
+
+:root {
+  --color1: #e3f2fd;
+  --color2: #BBDEFB;
+  --color3: #90CAF9;
+  --color4: #64B5F6;
+  --color5: #42A5F5;
+  --color6: #2196F3;
+  --color7: #1E88E5;
+  --color8: #1976D2;
+  --color9: #1565C0;
+  --color10: #0D47A1;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bg-programming.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.hero .hero-items {
+  position: absolute;
+  top: 47%;
+}
+.hero .hero-items h2, .hero .hero-items h4 {
+  color: var(--color2);
+}
+
+.contact .social-media i {
+  font-size: 2em;
+  color: var(--color6);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color8);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color3);
+}

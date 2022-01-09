@@ -1,0 +1,83 @@
+// Start Small Screens (Smaller Smartphones)
+@media (max-width: 576px)
+{
+
+}
+// End Small Screens (Smaller Smartphones)
+
+
+
+
+
+// Start Small Screens (Smaller Smartphones)
+@media (min-width: 200px) and (max-width: 480px)
+{
+
+}
+// End Small Screens (Smaller Smartphones)
+
+
+
+
+
+// Start Medium Screens (Tablets And Larger Smartphones)
+@media (min-width: 481px) and (max-width: 768px)
+{
+    
+}
+// End Medium Screens (Tablets And Larger Smartphones)
+
+
+
+
+
+// Start Large Screens (Laptops)
+@media (min-width: 1200px)
+{
+    
+}
+// End Large Screens (Laptops)
+
+
+
+
+
+// Start XX Large Screens (Larger Desktops And Monitors)
+@media (min-width: 1400px)
+{
+    
+}
+// End XX Large Screens (Larger Desktops And Monitors)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*/

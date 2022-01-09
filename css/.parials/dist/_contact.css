@@ -1,0 +1,15 @@
+.contact .social-media {
+  position: fixed;
+  top: 42%;
+  left: -10px;
+}
+.contact .social-media i {
+  margin: 10px 0;
+  font-size: 2em;
+  color: var(--color6);
+  transition: 0.7s ease;
+}
+.contact .social-media i:hover {
+  color: var(--color4);
+  transform: scale(1.1);
+}

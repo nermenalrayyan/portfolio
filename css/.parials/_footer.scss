@@ -1,0 +1,76 @@
+// Start Footer
+.footer
+{
+    background-color: var(--bg-color2);
+
+    .first-row
+    {
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem 5rem 0 4.5rem;
+
+        ul
+        {
+            font-size: 15px !important;
+            font-weight: 500;
+            padding-left: 0;
+            margin: 0;
+        }
+    
+        .item
+        {
+            text-align: left;
+            margin: 1rem 0;
+
+            h5
+            {
+                color: var(--bs-blue);
+            }
+
+
+            .contact
+            {
+                li
+                {
+                    margin-bottom: 0.5rem;        
+                    color: var(--font-color2);
+                    
+                    span
+                    {
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+            .link-pages
+            {
+
+                li
+                {
+                    margin-bottom: 0.5rem;
+                    a
+                    {
+                        &:hover
+                        {
+                            margin-top: 1%;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        padding-bottom: 2.4rem;
+        text-align: center;
+        height: 22px;
+
+        p
+        {
+            color: var(--font-color2);
+            font-family: inherit;
+        }
+    }
+}
+// End Footer

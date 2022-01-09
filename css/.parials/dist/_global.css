@@ -1,0 +1,93 @@
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold !important;
+  font-family: inherit;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+
+/* Start Link */
+a {
+  text-decoration: none !important;
+  color: var(--font-color2);
+  font-size: 17px;
+}
+a:hover {
+  color: var(--font-color4);
+}
+
+.link {
+  padding: 10px;
+}
+
+.more {
+  text-align: center;
+}
+
+/* End Link */
+/* Start Text */
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 18px;
+  letter-spacing: 1px;
+  color: var(--font-color3);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+h5 {
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  font-size: x-large;
+}
+
+h6 {
+  color: var(--font-color2);
+  margin-top: 5%;
+}
+
+/* End Text */
+button, select {
+  outline: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+a, button {
+  transition: 0.6s;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.social-links {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+.social-links li {
+  margin-right: 1.5rem;
+  width: 30px;
+  transition: 0.3s ease;
+}
+.social-links li a {
+  font-size: 28px !important;
+}
+.social-links li a:hover {
+  font-size: 40px !important;
+}

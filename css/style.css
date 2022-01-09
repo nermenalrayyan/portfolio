@@ -1,238 +1,215 @@
-/* start global */
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
-    /*  -webkit-box-sizing, -moz-box-sizing, box-sizing يضبط ال margin و  padding الموجودة تلقائيا في الصفحة*/
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* overflow: auto; */
+*, body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold !important;
+  font-family: inherit;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
 }
 
-body {
-    line-height: 1.5;
+/* Start Link */
+a {
+  text-decoration: none !important;
+  color: var(--font-color2);
+  font-size: 17px;
 }
 
-.container {
-    width: 1200px;
-    width: 95%;
-    max-width: 1024px;
-    margin: 29px auto;
+a:hover {
+  color: var(--font-color4);
 }
 
-/* end global */
-
-
-
-
-/* start framework */
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.link {
+  padding: 10px;
 }
 
-li, button, a, .submit {
-    cursor: pointer; /* يجعل الماوس على شكل يد عند الوقوف عن شئ معين */
+.more {
+  text-align: center;
 }
 
-.my-button {
-    background: none;
-    padding: 10px 30px;
-    font-weight: bold;
+/* End Link */
+/* Start Text */
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  text-transform: capitalize;
 }
 
-.fl-left {
-    float: left;
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 18px;
+  letter-spacing: 1px;
+  color: var(--font-color3);
+  text-align: center;
 }
 
-.fl-right {
-    float: right;
-}
-/* start framework */
-
-
-
-
-/* strat heading style */
-P {
-    margin-top: 5px;
-    margin-bottom: 7px;
-    line-height: 1.7;
-    font-weight: bold;
+h1 {
+  text-align: center;
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
-h2 {
-    text-transform: uppercase; /*يجعل النص كبير*/
-    font-size: 30px;
-} 
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 300;
-}
-/* strat heading style */
-
-
-
-
-/* start text alignment */
-.text-left {
-    text-align: left;
+h5 {
+  color: var(--font-color6);
+  margin-bottom: 15px;
+  font-size: x-large;
 }
 
-.text-center {
-    text-align: center;
+h6 {
+  color: var(--font-color2);
+  margin-top: 5%;
 }
 
-.text-center {
-    text-align: right;
+/* End Text */
+button, select {
+  outline: none !important;
 }
 
-.text-justify {
-  text-align: justify; /* يجعل السطور متساوية */
-}
-/* end text alignment */
-
-
-
-
-/* start text color */
-.Red50{
-    color:#FFEBEE;
-}    
-.Red-100{
-    color:#FFCDD2;
-}   
-
-.Red-200{
-    color:#EF9A9A;
-}   
-
-.Red-300{
-    color:#E57373;
-}   
-
-.Red-400{
-    color:#EF5350;
-}   
-
-.Red-500{
-    color:#F44336;
-}   
-
-.Red-600{
-    color:#E53935;
-}   
-
-.Red-700{
-    color:#D32F2F;
-}   
-
-.Red-800{
-    color:#C62828;
-}   
-
-.Red-900{
-    color:#B71C1C;
-}   
-
-.Red-A100{
-    color:#FF8A80;
-}   
-
-.RedA200{
-    color:#FF5252;
-}   
-
-
-.Red-A400{
-    color:#FF1744;
-}   
-
-
-.Red-A700{
-    color:#D50000;
-}   
-
-
-
-
-.text-aquamarine {
-    color: aquamarine;
-}
-.text-aqua {
-    color: aqua;
+li {
+  list-style: none;
 }
 
-.text-bisque {
-    color: bisque;
-}
-.text-black {
-    color: black;
-}
-.text-blue {
-    color: blue;
-}
-.text-blueviolet {
-    color: blueviolet;
-}
-.text-brown {
-    color: brown;
-}
-.text-burlywood {
-    color: burlywood;
+a, button {
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
-.text-c {
-    color: cadetblue;
-    color: chartreuse;
-    color: chocolate;
-    color: coral;
-    color: cornflowerblue;
-    color: crimson;
-    color: cyan;
+section {
+  padding: 100px 0;
 }
 
-.text-d {
-    color: d;
+.social-links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0;
 }
 
-
-.text-white {
-  color: white;
+.social-links li {
+  margin-right: 1.5rem;
+  width: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.text-red {
-    color: red;
+.social-links li a {
+  font-size: 28px !important;
 }
 
-.text-orange {
-    color: orange;
+.social-links li a:hover {
+  font-size: 40px !important;
 }
 
-.text-green {
-    color: green;
+header {
+  background-color: var(--color10);
+  position: fixed;
+  z-index: 1000;
 }
 
-.text-rebeccapurple {
-    color: rebeccapurple;
+header .header-items .logo {
+  color: var(--color1);
+  font-family: initial;
+  font-size: 1.3em;
 }
 
-
-.text-aquamarine {
-    color: rosybrown;
-    color: royalblue;
-    
-    color: tomato;
-    color: thistle;
-    color: teal;
-    color: tan;
-    color: turquoise;
+header .header-items .logo span {
+  color: var(--color3);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-/* end text color */
+header .header-items nav {
+  min-height: 70px;
+}
+
+header .header-items nav ul a {
+  color: var(--color1);
+  padding: 15px;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+header .header-items nav ul a:hover {
+  color: var(--color6);
+}
+
+header .header-items nav ul .active {
+  color: var(--color6);
+}
+
+:root {
+  --color1: #e3f2fd;
+  --color2: #BBDEFB;
+  --color3: #90CAF9;
+  --color4: #64B5F6;
+  --color5: #42A5F5;
+  --color6: #2196F3;
+  --color7: #1E88E5;
+  --color8: #1976D2;
+  --color9: #1565C0;
+  --color10: #0D47A1;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bg-programming.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero .hero-items {
+  position: absolute;
+  top: 43%;
+}
+
+.hero .hero-items h2, .hero .hero-items h4 {
+  color: var(--color2);
+}
+
+.hero .hero-items p {
+  color: var(--color6);
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.contact .social-media {
+  position: fixed;
+  top: 42%;
+  left: -10px;
+}
+
+.contact .social-media i {
+  margin: 10px 0;
+  font-size: 2em;
+  color: var(--color6);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.contact .social-media i:hover {
+  color: var(--color4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color3);
+}
+/*# sourceMappingURL=style.css.map */
