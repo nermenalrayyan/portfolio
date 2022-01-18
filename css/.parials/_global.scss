@@ -4,9 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: bold !important;
-    font-family: inherit;
+    // font-family: inherit;
+    font-family: 'Cormorant Garamond', serif;
     text-transform: capitalize;
     scroll-behavior: smooth; // يحعل الحركه في الموقع ناعمه وليست سريعه
+}
+
+body
+{
+    background-color: var(--color1) !important;
 }
 
 
@@ -45,20 +51,27 @@ p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2
 
 p
 {
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 28px;
     margin-top: 18px;
     letter-spacing: 1px;
-    color: var(--font-color3);
+    color: var(--color12);
     text-align: center;
+    width: 65%;
 }
 
 h1
 {
     text-align: center;
-    color: var(--font-color6);
+    color: var(--color13);
     margin-bottom: 15px;
     margin-top: 0;
+    font-size: 3em !important;
+}
+
+h2
+{
+	color: var(--color10);
 }
 
 h5
@@ -81,10 +94,14 @@ button, select
     outline: none !important;
 }
 
-
-li
+ul
 {
-    list-style: none;
+    margin-bottom: 0;
+    
+    li
+    {
+        list-style: none;
+    }
 }
 
 
@@ -95,7 +112,7 @@ a, button
 
 section
 {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 // main

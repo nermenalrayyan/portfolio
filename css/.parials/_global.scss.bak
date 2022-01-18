@@ -1,0 +1,180 @@
+*, body, html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold !important;
+    // font-family: inherit;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: capitalize;
+    scroll-behavior: smooth; // يحعل الحركه في الموقع ناعمه وليست سريعه
+}
+
+body
+{
+    background-color: var(--color1) !important;
+}
+
+
+/* Start Link */
+a
+{
+    text-decoration: none !important;
+    color: var(--font-color2);
+    font-size: 17px;
+
+    &:hover
+    {
+        color: var(--font-color4);
+    }
+}
+
+.link
+{
+    // color: #ffffff;
+    padding: 10px;
+    // font-size: 17px;
+}
+
+.more
+{
+    text-align: center;
+}
+/* End Link */
+
+
+/* Start Text */ 
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2
+{
+    text-transform: capitalize;
+}
+
+p
+{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 18px;
+    letter-spacing: 1px;
+    color: var(--font-color3);
+    text-align: center;
+    width: 65%;
+}
+
+h1
+{
+    text-align: center;
+    color: var(--font-color6);
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+h5
+{
+    color: var(--font-color6);
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+h6
+{
+    color: var(--font-color2);
+    margin-top: 5%;
+}
+/* End Text */ 
+
+
+button, select
+{
+    outline: none !important;
+}
+
+
+li
+{
+    list-style: none;
+}
+
+
+a, button
+{
+    transition: .6s;
+}
+
+section
+{
+    padding: 50px 0;
+}
+
+// main
+// {
+//     margin: 5% 0;
+
+//     .item
+//     {
+//         background-color: var(--bg-color2);
+//         border: 3px solid var(--border-color2);
+//         padding: 1rem;
+//         border-radius: 25px;
+
+//         &.item-small
+//         {
+//             width: 60%;
+//             position: relative;
+//             left: 21%;
+//         }
+
+//         section
+//         {
+//             border: 2px solid var(--border-color2);
+//             padding: 0;
+//             border-radius: 25px;
+//             background-color: var(--bg-color3);
+//             margin: 1rem;
+//             width: 97%;
+
+
+
+//             img
+//             {
+//                 width: 100%;
+//                 height: 100%;
+//             }
+        
+//             .text-main
+//             {
+//                 padding: 1rem;
+//                 height: 100%;
+        
+//                 p
+//                 {
+//                     line-height: 22px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.social-links
+{
+    display: inline-flex;
+    margin-bottom: 0;
+
+    li
+    {
+        margin-right: 1.5rem;
+        width: 30px;
+        transition: .3s ease;
+
+        a
+        {
+           font-size: 28px !important;
+
+            &:hover
+            {
+                font-size: 40px !important;
+            }
+        }
+    }
+}
+

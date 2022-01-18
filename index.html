@@ -18,6 +18,13 @@
         <!-- <link rel="stylesheet" href="css/style1.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- Start Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- End Google Font -->
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->        
         <link rel="stylesheet" href="css/normalize.css">
@@ -36,12 +43,12 @@
 
             <nav class="d-flex justify-content-between align-items-center">
                 <ul class="d-inline-flex mb-0">
-                    <li><a href="#home" class="active">home</a></li>
+                    <li><a href="index.html" class="active">home</a></li>
                     <li><a href="#about">about</a></li>
                     <!-- <li><a href="#">portfolio</a></li> -->
-                    <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="#goals">goals</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <!-- <li><a href="#goals">goals</a></li> -->
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -55,7 +62,7 @@
         <div class="container">
             <div class="row hero-items">
                 <!-- <h3>hello</h3> -->
-                <h2>i'm nermen alrayyan</h2>
+                <h2>nermen alrayyan</h2>
                 <h4>web designer</h4>
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacus nisi, ullamcorper ac felis non, condimentum convallis sapien. Cras tincidunt, nibh consectetur maximus blandit, dui diam auctor orci.</p> -->
             </div>
@@ -66,24 +73,106 @@
         </div>
     </section>
     <!-- end hero -->
-        
-    <div class="about" id="about">
-        <div class="container">
-            <h2>About</h2>
+    
+    
+    <!-- Start About -->
+    <section class="about" id="about">
+        <div class="container about-items">
+            <h1>About</h1>
             <p>i have averrage experience in web design html, css, sass, bootstrap, <br> my goal is to be a full stack developer in the future, and learn data structures and programming algorithms </p>
         </div>
-    </div>
+    </section>
+    <!-- End About -->
+
+
+    <!-- Start Skills -->
+    <section class="skills">
+        <div class="container">
+            <h1>skills</h1>
+            <div class="prog-items">
+                <div class="prog-item">
+                    <h5>html</h5>
+                    <div class="prog">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="prog-item">
+                    <h5>css</h5>
+                    <div class="prog">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="prog-item">
+                    <h5>sass</h5>
+                    <div class="prog">
+                        <span class="sass"></span>
+                    </div>
+                </div>
+                <div class="prog-item">
+                    <h5>bootstrap</h5>
+                    <div class="prog">
+                        <span class="bootstrap"></span>
+                    </div>
+                </div>
+                <div class="prog-item">
+                    <h5>javascript</h5>
+                    <div class="prog">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills -->
+
+
+    <!-- Start projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1>projects</h1>
+            <div class="projects-items d-flex justify-content-between">
+                <div class="project-item">
+                    <a href="https://github.com/nermenalrayyan/trees-template">
+                        <img src="images/projects/trees-template.jpeg" alt="">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+
+                <div class="project-item">
+                    <a href="https://github.com/nermenalrayyan/trees-template">
+                        <img src="images/projects/trees-template.jpeg" alt="">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+
+                <div class="project-item">
+                    <a href="https://github.com/nermenalrayyan/trees-template">
+                        <img src="images/projects/trees-template.jpeg" alt="">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End projects -->
+
 
     <!-- start contact -->
-    <section class="contact">
-        <div class="container social-media">
-            <ul>
+    <section class="contact" id="contact">
+        <div class="container">
+            <ul class="social-media">
                 <!-- <li><i class="fab fa-facebook-f"></i></li> -->
                 <!-- <li><i class="fab fa-twitter"></i></li> -->
                 <li><i class="fab fa-linkedin-in"></i></li>
                 <!-- <li><i class="fab fa-instagram"></i></li> -->
                 <li><i class="fab fa-codepen"></i></li>
                 <li><i class="fab fa-github"></i></li>
+            </ul>
+
+            <ul class="myinfo">
+                <li><i class="fas fa-envelope"></i> n.alrayyan5@gmail.com</li>
+                <li><i class="fas fa-phone-alt"></i> 00971569118519</li>
+                <li><i class="fas fa-map-marker-alt"></i> mohammed bin zayed</li>
             </ul>
         </div>
     </section>

@@ -10,7 +10,7 @@
 }
 .hero .hero-items {
   position: absolute;
-  top: 43%;
+  top: 48%;
 }
 .hero .hero-items h2, .hero .hero-items h4 {
   color: var(--color2);

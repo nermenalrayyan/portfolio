@@ -1,12 +1,14 @@
 .contact
 {
-    
+    background-color: var(--color10);
+    color: var(--color1);
 
     .social-media
     {
         position: fixed;
         top: 42%;
         left: -10px;
+        width: auto;
     
         i
         {
@@ -20,6 +22,35 @@
                 color: var(--color4);
                 transform: scale(1.1);
             }
+        }
+    }
+
+    .myinfo
+    {
+        width: 20%;
+        margin-bottom: 0;
+
+        li
+        {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            height: 30px;
+
+            text-transform: lowercase;
+            font-size: 1em;
+            font-family: fangsong;
+            margin-bottom: 0.6px;
+
+            i
+            {
+                margin-right: 10px !important;
+            }
+        }
+
+        li:last-child
+        {
+            margin-bottom: 0;
         }
     }
 }

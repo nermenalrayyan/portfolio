@@ -1,7 +1,12 @@
+.contact {
+  background-color: var(--color10);
+  color: var(--color1);
+}
 .contact .social-media {
   position: fixed;
   top: 42%;
   left: -10px;
+  width: auto;
 }
 .contact .social-media i {
   margin: 10px 0;
@@ -12,4 +17,23 @@
 .contact .social-media i:hover {
   color: var(--color4);
   transform: scale(1.1);
+}
+.contact .myinfo {
+  width: 20%;
+  margin-bottom: 0;
+}
+.contact .myinfo li {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  text-transform: lowercase;
+  font-size: 1em;
+  font-family: fangsong;
+  margin-bottom: 0.6px;
+}
+.contact .myinfo li i {
+  margin-right: 10px !important;
+}
+.contact .myinfo li:last-child {
+  margin-bottom: 0;
 }
