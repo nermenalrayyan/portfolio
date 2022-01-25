@@ -16,14 +16,34 @@ header .header-items .logo span {
 header .header-items nav {
   min-height: 70px;
 }
-header .header-items nav ul a {
+header .header-items nav .list-nav {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}
+header .header-items nav label {
+  display: none;
+}
+header .header-items nav label i {
+  font-size: 30px;
+  margin-top: 5px;
+  color: beige !important;
+}
+header .header-items nav .menu-nav {
+  z-index: 99999;
+}
+header .header-items nav .menu-nav ul {
+  margin: 0;
+}
+header .header-items nav .menu-nav ul a {
+  display: block;
   color: var(--color1);
   padding: 15px;
   transition: 0.7s ease;
 }
-header .header-items nav ul a:hover {
+header .header-items nav .menu-nav ul a:hover {
   color: var(--color6);
 }
-header .header-items nav ul .active {
+header .header-items nav .menu-nav ul .active {
   color: var(--color6);
 }
