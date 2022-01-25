@@ -17,7 +17,7 @@ body {
 a {
   text-decoration: none !important;
   color: var(--font-color2);
-  font-size: 17px;
+  font-size: 1.3em;
 }
 
 a:hover {
@@ -51,8 +51,7 @@ p {
 h1 {
   text-align: center;
   color: var(--color13);
-  margin-bottom: 15px;
-  margin-top: 0;
+  margin: 0 0  35px 0 !important;
   font-size: 3em !important;
 }
 
@@ -124,7 +123,7 @@ header {
 header .header-items .logo {
   color: var(--color1);
   font-family: initial;
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 
 header .header-items .logo span {
@@ -176,7 +175,6 @@ header .header-items nav ul .active {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  position: relative;
 }
 
 .hero .hero-items {
@@ -184,16 +182,70 @@ header .header-items nav ul .active {
   top: 48%;
 }
 
-.hero .hero-items h2, .hero .hero-items h4 {
+.hero .hero-items h2, .hero .hero-items h3 {
   color: var(--color2);
 }
 
-.hero .hero-items p {
-  color: var(--color6);
-  text-align: left;
-  font-size: 1.2em;
+@media (max-width: 1400px) {
+  .about::before {
+    top: 82.5% !important;
+    left: 17.9% !important;
+  }
 }
 
+@media (max-width: 1200px) {
+  .about::before {
+    top: 85.9% !important;
+    left: 11.9% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+  header nav {
+    display: none !important;
+  }
+  .hero .hero-items {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .about::before {
+    content: "" !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .skills .prog-item {
+    width: 45% !important;
+    margin: 5% 0;
+  }
+  .projects .project-item {
+    width: 55% !important;
+    margin: 5% 0 !important;
+  }
+}
+
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*/
 .contact {
   background-color: var(--color10);
   color: var(--color1);
@@ -221,7 +273,7 @@ header .header-items nav ul .active {
 }
 
 .contact .myinfo {
-  width: 20%;
+  width: 25%;
   margin-bottom: 0;
 }
 
@@ -269,8 +321,8 @@ header .header-items nav ul .active {
   position: absolute;
   z-index: 1;
   color: var(--color11);
-  top: 90%;
-  left: 20%;
+  top: 85.5%;
+  left: 18.9%;
 }
 
 .skills {
@@ -477,36 +529,92 @@ header .header-items nav ul .active {
   }
 }
 
-.projects .projects-items .project-item a {
-  position: relative;
+.projects .projects-items .project-item {
+  width: 25%;
+  margin: auto;
 }
 
-.projects .projects-items .project-item a img {
-  width: 108%;
+.projects .projects-items .project-item img {
+  width: 100% !important;
   height: 45vh;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.projects .projects-items .project-item a img:hover {
+.projects .projects-items .project-item img:hover {
+  opacity: 0.8;
+}
+
+.projects .projects-items .project-item a {
+  position: relative;
+}
+
+.projects .projects-items .project-item h5 {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--color10);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.projects .projects-items .project-item h5:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.projects .projects-items .project-item a i {
-  -webkit-transform: translate(-190px, 25px);
-          transform: translate(-190px, 25px);
-  font-size: 65px;
+footer {
+  background-color: var(--bg-color2);
 }
 
-.projects .projects-items .project-item a:hover > i {
-  visibility: visible;
-  z-index: 200;
-  color: var(--color10);
+footer .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem 0 4.5rem;
 }
 
-.projects .projects-items .project-item a:hover {
-  opacity: 72%;
+footer .first-row ul {
+  font-size: 15px !important;
+  font-weight: 500;
+  padding-left: 0;
+  margin: 0;
+}
+
+footer .first-row .item {
+  text-align: left;
+  margin: 1rem 0;
+}
+
+footer .first-row .item h5 {
+  color: var(--bs-blue);
+}
+
+footer .first-row .item .contact li {
+  margin-bottom: 0.5rem;
+  color: var(--font-color2);
+}
+
+footer .first-row .item .contact li span {
+  margin-left: 7px;
+}
+
+footer .first-row .item .link-pages li {
+  margin-bottom: 0.5rem;
+}
+
+footer .first-row .item .link-pages li a:hover {
+  margin-top: 1%;
+  text-decoration: underline;
+}
+
+footer .copy {
+  text-align: center;
+  background-color: var(--color9);
+  color: var(--color2);
+  padding: 10px 0;
 }
 
 ::-webkit-scrollbar {

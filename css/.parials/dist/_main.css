@@ -12,8 +12,8 @@
   position: absolute;
   z-index: 1;
   color: var(--color11);
-  top: 90%;
-  left: 20%;
+  top: 85.5%;
+  left: 18.9%;
 }
 
 .skills {
@@ -132,26 +132,27 @@
   }
 }
 
-.projects .projects-items .project-item a {
-  position: relative;
+.projects .projects-items .project-item {
+  width: 25%;
+  margin: auto;
 }
-.projects .projects-items .project-item a img {
-  width: 108%;
+.projects .projects-items .project-item img {
+  width: 100% !important;
   height: 45vh;
   transition: 0.5s ease;
 }
-.projects .projects-items .project-item a img:hover {
-  transform: scale(1.1);
+.projects .projects-items .project-item img:hover {
+  opacity: 0.8;
 }
-.projects .projects-items .project-item a i {
-  transform: translate(-190px, 25px);
-  font-size: 65px;
+.projects .projects-items .project-item a {
+  position: relative;
 }
-.projects .projects-items .project-item a:hover > i {
-  visibility: visible;
-  z-index: 200;
+.projects .projects-items .project-item h5 {
+  margin-top: 15px;
+  text-align: center;
   color: var(--color10);
+  transition: 0.5s ease;
 }
-.projects .projects-items .project-item a:hover {
-  opacity: 72%;
+.projects .projects-items .project-item h5:hover {
+  transform: scale(1.1);
 }

@@ -19,8 +19,8 @@
         position: absolute;
         z-index: 1;
         color: var(--color11);
-        top: 90%;
-        left: 20%;
+        top: 85.5%;
+        left: 18.9%;
     }
 }
 // End About
@@ -219,44 +219,57 @@
     {
         .project-item
         {
+            width: 25%;
+            margin: auto;
+
+            img
+            {
+                width: 100% !important;
+                height: 45vh;
+                transition: 0.5s ease;
+
+                &:hover
+                {
+                    opacity: 0.8;
+                }
+            }
+
             a
             {
                 position: relative;
 
-                img
-                {
-                    width: 108%;
-                    height: 45vh;
-                    transition: 0.5s ease;
-
-                    &:hover
-                    {
-                        transform: scale(1.1);
-                    }
-                }
-
-                i
-                {
+                // i
+                // {
                 //    visibility: hidden;
-                //    width: 0;
-                //     height: 0;
-                    transform: translate(-190px, 25px);
-                    font-size: 65px;
-                }
+                // //    width: 0;
+                // //     height: 0;
+                //     font-size: 65px;
+                // }
 
-                &:hover > i
-                {
-                    visibility: visible;
-                    z-index: 200;
-                    color: var(--color10);
-                }
+                // &:hover i
+                // {
+                //     visibility: visible;
+                //     z-index: 200;
+                //     color: var(--color10);
+                // }
 
+                // &:hover
+                // {
+                //     z-index: 100;
+                //     transform: translate(-190px, 25px);
+                // }
+            }
+
+            h5
+            {  
+                margin-top: 15px;
+                text-align: center;
+                color: var(--color10);
+                transition: 0.5s ease;
+            
                 &:hover
                 {
-                    // z-index: 100;
-                    opacity: 72%;
-                    // opacity: 0.5;
-                    // display: block;
+                    transform: scale(1.1);
                 }
             }
         }

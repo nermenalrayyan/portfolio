@@ -1,5 +1,5 @@
 // Start Footer
-.footer
+footer
 {
     background-color: var(--bg-color2);
 
@@ -60,17 +60,12 @@
             }
         }
     }
-    .copyright
+    .copy
     {
-        padding-bottom: 2.4rem;
         text-align: center;
-        height: 22px;
-
-        p
-        {
-            color: var(--font-color2);
-            font-family: inherit;
-        }
+        background-color: var(--color9);
+        color: var(--color2);
+        padding: 10px 0;
     }
 }
 // End Footer

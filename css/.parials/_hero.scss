@@ -7,23 +7,24 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    position: relative;
+    // position: relative;
 
     .hero-items
     {
         position: absolute;
         top: 48%;
+        
 
-        h2, h4
+        h2, h3
         {
             color: var(--color2);
         }
 
-        p
-        {
-            color: var(--color6);
-            text-align: left;
-            font-size: 1.2em;
-        }
+        // p
+        // {
+        //     color: var(--color6);
+        //     text-align: left;
+        //     font-size: 1.2em;
+        // }
     }
 }
