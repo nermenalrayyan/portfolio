@@ -29,9 +29,7 @@
   }
 
   .about::before {
-    content: "" !important;
-    top: 0 !important;
-    left: 0 !important;
+    display: none;
   }
 
   .skills .prog-item {

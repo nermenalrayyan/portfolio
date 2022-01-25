@@ -217,9 +217,7 @@ header .header-items nav ul .active {
             transform: translate(-50%, -50%);
   }
   .about::before {
-    content: "" !important;
-    top: 0 !important;
-    left: 0 !important;
+    display: none;
   }
   .skills .prog-item {
     width: 45% !important;
