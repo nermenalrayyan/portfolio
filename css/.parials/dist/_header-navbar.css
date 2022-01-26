@@ -6,7 +6,7 @@ header {
 header .header-items .logo {
   color: var(--color1);
   font-family: initial;
-  font-size: 1.7vw;
+  font-size: 1.7em;
 }
 header .header-items .logo span {
   color: var(--color3);
@@ -25,7 +25,7 @@ header .header-items nav label {
   display: none;
 }
 header .header-items nav label i {
-  font-size: 2vw;
+  font-size: 30px;
   margin-top: 5px;
   color: beige !important;
 }
