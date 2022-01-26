@@ -27,7 +27,7 @@ header .header-items nav label {
 header .header-items nav label i {
   font-size: 30px;
   margin-top: 5px;
-  color: beige !important;
+  color: beige;
 }
 header .header-items nav .menu-nav {
   z-index: 99999;
