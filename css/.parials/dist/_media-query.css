@@ -3,6 +3,14 @@
     top: 82.5% !important;
     left: 17.9% !important;
   }
+
+  .skills span::after {
+    left: 15px !important;
+  }
+  .skills .prog .javascript::after {
+    top: 29px;
+    left: 32px !important;
+  }
 }
 @media (max-width: 1200px) {
   .about::before {
@@ -52,17 +60,14 @@
   }
 
   .hero::before {
-    top: 32% !important;
-    right: 23.4% !important;
+    top: 28% !important;
+    right: 9.9% !important;
+    width: 80% !important;
   }
   .hero .hero-items {
-    position: absolute;
-    top: 61%;
+    top: 66.5%;
     text-align: center;
-    left: 53%;
-    padding: 25px 0 19px 0;
-    background: rgba(0, 0, 0, 0.5);
-    transform: translate(-50%, -50%);
+    left: 2%;
   }
 
   .skills .prog-item {
@@ -77,6 +82,34 @@
   .projects .project-item {
     width: 55% !important;
     margin: 5% 0 !important;
+  }
+
+  .contact .myinfo {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .hero::before {
+    top: 28% !important;
+    right: 9.9% !important;
+  }
+  .hero .hero-items {
+    top: 75%;
+    text-align: center;
+    left: 2%;
+    width: inherit;
+  }
+
+  .skills span::after {
+    left: 15px !important;
+  }
+  .skills .prog .javascript::after {
+    top: 29px;
+    left: 24px !important;
+  }
+
+  .contact .social-media {
+    top: 45% !important;
   }
 }
 /*

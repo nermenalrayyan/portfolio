@@ -87,9 +87,6 @@
 }
 .skills .prog-items .prog-item .javascript::after {
   content: "5%";
-  position: absolute;
-  top: 27px;
-  left: 43px !important;
 }
 @keyframes html {
   0% {

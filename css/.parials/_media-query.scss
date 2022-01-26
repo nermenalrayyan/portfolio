@@ -2,9 +2,27 @@
 {
     .about
     {
-        &::before {
+        &::before 
+        {
             top: 82.5% !important;
             left: 17.9% !important;
+        }
+    }
+
+    .skills
+    {
+        span::after 
+        {
+            left: 15px !important;
+        }
+
+        .prog
+        {
+            .javascript::after 
+            {
+                top: 29px;
+                left: 32px !important;
+            }
         }
     }
 }
@@ -77,7 +95,7 @@
     {
         &::before
         {   
-            display: none;  
+            display: none; 
         }
     }
 }
@@ -99,19 +117,19 @@
 
         &::before
         {
-            top: 32% !important;
-            right: 23.4% !important;
+            top: 28% !important;
+            right: 9.9% !important;
+            width: 80% !important;
         }
 
         .hero-items
         {
-            position: absolute;
-            top: 61%;
+            top: 66.5%;
             text-align: center;
-            left: 53%;
-            padding: 25px 0 19px 0;
-            background: rgba(0, 0, 0, 0.5);
-            transform: translate(-50%, -50%);
+            left: 2%;
+            // padding: 25px 0 19px 0;
+            // background: rgba(0, 0, 0, 0.5);
+            // transform: translate(-50%, -50%);
         }
     }
 
@@ -139,52 +157,121 @@
             margin: 5% 0 !important;
         }
     }
+
+    .contact
+    {
+        .myinfo
+        {
+            flex-direction: column;
+        }
+    }
 }
 // End Small Screens (Smaller Smartphones)
 
 
 
-
-
-// Start Small Screens (Smaller Smartphones)
-@media (min-width: 200px) and (max-width: 480px)
+@media (max-width: 320px)
 {
+    .hero
+    {
 
+        &::before
+        {
+            top: 28% !important;
+            right: 9.9% !important;
+            // width: 80% !important;
+        }
+
+        .hero-items
+        {
+            top: 75%;
+            text-align: center;
+            left: 2%;
+            width: inherit;
+        }
+    }
+
+    .skills
+    {
+        span::after {
+            left: 15px !important;
+        }
+
+        .prog
+        {
+            .javascript::after {
+                top: 29px;
+                left: 24px !important;
+            }
+        }
+    }
+
+    .contact
+    {
+        .social-media 
+        {
+            top: 45% !important;
+        }
+    }
 }
-// End Small Screens (Smaller Smartphones)
 
 
 
 
 
-// Start Medium Screens (Tablets And Larger Smartphones)
-@media (min-width: 481px) and (max-width: 768px)
-{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Start Small Screens (Smaller Smartphones)
+// @media (min-width: 200px) and (max-width: 480px)
+// {
+
+// }
+// // End Small Screens (Smaller Smartphones)
+
+
+
+
+
+// // Start Medium Screens (Tablets And Larger Smartphones)
+// @media (min-width: 481px) and (max-width: 768px)
+// {
     
-}
-// End Medium Screens (Tablets And Larger Smartphones)
+// }
+// // End Medium Screens (Tablets And Larger Smartphones)
 
 
 
 
 
-// Start Large Screens (Laptops)
-@media (min-width: 1200px)
-{
+// // Start Large Screens (Laptops)
+// @media (min-width: 1200px)
+// {
     
-}
-// End Large Screens (Laptops)
+// }
+// // End Large Screens (Laptops)
 
 
 
 
 
-// Start XX Large Screens (Larger Desktops And Monitors)
-@media (min-width: 1400px)
-{
+// // Start XX Large Screens (Larger Desktops And Monitors)
+// @media (min-width: 1400px)
+// {
     
-}
-// End XX Large Screens (Larger Desktops And Monitors)
+// }
+// // End XX Large Screens (Larger Desktops And Monitors)
 
 
 

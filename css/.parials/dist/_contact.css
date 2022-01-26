@@ -19,7 +19,6 @@
   transform: scale(1.1);
 }
 .contact .myinfo {
-  width: 25%;
   margin-bottom: 0;
 }
 .contact .myinfo li {
@@ -29,7 +28,7 @@
   text-transform: lowercase;
   font-size: 1em;
   font-family: fangsong;
-  margin-bottom: 0.6px;
+  margin: 0 10px;
 }
 .contact .myinfo li i {
   margin-right: 10px !important;

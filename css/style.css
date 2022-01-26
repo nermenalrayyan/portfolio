@@ -123,7 +123,7 @@ header {
 header .header-items .logo {
   color: var(--color1);
   font-family: initial;
-  font-size: 1.7em;
+  font-size: 1.7vw;
 }
 
 header .header-items .logo span {
@@ -147,7 +147,7 @@ header .header-items nav label {
 }
 
 header .header-items nav label i {
-  font-size: 30px;
+  font-size: 2vw;
   margin-top: 5px;
   color: beige !important;
 }
@@ -228,6 +228,13 @@ header .header-items nav .menu-nav ul .active {
     top: 82.5% !important;
     left: 17.9% !important;
   }
+  .skills span::after {
+    left: 15px !important;
+  }
+  .skills .prog .javascript::after {
+    top: 29px;
+    left: 32px !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -281,18 +288,14 @@ header .header-items nav .menu-nav ul .active {
     display: none !important;
   }
   .hero::before {
-    top: 32% !important;
-    right: 23.4% !important;
+    top: 28% !important;
+    right: 9.9% !important;
+    width: 80% !important;
   }
   .hero .hero-items {
-    position: absolute;
-    top: 61%;
+    top: 66.5%;
     text-align: center;
-    left: 53%;
-    padding: 25px 0 19px 0;
-    background: rgba(0, 0, 0, 0.5);
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 2%;
   }
   .skills .prog-item {
     width: 45% !important;
@@ -304,6 +307,35 @@ header .header-items nav .menu-nav ul .active {
   .projects .project-item {
     width: 55% !important;
     margin: 5% 0 !important;
+  }
+  .contact .myinfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero::before {
+    top: 28% !important;
+    right: 9.9% !important;
+  }
+  .hero .hero-items {
+    top: 75%;
+    text-align: center;
+    left: 2%;
+    width: inherit;
+  }
+  .skills span::after {
+    left: 15px !important;
+  }
+  .skills .prog .javascript::after {
+    top: 29px;
+    left: 24px !important;
+  }
+  .contact .social-media {
+    top: 45% !important;
   }
 }
 
@@ -349,7 +381,6 @@ bootstrap 5 responsive screen sizes:
 }
 
 .contact .myinfo {
-  width: 25%;
   margin-bottom: 0;
 }
 
@@ -364,7 +395,7 @@ bootstrap 5 responsive screen sizes:
   text-transform: lowercase;
   font-size: 1em;
   font-family: fangsong;
-  margin-bottom: 0.6px;
+  margin: 0 10px;
 }
 
 .contact .myinfo li i {
@@ -510,9 +541,6 @@ bootstrap 5 responsive screen sizes:
 
 .skills .prog-items .prog-item .javascript::after {
   content: "5%";
-  position: absolute;
-  top: 27px;
-  left: 43px !important;
 }
 
 @-webkit-keyframes html {
