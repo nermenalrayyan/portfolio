@@ -311,9 +311,6 @@ header .header-items nav .menu-nav ul .active {
     top: 66.5%;
     text-align: center;
   }
-  .hero .hero-items h2, .hero .hero-items h3 {
-    color: red !important;
-  }
   .skills .prog-item {
     width: 45% !important;
     margin: 5% 0;
@@ -346,9 +343,6 @@ header .header-items nav .menu-nav ul .active {
     top: 75%;
     text-align: center;
     width: inherit;
-  }
-  .hero .hero-items h2, .hero .hero-items h3 {
-    color: green !important;
   }
   .skills span::after {
     left: 15px !important;
