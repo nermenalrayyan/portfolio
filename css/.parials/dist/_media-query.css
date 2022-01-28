@@ -83,7 +83,6 @@
   .hero .hero-items {
     top: 66.5%;
     text-align: center;
-    left: 2%;
   }
   .hero .hero-items h2, .hero .hero-items h3 {
     color: red !important;
@@ -117,7 +116,6 @@
   .hero .hero-items {
     top: 75%;
     text-align: center;
-    left: 3%;
     width: inherit;
   }
   .hero .hero-items h2, .hero .hero-items h3 {
