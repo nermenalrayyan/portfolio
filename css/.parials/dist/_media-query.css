@@ -87,7 +87,7 @@
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 19%;
+    right: 17%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -133,7 +133,7 @@
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 5%;
+    right: 8% !important;
   }
 }
 @media screen and (max-width: 483px) {
@@ -154,7 +154,7 @@
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 9%;
+    right: 3%;
   }
 }
 @media screen and (max-width: 320px) {

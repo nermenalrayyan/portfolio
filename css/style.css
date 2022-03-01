@@ -321,7 +321,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 19%;
+    right: 17%;
   }
 }
 
@@ -371,7 +371,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 5%;
+    right: 8% !important;
   }
 }
 
@@ -398,7 +398,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 9%;
+    right: 3%;
   }
 }
 
