@@ -588,9 +588,9 @@ bootstrap 5 responsive screen sizes:
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: self-end;
-      -ms-flex-align: self-end;
-          align-items: self-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   color: var(--color10);
   font-family: math;
   width: 100%;
