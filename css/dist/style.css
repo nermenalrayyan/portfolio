@@ -276,7 +276,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 29%;
+    right: 25%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 599px) {
@@ -287,7 +287,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 23%;
+    right: 19%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -322,7 +322,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    right: 23%;
+    right: 17%;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 479px) {
@@ -333,7 +333,7 @@ header .header-items nav .menu-nav ul .active {
   }
   .hero .hero-items {
     top: 75.5%;
-    left: 10%;
+    right: 5%;
   }
 }
 @media screen and (max-width: 483px) {
@@ -520,18 +520,18 @@ bootstrap 5 responsive screen sizes:
   border-radius: 20px;
 }
 .skills .prog-items .prog-item .html {
-  height: 77%;
+  height: 65%;
   animation: html 1s;
 }
 .skills .prog-items .prog-item .html::after {
-  content: "77%";
+  content: "65%";
 }
 .skills .prog-items .prog-item .css {
-  height: 84%;
+  height: 70%;
   animation: css 1s;
 }
 .skills .prog-items .prog-item .css::after {
-  content: "84%";
+  content: "70%";
 }
 .skills .prog-items .prog-item .sass {
   height: 50%;
@@ -559,7 +559,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 77%;
+    height: 65%;
   }
 }
 @keyframes css {
@@ -567,7 +567,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 84%;
+    height: 70%;
   }
 }
 @keyframes sass {
