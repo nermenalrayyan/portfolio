@@ -482,6 +482,11 @@
 
 @media screen and (min-width: 321px) and (max-width: 375px)
 {
+    // html, body
+    // {
+    //     // overflow-x: hidden !important;
+    // }
+
     .hero
     {
 
@@ -495,7 +500,7 @@
         .hero-items
         {
             top: 75.5%;
-            right: 3%;
+            right: 3.6%;
         }
     }
 }
