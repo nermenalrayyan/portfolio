@@ -29,7 +29,7 @@
   width: 23px;
 }
 .skills .prog-items .prog-item .prog span {
-  display: block;
+  display: flex;
   align-items: self-end;
   color: var(--color10);
   font-family: math;

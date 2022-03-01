@@ -585,7 +585,9 @@ bootstrap 5 responsive screen sizes:
 }
 
 .skills .prog-items .prog-item .prog span {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: self-end;
       -ms-flex-align: self-end;
           align-items: self-end;
