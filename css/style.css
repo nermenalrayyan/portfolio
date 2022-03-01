@@ -585,16 +585,23 @@ bootstrap 5 responsive screen sizes:
 }
 
 .skills .prog-items .prog-item .prog span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: self-end;
       -ms-flex-align: self-end;
           align-items: self-end;
   color: var(--color10);
   font-family: math;
   width: 100%;
+  height: 100%;
   background-color: var(--color10);
+  position: relative;
+}
+
+.skills .prog-items .prog-item .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  left: -35px;
+  bottom: 0;
 }
 
 .skills .prog-items .prog-item .prog span::after {
@@ -606,53 +613,23 @@ bootstrap 5 responsive screen sizes:
 }
 
 .skills .prog-items .prog-item .html {
-  height: 65%;
   -webkit-animation: html 1s;
           animation: html 1s;
 }
 
-.skills .prog-items .prog-item .html::after {
-  content: "65%";
-}
-
 .skills .prog-items .prog-item .css {
-  height: 70%;
   -webkit-animation: css 1s;
           animation: css 1s;
 }
 
-.skills .prog-items .prog-item .css::after {
-  content: "70%";
-}
-
 .skills .prog-items .prog-item .sass {
-  height: 50%;
   -webkit-animation: sass 1s;
           animation: sass 1s;
 }
 
-.skills .prog-items .prog-item .sass::after {
-  content: "50%";
-}
-
 .skills .prog-items .prog-item .bootstrap {
-  height: 40%;
   -webkit-animation: bootstrap 1s;
           animation: bootstrap 1s;
-}
-
-.skills .prog-items .prog-item .bootstrap::after {
-  content: "40%";
-}
-
-.skills .prog-items .prog-item .javascript {
-  height: 19%;
-  -webkit-animation: javascript 1s;
-          animation: javascript 1s;
-}
-
-.skills .prog-items .prog-item .javascript::after {
-  content: "19%";
 }
 
 @-webkit-keyframes html {

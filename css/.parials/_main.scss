@@ -60,14 +60,26 @@
     
                 span
                 {
-                    display: flex;
+                    // display: flex;
+                    display: block;
                     align-items: self-end;
                     color: var(--color10);
                     font-family: math;
                     // padding-right: 5px;
                     width: 100%;
-                    // height: 100%;
+                    height: 100%;
                     background-color: var(--color10);
+                    position: relative;
+
+                    &::before
+                    {
+                        content: attr(data-progress);
+                        position: absolute;
+                        // background-color: black;
+                        // color: white;
+                        left: -35px;
+                        bottom: 0;
+                    }
 
                     &::after
                     {
@@ -86,63 +98,64 @@
                 border-radius: 20px;
             }
 
+
             .html
             {
-                height: 65%;
+                // height: 65%;
                 animation: html 1s;
 
-                &::after
-                {
-                    content: "65%";
-                }
+                // &::after
+                // {
+                //     content: "65%";
+                // }
             }
     
             .css
             {
-                height: 70%;
+                // height: 70%;
                 animation: css 1s;
 
-                &::after
-                {
-                    content: "70%";
-                }
+                // &::after
+                // {
+                //     content: "70%";
+                // }
             }
     
             .sass
             {
-                height: 50%;
+                // height: 50%;
                 animation: sass 1s;
 
-                &::after
-                {
-                    content: "50%";
-                }
+                // &::after
+                // {
+                //     content: "50%";
+                // }
             }
     
             .bootstrap
             {
-                height: 40%;
+                // height: 40%;
                 animation: bootstrap 1s;
 
-                &::after
-                {
-                    content: "40%";
-                }
+                // &::after
+                // {
+                //     content: "40%";
+                // }
             }
     
-            .javascript
-            {
-                height: 19%;
-                animation: javascript 1s;
+            // .javascript
+            // {
+            //     height: 19%;
+            //     animation: javascript 1s;
 
-                &::after
-                {
-                    content: "19%";
-                    // position: absolute;
-                    // top: 27px;
-                    // left: 43px;
-                }
-            }
+            //     &::after
+            //     {
+            //         content: "19%";
+            //         // position: absolute;
+            //         // top: 27px;
+            //         // left: 43px;
+            //     }
+            // }
     
             @keyframes html
             {

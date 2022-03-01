@@ -29,12 +29,20 @@
   width: 23px;
 }
 .skills .prog-items .prog-item .prog span {
-  display: flex;
+  display: block;
   align-items: self-end;
   color: var(--color10);
   font-family: math;
   width: 100%;
+  height: 100%;
   background-color: var(--color10);
+  position: relative;
+}
+.skills .prog-items .prog-item .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  left: -35px;
+  bottom: 0;
 }
 .skills .prog-items .prog-item .prog span::after {
   margin-left: -40px;
@@ -43,39 +51,16 @@
   border-radius: 20px;
 }
 .skills .prog-items .prog-item .html {
-  height: 65%;
   animation: html 1s;
 }
-.skills .prog-items .prog-item .html::after {
-  content: "65%";
-}
 .skills .prog-items .prog-item .css {
-  height: 70%;
   animation: css 1s;
 }
-.skills .prog-items .prog-item .css::after {
-  content: "70%";
-}
 .skills .prog-items .prog-item .sass {
-  height: 50%;
   animation: sass 1s;
 }
-.skills .prog-items .prog-item .sass::after {
-  content: "50%";
-}
 .skills .prog-items .prog-item .bootstrap {
-  height: 40%;
   animation: bootstrap 1s;
-}
-.skills .prog-items .prog-item .bootstrap::after {
-  content: "40%";
-}
-.skills .prog-items .prog-item .javascript {
-  height: 19%;
-  animation: javascript 1s;
-}
-.skills .prog-items .prog-item .javascript::after {
-  content: "19%";
 }
 @keyframes html {
   0% {
