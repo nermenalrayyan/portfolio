@@ -101,7 +101,6 @@
 
   .projects .project-item {
     width: 55% !important;
-    margin: 5% 0 !important;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 576px) {
