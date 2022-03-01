@@ -166,6 +166,10 @@
     font-size: 15vw !important;
   }
 
+  h5 {
+    font-size: 7vw !important;
+  }
+
   header .logo {
     font-size: 8.5vw !important;
     text-align: center;
