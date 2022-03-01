@@ -1,0 +1,58 @@
+@media screen and (max-width: 375px) {
+  header .logo {
+    font-size: 8.5vw !important;
+    text-align: center;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+  .hero::before {
+    top: 25% !important;
+    right: 21% !important;
+    width: 65%;
+    height: 24%;
+  }
+  .hero .hero-items {
+    top: 61%;
+    left: 3%;
+    text-align: center;
+    width: inherit;
+  }
+  .hero .hero-items h2 {
+    font-size: 8vw;
+  }
+  .hero .hero-items h3 {
+    font-size: 7vw;
+  }
+
+  .contact i {
+    font-size: 9vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-items {
+    justify-content: center !important;
+  }
+  header .header-items nav {
+    display: none !important;
+  }
+  header .header-items nav a {
+    display: none !important;
+  }
+
+  .hero::before {
+    top: 25%;
+    right: 27%;
+  }
+  .hero .hero-items {
+    top: 73%;
+    left: 26%;
+    text-align: center;
+  }
+}
+@media (max-width: 1400px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}

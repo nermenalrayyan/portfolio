@@ -16,7 +16,7 @@ body {
 a {
   text-decoration: none !important;
   color: var(--font-color2);
-  font-size: 17px;
+  font-size: 1.3em;
 }
 a:hover {
   color: var(--font-color4);
@@ -49,8 +49,7 @@ p {
 h1 {
   text-align: center;
   color: var(--color13);
-  margin-bottom: 15px;
-  margin-top: 0;
+  margin: 0 0 35px 0 !important;
   font-size: 3em !important;
 }
 
@@ -113,7 +112,7 @@ header {
 header .header-items .logo {
   color: var(--color1);
   font-family: initial;
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 header .header-items .logo span {
   color: var(--color3);
@@ -123,15 +122,35 @@ header .header-items .logo span {
 header .header-items nav {
   min-height: 70px;
 }
-header .header-items nav ul a {
+header .header-items nav .list-nav {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}
+header .header-items nav label {
+  display: none;
+}
+header .header-items nav label i {
+  font-size: 30px;
+  margin-top: 5px;
+  color: beige;
+}
+header .header-items nav .menu-nav {
+  z-index: 99999;
+}
+header .header-items nav .menu-nav ul {
+  margin: 0;
+}
+header .header-items nav .menu-nav ul a {
+  display: block;
   color: var(--color1);
   padding: 15px;
   transition: 0.7s ease;
 }
-header .header-items nav ul a:hover {
+header .header-items nav .menu-nav ul a:hover {
   color: var(--color6);
 }
-header .header-items nav ul .active {
+header .header-items nav .menu-nav ul .active {
   color: var(--color6);
 }
 
@@ -154,49 +173,252 @@ header .header-items nav ul .active {
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(../images/bg-programming.svg);
+  background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/close-tag.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48%;
+  height: 50%;
+  top: 32%;
+  right: 5%;
+}
 .hero .hero-items {
   position: absolute;
   top: 48%;
 }
-.hero .hero-items h2, .hero .hero-items h4 {
+.hero .hero-items h2, .hero .hero-items h3 {
   color: var(--color2);
-  font-size: 3vw;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1400px) {
   html, body {
     overflow-x: hidden !important;
   }
+}
+@media screen and (min-width: 1025px) and (max-width: 1326px) {
+  .hero::before {
+    top: 36%;
+    right: 2%;
+    width: 38%;
+  }
+  .hero .hero-items {
+    top: 52%;
+    left: 8%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero::before {
+    top: 39%;
+    right: 2%;
+    width: 46%;
+  }
+  .hero .hero-items {
+    top: 52%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .skills {
+    padding: 50px 0 0 0;
+  }
+  .skills .prog-item {
+    margin-bottom: 6% !important;
+  }
+
+  .contant .container {
+    margin-left: 0 !important;
+  }
+  .contant .container ul:nth-of-type(2) {
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-items {
+    justify-content: center !important;
+  }
+  header .header-items nav {
+    display: none !important;
+  }
+  header .header-items nav a {
+    display: none !important;
+  }
 
   .hero .hero-items {
-    position: absolute;
-    top: 50%;
     text-align: center;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    transform: translate(-50%, -50%);
+  }
+  .hero .hero-items::before {
+    width: 55%;
   }
 
   .about::before {
-    font-size: 11em !important;
-    top: 117% !important;
-    left: 4% !important;
+    display: none;
   }
 
-  .skills .prog-item {
-    width: 45% !important;
-    margin: 5% 0;
+  .contact .myinfo {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .hero::before {
+    top: 25% !important;
+    right: 25% !important;
+    width: 55%;
+  }
+  .hero .hero-items {
+    top: 75.5%;
+    right: 29%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 599px) {
+  .hero::before {
+    top: 25% !important;
+    right: 25% !important;
+    width: 55%;
+  }
+  .hero .hero-items {
+    top: 75.5%;
+    right: 23%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    display: none !important;
+  }
+
+  .about .about-items {
+    margin-left: 0 !important;
   }
 
   .projects .project-item {
     width: 55% !important;
     margin: 5% 0 !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 576px) {
+  .skills .prog-items {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .skills .prog-items .prog-item {
+    margin-bottom: 20% !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 575px) {
+  .hero::before {
+    top: 25% !important;
+    right: 25% !important;
+    width: 55%;
+  }
+  .hero .hero-items {
+    top: 75.5%;
+    right: 23%;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 479px) {
+  .hero::before {
+    top: 25% !important;
+    right: 12% !important;
+    width: 80% !important;
+  }
+  .hero .hero-items {
+    top: 75.5%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 483px) {
+  .contact .social-media {
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-evenly;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .hero::before {
+    width: 80% !important;
+    top: 27% !important;
+    right: 12% !important;
+  }
+  .hero .hero-items {
+    top: 75.5%;
+    right: 9%;
+  }
+}
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 6vw !important;
+  }
+
+  h1 {
+    font-size: 15vw !important;
+  }
+
+  header .logo {
+    font-size: 8.5vw !important;
+    text-align: center;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+  .hero::before {
+    right: 17% !important;
+    width: 70%;
+    height: 50%;
+    top: 23%;
+  }
+  .hero .hero-items {
+    top: 61%;
+    left: 3%;
+    width: inherit;
+  }
+  .hero .hero-items h2 {
+    font-size: 8vw;
+  }
+  .hero .hero-items h3 {
+    font-size: 7vw;
+  }
+
+  .skills h1 {
+    font-size: 17vw !important;
+  }
+  .skills .prog-items {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .skills .prog-items h5 {
+    font-size: 7vw;
+  }
+  .skills .prog-items .prog {
+    width: 8vw !important;
+  }
+  .skills .prog-items .prog span::after {
+    font-size: 5vw;
+  }
+
+  .contact .social-media i {
+    font-size: 10vw !important;
+  }
+  .contact li {
+    font-size: 5vw !important;
+  }
+
+  footer p {
+    font-size: 5vw !important;
   }
 }
 /*
@@ -226,7 +448,7 @@ bootstrap 5 responsive screen sizes:
 }
 .contact .social-media i {
   margin: 10px 0;
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--color6);
   transition: 0.7s ease;
 }
@@ -235,7 +457,6 @@ bootstrap 5 responsive screen sizes:
   transform: scale(1.1);
 }
 .contact .myinfo {
-  width: 25%;
   margin-bottom: 0;
 }
 .contact .myinfo li {
@@ -243,9 +464,9 @@ bootstrap 5 responsive screen sizes:
   align-items: center;
   height: 30px;
   text-transform: lowercase;
-  font-size: 1em;
+  font-size: 16px;
   font-family: fangsong;
-  margin-bottom: 0.6px;
+  margin: 5px 10px;
 }
 .contact .myinfo li i {
   margin-right: 10px !important;
@@ -260,16 +481,6 @@ bootstrap 5 responsive screen sizes:
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-left: 8%;
-}
-.about::before {
-  content: "about";
-  font-size: 20em;
-  position: absolute;
-  z-index: 1;
-  color: var(--color11);
-  top: 90%;
-  left: 20%;
 }
 
 .skills {
@@ -280,7 +491,7 @@ bootstrap 5 responsive screen sizes:
   justify-content: center;
 }
 .skills .prog-items .prog-item {
-  width: 15%;
+  width: 144px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,7 +503,7 @@ bootstrap 5 responsive screen sizes:
 .skills .prog-items .prog-item .prog {
   background-color: var(--color3);
   height: 20rem;
-  width: 15%;
+  width: 23px;
 }
 .skills .prog-items .prog-item .prog span {
   display: flex;
@@ -303,56 +514,52 @@ bootstrap 5 responsive screen sizes:
   background-color: var(--color10);
 }
 .skills .prog-items .prog-item .prog span::after {
-  position: absolute;
-  left: 35px;
+  margin-left: -40px;
 }
 .skills .prog-items .prog-item .prog, .skills .prog-items .prog-item span {
   border-radius: 20px;
 }
 .skills .prog-items .prog-item .html {
-  height: 80%;
+  height: 77%;
   animation: html 1s;
 }
 .skills .prog-items .prog-item .html::after {
-  content: "80%";
+  content: "77%";
 }
 .skills .prog-items .prog-item .css {
-  height: 60%;
+  height: 84%;
   animation: css 1s;
 }
 .skills .prog-items .prog-item .css::after {
-  content: "60%";
+  content: "84%";
 }
 .skills .prog-items .prog-item .sass {
-  height: 40%;
+  height: 50%;
   animation: sass 1s;
 }
 .skills .prog-items .prog-item .sass::after {
-  content: "40%";
+  content: "50%";
 }
 .skills .prog-items .prog-item .bootstrap {
-  height: 10%;
+  height: 40%;
   animation: bootstrap 1s;
 }
 .skills .prog-items .prog-item .bootstrap::after {
-  content: "10%";
+  content: "40%";
 }
 .skills .prog-items .prog-item .javascript {
-  height: 5%;
+  height: 19%;
   animation: javascript 1s;
 }
 .skills .prog-items .prog-item .javascript::after {
-  content: "5%";
-  position: absolute;
-  top: 27px;
-  left: 43px !important;
+  content: "19%";
 }
 @keyframes html {
   0% {
     height: 0%;
   }
   100% {
-    height: 80%;
+    height: 77%;
   }
 }
 @keyframes css {
@@ -360,7 +567,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 60%;
+    height: 84%;
   }
 }
 @keyframes sass {
@@ -368,7 +575,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 40%;
+    height: 50%;
   }
 }
 @keyframes bootstrap {
@@ -376,7 +583,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 10%;
+    height: 40%;
   }
 }
 @keyframes javascript {
@@ -384,7 +591,7 @@ bootstrap 5 responsive screen sizes:
     height: 0%;
   }
   100% {
-    height: 5%;
+    height: 19%;
   }
 }
 
@@ -413,49 +620,55 @@ bootstrap 5 responsive screen sizes:
   transform: scale(1.1);
 }
 
-.footer {
+footer {
   background-color: var(--bg-color2);
 }
-.footer .first-row {
+footer .first-row {
   display: flex;
   justify-content: space-between;
   padding: 3rem 5rem 0 4.5rem;
 }
-.footer .first-row ul {
+footer .first-row ul {
   font-size: 15px !important;
   font-weight: 500;
   padding-left: 0;
   margin: 0;
 }
-.footer .first-row .item {
+footer .first-row .item {
   text-align: left;
   margin: 1rem 0;
 }
-.footer .first-row .item h5 {
+footer .first-row .item h5 {
   color: var(--bs-blue);
 }
-.footer .first-row .item .contact li {
+footer .first-row .item .contact li {
   margin-bottom: 0.5rem;
   color: var(--font-color2);
 }
-.footer .first-row .item .contact li span {
+footer .first-row .item .contact li span {
   margin-left: 7px;
 }
-.footer .first-row .item .link-pages li {
+footer .first-row .item .link-pages li {
   margin-bottom: 0.5rem;
 }
-.footer .first-row .item .link-pages li a:hover {
+footer .first-row .item .link-pages li a:hover {
   margin-top: 1%;
   text-decoration: underline;
 }
-.footer .copyright {
-  padding-bottom: 2.4rem;
-  text-align: center;
-  height: 22px;
+footer .copy {
+  background-color: var(--color9);
+  padding: 10px;
 }
-.footer .copyright p {
-  color: var(--font-color2);
-  font-family: inherit;
+footer .copy p {
+  color: var(--color2);
+  text-transform: lowercase;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+footer .copy i {
+  font-size: 15px;
 }
 
 ::-webkit-scrollbar {

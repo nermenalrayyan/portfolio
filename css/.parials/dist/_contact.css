@@ -10,7 +10,7 @@
 }
 .contact .social-media i {
   margin: 10px 0;
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--color6);
   transition: 0.7s ease;
 }
@@ -26,9 +26,9 @@
   align-items: center;
   height: 30px;
   text-transform: lowercase;
-  font-size: 1em;
+  font-size: 16px;
   font-family: fangsong;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 .contact .myinfo li i {
   margin-right: 10px !important;

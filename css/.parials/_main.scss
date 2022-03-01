@@ -9,19 +9,19 @@
         // padding: 20px;
         position: relative;
         z-index: 2;
-        margin-left: 8%;
+        // margin-left: 8%;
     }
 
-    &::before
-    {
-        content: "about";
-        font-size: 20em;
-        position: absolute;
-        z-index: 1;
-        color: var(--color11);
-        top: 85.5%;
-        left: 18.9%;
-    }
+    // &::before
+    // {
+    //     content: "about";
+    //     font-size: 20em;
+    //     position: absolute;
+    //     z-index: 1;
+    //     color: var(--color11);
+    //     top: 86%;
+    //     left: 20%;
+    // }
 }
 // End About
 
@@ -38,7 +38,8 @@
     
         .prog-item
         {
-            width: 15%;
+            // width: 15%;
+            width: 144px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -54,7 +55,7 @@
             {
                 background-color: var(--color3);
                 height: 20rem;
-                width: 15%;
+                width: 23px;
                 // padding-right: 10px;
     
                 span
@@ -72,8 +73,10 @@
                     {
                         // content: "";
                         // background-color: red;
-                        position: absolute;
-                        left: 35px;
+
+                        // position: absolute;
+                        // left: 35px;
+                        margin-left: -40px;
                     }
                 }
             }
@@ -85,30 +88,41 @@
 
             .html
             {
-                height: 80%;
+                height: 65%;
                 animation: html 1s;
 
                 &::after
                 {
-                    content: "80%";
+                    content: "65%";
                 }
             }
     
             .css
             {
-                height: 60%;
+                height: 70%;
                 animation: css 1s;
 
                 &::after
                 {
-                    content: "60%";
+                    content: "70%";
                 }
             }
     
             .sass
             {
-                height: 40%;
+                height: 50%;
                 animation: sass 1s;
+
+                &::after
+                {
+                    content: "50%";
+                }
+            }
+    
+            .bootstrap
+            {
+                height: 40%;
+                animation: bootstrap 1s;
 
                 &::after
                 {
@@ -116,25 +130,14 @@
                 }
             }
     
-            .bootstrap
-            {
-                height: 10%;
-                animation: bootstrap 1s;
-
-                &::after
-                {
-                    content: "10%";
-                }
-            }
-    
             .javascript
             {
-                height: 5%;
+                height: 19%;
                 animation: javascript 1s;
 
                 &::after
                 {
-                    content: "5%";
+                    content: "19%";
                     // position: absolute;
                     // top: 27px;
                     // left: 43px;
@@ -150,7 +153,7 @@
     
                 100%
                 {
-                    height: 80%;
+                    height: 65%;
                 }
             }
     
@@ -163,7 +166,7 @@
     
                 100%
                 {
-                    height: 60%;
+                    height: 70%;
                 }
             }
     
@@ -176,7 +179,7 @@
     
                 100%
                 {
-                    height: 40%;
+                    height: 50%;
                 }
             }
     
@@ -189,7 +192,7 @@
     
                 100%
                 {
-                    height: 10%;
+                    height: 40%;
                 }
             }
     
@@ -202,7 +205,7 @@
     
                 100%
                 {
-                    height: 5%;
+                    height: 19%;
                 }
             }
         }

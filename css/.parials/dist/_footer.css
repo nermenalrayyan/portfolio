@@ -34,8 +34,17 @@ footer .first-row .item .link-pages li a:hover {
   text-decoration: underline;
 }
 footer .copy {
-  text-align: center;
   background-color: var(--color9);
+  padding: 10px;
+}
+footer .copy p {
   color: var(--color2);
-  padding: 10px 0;
+  text-transform: lowercase;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+footer .copy i {
+  font-size: 15px;
 }

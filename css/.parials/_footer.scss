@@ -62,10 +62,23 @@ footer
     }
     .copy
     {
-        text-align: center;
         background-color: var(--color9);
-        color: var(--color2);
-        padding: 10px 0;
+        padding: 10px;
+
+        p
+        {
+            color: var(--color2);
+            text-transform: lowercase;
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        i
+        {
+            font-size: 15px;
+        }
     }
 }
 // End Footer

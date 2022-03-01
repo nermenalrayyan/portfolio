@@ -4,16 +4,6 @@
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-left: 8%;
-}
-.about::before {
-  content: "about";
-  font-size: 20em;
-  position: absolute;
-  z-index: 1;
-  color: var(--color11);
-  top: 85.5%;
-  left: 18.9%;
 }
 
 .skills {
@@ -24,7 +14,7 @@
   justify-content: center;
 }
 .skills .prog-items .prog-item {
-  width: 15%;
+  width: 144px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +26,7 @@
 .skills .prog-items .prog-item .prog {
   background-color: var(--color3);
   height: 20rem;
-  width: 15%;
+  width: 23px;
 }
 .skills .prog-items .prog-item .prog span {
   display: flex;
@@ -47,53 +37,52 @@
   background-color: var(--color10);
 }
 .skills .prog-items .prog-item .prog span::after {
-  position: absolute;
-  left: 35px;
+  margin-left: -40px;
 }
 .skills .prog-items .prog-item .prog, .skills .prog-items .prog-item span {
   border-radius: 20px;
 }
 .skills .prog-items .prog-item .html {
-  height: 80%;
+  height: 65%;
   animation: html 1s;
 }
 .skills .prog-items .prog-item .html::after {
-  content: "80%";
+  content: "65%";
 }
 .skills .prog-items .prog-item .css {
-  height: 60%;
+  height: 70%;
   animation: css 1s;
 }
 .skills .prog-items .prog-item .css::after {
-  content: "60%";
+  content: "70%";
 }
 .skills .prog-items .prog-item .sass {
-  height: 40%;
+  height: 50%;
   animation: sass 1s;
 }
 .skills .prog-items .prog-item .sass::after {
-  content: "40%";
+  content: "50%";
 }
 .skills .prog-items .prog-item .bootstrap {
-  height: 10%;
+  height: 40%;
   animation: bootstrap 1s;
 }
 .skills .prog-items .prog-item .bootstrap::after {
-  content: "10%";
+  content: "40%";
 }
 .skills .prog-items .prog-item .javascript {
-  height: 5%;
+  height: 19%;
   animation: javascript 1s;
 }
 .skills .prog-items .prog-item .javascript::after {
-  content: "5%";
+  content: "19%";
 }
 @keyframes html {
   0% {
     height: 0%;
   }
   100% {
-    height: 80%;
+    height: 65%;
   }
 }
 @keyframes css {
@@ -101,7 +90,7 @@
     height: 0%;
   }
   100% {
-    height: 60%;
+    height: 70%;
   }
 }
 @keyframes sass {
@@ -109,7 +98,7 @@
     height: 0%;
   }
   100% {
-    height: 40%;
+    height: 50%;
   }
 }
 @keyframes bootstrap {
@@ -117,7 +106,7 @@
     height: 0%;
   }
   100% {
-    height: 10%;
+    height: 40%;
   }
 }
 @keyframes javascript {
@@ -125,7 +114,7 @@
     height: 0%;
   }
   100% {
-    height: 5%;
+    height: 19%;
   }
 }
 
