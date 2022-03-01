@@ -120,6 +120,7 @@
 }
 .projects .projects-items .project-item h5 {
   margin-top: 15px;
+  margin-bottom: 0 !important;
   text-align: center;
   color: var(--color10);
   transition: 0.5s ease;
