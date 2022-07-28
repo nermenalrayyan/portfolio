@@ -1,27 +1,17 @@
 .hero {
-  height: 100vh;
-  width: 100%;
   background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/close-tag.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 48%;
-  height: 50%;
-  top: 32%;
-  right: 5%;
-}
 .hero .hero-items {
-  position: absolute;
-  top: 48%;
+  align-items: center;
+  height: 579px;
 }
-.hero .hero-items h2, .hero .hero-items h3 {
+.hero .hero-items .text-items {
+  width: 300px;
+}
+.hero .hero-items .text-items h2, .hero .hero-items .text-items h4 {
   color: var(--color2);
 }

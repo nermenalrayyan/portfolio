@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden !important;
+}
+
 *, body, html {
   margin: 0;
   padding: 0;
@@ -43,7 +47,6 @@ p {
   letter-spacing: 1px;
   color: var(--color12);
   text-align: center;
-  width: 65%;
 }
 
 h1 {
