@@ -65,6 +65,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .hero {
+    padding: 125px 0 50px 0;
+  }
   .hero::before {
     top: 25% !important;
     right: 25% !important;
@@ -72,14 +75,8 @@
   }
   .hero .hero-items {
     text-align: center;
-    justify-content: center;
-    align-items: end;
-  }
-
-  .hero .hero-items {
-    text-align: center;
-    justify-content: center;
-    align-items: end;
+    height: 365px;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 599px) {

@@ -312,6 +312,7 @@
 @media screen and (max-width: 991px) {
   .hero
   {
+    padding: 125px 0 50px 0;
 
       &::before
       {
@@ -323,27 +324,29 @@
       .hero-items
       {
         text-align: center;
-        justify-content: center;
-        align-items: end;
+        // justify-content: center;
+        // align-items: end;
+        height: 365px;
+        flex-direction: column-reverse;
           // top: 75.5%;
           // right: 24.1%;
       }
   }
   
-  .hero
-  {
-    .hero-items
-    {
-      text-align: center;
-      justify-content: center;
-      align-items: end;
-      // height: 439px;
+  // .hero
+  // {
+  //   .hero-items
+  //   {
+  //     text-align: center;
+  //     justify-content: center;
+  //     align-items: end;
+  //     // height: 439px;
 
-      // &::before {
-      //     width: 55%;
-      // }
-    }
-  }
+  //     // &::before {
+  //     //     width: 55%;
+  //     // }
+  //   }
+  // }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px)
