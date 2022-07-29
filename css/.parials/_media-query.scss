@@ -489,8 +489,14 @@
 }
 // End Small Screens (Smaller Smartphones)
 
-@media screen and (max-width: 483px)
+@media screen and (max-width: 576px)
 {
+  .hero {
+    
+    .img {
+      width: 426px !important;
+    }
+  }
     .contact
     {
         .social-media 
