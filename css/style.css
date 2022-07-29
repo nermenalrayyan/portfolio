@@ -44,6 +44,7 @@ p {
   font-size: 1.2em;
   line-height: 28px;
   margin-top: 18px;
+  margin-bottom: 0;
   letter-spacing: 1px;
   color: var(--color12);
   text-align: center;
@@ -109,6 +110,7 @@ section {
 
 header {
   background-color: var(--color10);
+  height: 70px;
   position: fixed;
   z-index: 1000;
 }
@@ -179,10 +181,10 @@ header .header-items nav .menu-nav ul .active {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  margin-top: 70px;
 }
 .hero .hero-items {
-  align-items: center;
-  height: 575px;
+  height: 455px;
   gap: 190px;
 }
 .hero .hero-items .text-items h2, .hero .hero-items .text-items h4 {
@@ -192,29 +194,36 @@ header .header-items nav .menu-nav ul .active {
   width: 100%;
 }
 
-@media (max-width: 1326px) and (min-width: 992px) {
-  .hero .item {
-    width: 300px;
-    margin: 0 0 50px 30px;
+@media (max-width: 1326px) and (min-width: 1200px) {
+  .hero .hero-items {
+    height: 365px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .hero {
-    padding: 125px 0 50px 0;
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .hero .hero-items {
+    height: 360px;
+    gap: 80px;
   }
+}
+@media screen and (max-width: 991px) {
   .hero .hero-items {
     flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 990px) {
-  .contant .container {
-    margin-left: 0 !important;
-  }
-  .contant .container ul:nth-of-type(2) {
-    padding-left: 0 !important;
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .hero .hero-items {
+    gap: 91px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 420px) {
+  .hero .hero-items {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero .hero-items {
+    gap: 77px;
+  }
   header .header-items {
     justify-content: center !important;
   }
@@ -262,6 +271,11 @@ header .header-items nav .menu-nav ul .active {
     padding-left: 0 !important;
   }
 }
+@media screen and (max-width: 419px) {
+  .hero .hero-items {
+    height: 360px;
+  }
+}
 @media screen and (max-width: 320px) {
   p {
     font-size: 6vw !important;
@@ -275,12 +289,6 @@ header .header-items nav .menu-nav ul .active {
   header .logo {
     font-size: 8.5vw !important;
     text-align: center;
-  }
-  .hero .hero-items {
-    padding-bottom: 35px;
-  }
-  .hero .hero-items h2 {
-    font-size: 8vw;
   }
   .skills h1 {
     font-size: 17vw !important;
@@ -603,7 +611,7 @@ footer .copy p {
   text-transform: lowercase;
   font-size: 17px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   width: 100%;
 }
 footer .copy i {

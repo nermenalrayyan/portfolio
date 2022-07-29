@@ -1,5 +1,5 @@
 
-@media (max-width: 1326px) and (min-width: 992px)
+@media (max-width: 1326px) and (min-width: 1200px)
 {
   // html, body
   // {
@@ -8,9 +8,14 @@
 
 
   .hero { 
-    .item {
-      width: 300px;
-      margin: 0 0 50px 30px;
+    // .item {
+    //   width: 300px;
+    //   margin: 0 0 50px 30px;
+    // }
+
+    .hero-items {
+      // align-items: center;
+      height: 365px;
     }
   }
   
@@ -24,10 +29,10 @@
   // }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) and (min-width: 992px) {
   .hero
   {
-    padding: 125px 0 50px 0;
+    // padding-top: 140px;
 
       // &::before
       // {
@@ -42,7 +47,9 @@
         // justify-content: center;
         // align-items: end;
         // height: 365px;
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
+        height: 360px;
+        gap: 80px;
           // top: 75.5%;
           // right: 24.1%;
       }
@@ -181,24 +188,31 @@
 //         }
 //     }
 // }
-
-@media screen and (max-width: 990px)
-{
-    .contant
-    {
-        .container {
-            margin-left: 0 !important;
-
-            ul:nth-of-type(2)
-            {
-                padding-left: 0 !important;
-            }
-        }
+@media screen and (max-width: 991px){
+  .hero {
+    .hero-items {
+      flex-direction: column-reverse;
+      // gap: 117px;
     }
+  }
 }
 
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .hero {
+    .hero-items {
+      // flex-direction: column-reverse;
+      gap: 91px;
+    }
+  }
+}
 
-
+@media screen and (max-width: 991px) and (min-width: 420px){
+  .hero {
+    .hero-items {
+      height: 360px;
+    }
+  }
+}
 
 // @media screen and (min-width: 576px) and (max-width:576px)
 // {
@@ -217,13 +231,15 @@
 // }
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 
-    // ::-webkit-scrollbar 
-    // {
-    //     width: 0 !important;
-    // }
+  .hero {
+    .hero-items {
+      // flex-direction: column-reverse;
+      gap: 77px;
+    }
+  }
 
     header
     {
@@ -558,6 +574,15 @@
 //     }
 // }
 
+@media screen and (max-width: 419px){
+  .hero {
+    .hero-items {
+      height: 360px;
+    }
+  }
+}
+
+
 @media screen and (max-width: 320px)
 {
     p {
@@ -598,12 +623,12 @@
         .hero-items
         {
           // height: 378px;
-          padding-bottom: 35px;
+          // padding-bottom: 35px;
 
-            h2
-            {
-                font-size: 8vw;
-            }
+            // h2
+            // {
+            //     font-size: 8vw;
+            // }
 
             // h3
             // {

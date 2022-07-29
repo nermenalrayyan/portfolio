@@ -1,5 +1,6 @@
 header {
   background-color: var(--color10);
+  height: 70px;
   position: fixed;
   z-index: 1000;
 }

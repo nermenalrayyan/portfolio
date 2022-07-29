@@ -4,10 +4,10 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  margin-top: 70px;
 }
 .hero .hero-items {
-  align-items: center;
-  height: 575px;
+  height: 455px;
   gap: 190px;
 }
 .hero .hero-items .text-items h2, .hero .hero-items .text-items h4 {

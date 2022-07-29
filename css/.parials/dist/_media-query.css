@@ -1,26 +1,34 @@
-@media (max-width: 1326px) and (min-width: 992px) {
-  .hero .item {
-    width: 300px;
-    margin: 0 0 50px 30px;
+@media (max-width: 1326px) and (min-width: 1200px) {
+  .hero .hero-items {
+    height: 365px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .hero {
-    padding: 125px 0 50px 0;
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .hero .hero-items {
+    height: 360px;
+    gap: 80px;
   }
+}
+@media screen and (max-width: 991px) {
   .hero .hero-items {
     flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 990px) {
-  .contant .container {
-    margin-left: 0 !important;
-  }
-  .contant .container ul:nth-of-type(2) {
-    padding-left: 0 !important;
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .hero .hero-items {
+    gap: 91px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 420px) {
+  .hero .hero-items {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero .hero-items {
+    gap: 77px;
+  }
+
   header .header-items {
     justify-content: center !important;
   }
@@ -72,6 +80,11 @@
     padding-left: 0 !important;
   }
 }
+@media screen and (max-width: 419px) {
+  .hero .hero-items {
+    height: 360px;
+  }
+}
 @media screen and (max-width: 320px) {
   p {
     font-size: 6vw !important;
@@ -88,13 +101,6 @@
   header .logo {
     font-size: 8.5vw !important;
     text-align: center;
-  }
-
-  .hero .hero-items {
-    padding-bottom: 35px;
-  }
-  .hero .hero-items h2 {
-    font-size: 8vw;
   }
 
   .skills h1 {

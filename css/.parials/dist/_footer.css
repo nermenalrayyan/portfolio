@@ -42,7 +42,7 @@ footer .copy p {
   text-transform: lowercase;
   font-size: 17px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   width: 100%;
 }
 footer .copy i {
