@@ -1,5 +1,4 @@
 .hero {
-  height: 100vh;
   background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +8,7 @@
 .hero .hero-items {
   align-items: center;
   height: 575px;
+  gap: 190px;
 }
 .hero .hero-items .text-items h2, .hero .hero-items .text-items h4 {
   color: var(--color2);

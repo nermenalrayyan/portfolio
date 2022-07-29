@@ -1,6 +1,6 @@
 .hero
 {
-    height: 100vh;
+    // height: 100vh;
     // width: 100%;
     background-image: url(../images/background.svg);
     background-repeat: no-repeat;
@@ -31,6 +31,7 @@
         // justify-content: start;
         align-items: center;
         height: 575px;
+        gap: 190px;
         
 
         .text-items{
