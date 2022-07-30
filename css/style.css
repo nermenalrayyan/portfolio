@@ -393,16 +393,22 @@ bootstrap 5 responsive screen sizes:
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.8s ease-in-out;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+.skills .skills-items .prog-items .prog-item:hover {
+  flex-direction: column-reverse;
+  opacity: 0.6;
+  transform: rotate3d(23, 1, 23, 20deg) scale(1.1);
+}
+.skills .skills-items .prog-items .prog-item:hover h5 {
+  margin: 15px 0 0 0;
 }
 .skills .skills-items .prog-items .prog-item h5 {
   color: var(--color12);
 }
 .skills .skills-items .prog-items .prog-item i {
   font-size: 55px;
-  transition: all 0.5s ease-in-out;
-}
-.skills .skills-items .prog-items .prog-item i:hover {
-  opacity: 0.8;
 }
 .skills .skills-items .prog-items .prog-item .prog {
   background-color: var(--color3);
