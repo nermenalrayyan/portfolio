@@ -1,20 +1,8 @@
 
 @media (max-width: 1326px) and (min-width: 1200px)
 {
-  // html, body
-  // {
-  //     overflow-x: hidden !important;
-  // }
-
-
   .hero { 
-    // .item {
-    //   width: 300px;
-    //   margin: 0 0 50px 30px;
-    // }
-
     .hero-items {
-      // align-items: center;
       height: 365px;
     }
   }
@@ -73,19 +61,6 @@
 
 // @media screen and (min-width: 1133px) and (max-width: 1326px)
 // {
-//     .hero
-//     {
-//         &::before {
-//             top: 36%;
-//             right: 2%;
-//             width: 626px !important;
-//         }
-
-//         .hero-items {
-//             top: 52%;
-//             left: 8%;
-//         }
-//     }
 
 //     // .skills
 //     // {
@@ -105,40 +80,6 @@
 //     // }
 // }
 
-
-// @media screen and (min-width: 992px) and (max-width: 1326px)
-// {
-//   .hero
-//   {
-//     &::before {
-//       top: 36%;
-//       right: 2%;
-//       width: 554px;
-//     }
-
-//     .hero-items {
-//       top: 52%;
-//       left: 8%;
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 769px) and (max-width: 991px)
-// {
-//   .hero
-//   {
-//     &::before {
-//       top: 36%;
-//       right: 2%;
-//       width: 554px;
-//     }
-
-//     .hero-items {
-//       top: 52%;
-//       left: 8%;
-//     }
-//   }
-// }
 
 // @media screen and (min-width: 1025px) and (max-width: 1199px)
 // {
@@ -171,28 +112,10 @@
 //     // }
 // }
 
-// @media screen and (min-width: 769px) and (max-width: 1024px)
-// {
-//     .hero
-//     {
-//         &::before {
-//             top: 39%;
-//             right: 2%;
-//             width: 46%;
-//             // height: 37% !important;
-//         }
-
-//         .hero-items {
-//             top: 52%;
-//             left: 10%;
-//         }
-//     }
-// }
 @media screen and (max-width: 991px){
   .hero {
     .hero-items {
       flex-direction: column-reverse;
-      // gap: 117px;
     }
   }
 }
@@ -200,7 +123,6 @@
 @media screen and (max-width: 991px) and (min-width: 768px){
   .hero {
     .hero-items {
-      // flex-direction: column-reverse;
       gap: 91px;
     }
   }
@@ -236,7 +158,6 @@
 
   .hero {
     .hero-items {
-      // flex-direction: column-reverse;
       gap: 77px;
     }
   }
@@ -348,64 +269,6 @@
     }
 }
 
-// @media screen and (min-width: 320px) and (max-width: 768px) {
-//   .hero
-//   {
-//     .hero-items
-//     {
-//       // text-align: center;
-//       // justify-content: center;
-//       // align-items: end;
-//       // height: 439px;
-
-//       // &::before {
-//       //     width: 55%;
-//       // }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 600px) and (max-width: 768px)
-// {
-//   // .hero
-//   // {
-
-//   //     &::before
-//   //     {
-//   //         top: 25% !important;
-//   //         right: 25% !important;
-//   //         width: 55%;     
-//   //     }
-
-//   //     .hero-items
-//   //     {
-//   //         top: 75.5%;
-//   //         right: 24.1%;
-//   //     }
-//   // }
-// }
-
-// @media screen and (min-width: 576px) and (max-width: 599px)
-// {
-//   .hero
-//   {
-
-//       // &::before
-//       // {
-//       //     top: 25% !important;
-//       //     right: 25% !important;
-//       //     width: 55%;     
-//       // }
-
-//       .hero-items
-//       {
-//           top: 75.5%;
-//           right: 17%;
-//       }
-//   }
-// }
-
-
 // Start Small Screens (Smaller Smartphones)
 @media screen and (max-width: 576px)
 {
@@ -463,46 +326,6 @@
         }
     }
 }
-
-// @media screen and (min-width: 480px) and (max-width: 575px)
-// {
-//     .hero
-//     {
-//         &::before
-//         {
-//             top: 25% !important;
-//             right: 25% !important;
-//             width: 55%;     
-//         }
-
-//         .hero-items
-//         {
-//             top: 75.5%;
-//             right: 17%;
-//         }
-//     }
-// }
-
-
-// @media screen and (min-width: 376px) and (max-width: 479px)
-// {
-//     .hero
-//     {
-
-//         &::before
-//         {
-//             top: 25% !important;
-//             right: 12% !important;
-//             width: 80% !important;     
-//         }
-
-//         .hero-items
-//         {
-//             top: 75.5%;
-//             right: 5%;
-//         }
-//     }
-// }
 // End Small Screens (Smaller Smartphones)
 
 @media screen and (max-width: 576px)
@@ -529,51 +352,6 @@
     }
 }
 
-// @media screen and (min-width: 376px) and (max-width: 425px)
-// {
-//     .hero
-//     {
-
-//         &::before
-//         {
-//             top: 25% !important;
-//             right: 12% !important;
-//             width: 80% !important;     
-//         }
-
-//         .hero-items
-//         {
-//             top: 75.5%;
-//             left: 10%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 321px) and (max-width: 375px)
-// {
-//     // html, body
-//     // {
-//     //     // overflow-x: hidden !important;
-//     // }
-
-//     .hero
-//     {
-
-//         &::before
-//         {
-//             width: 80% !important;
-//             top: 27% !important;
-//             right: 12% !important;     
-//         }
-
-//         .hero-items
-//         {
-//             top: 75.5%;
-//             right: 3.6%;
-//         }
-//     }
-// }
-
 @media screen and (max-width: 419px){
   .hero {
     .hero-items {
@@ -581,7 +359,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 320px)
 {
@@ -603,37 +380,6 @@
         {
             font-size: 8.5vw !important;
             text-align: center;
-        }
-    }
-
-    .hero
-    {
-        // height: 80vh;
-
-        // &::before
-        // {
-        //     right: 17% !important;
-        //     width: 70%;
-        //     height: 50%;
-        //     top: 23%;
-        //     // right: 9.9% !important;
-        //     // width: 80% !important;
-        // }
-
-        .hero-items
-        {
-          // height: 378px;
-          // padding-bottom: 35px;
-
-            // h2
-            // {
-            //     font-size: 8vw;
-            // }
-
-            // h3
-            // {
-            //     font-size: 7vw;
-            // }
         }
     }
 
@@ -685,81 +431,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Start Small Screens (Smaller Smartphones)
-// @media (min-width: 200px) and (max-width: 480px)
-// {
-
-// }
-// // End Small Screens (Smaller Smartphones)
-
-
-
-
-
-// // Start Medium Screens (Tablets And Larger Smartphones)
-// @media (min-width: 481px) and (max-width: 768px)
-// {
-    
-// }
-// // End Medium Screens (Tablets And Larger Smartphones)
-
-
-
-
-
-// // Start Large Screens (Laptops)
-// @media (min-width: 1200px)
-// {
-    
-// }
-// // End Large Screens (Laptops)
-
-
-
-
-
-// // Start XX Large Screens (Larger Desktops And Monitors)
-// @media (min-width: 1400px)
-// {
-    
-// }
-// // End XX Large Screens (Larger Desktops And Monitors)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 bootstrap 5 responsive screen sizes:
