@@ -187,7 +187,7 @@ header .header-items nav .menu-nav ul .active {
   height: 455px;
   gap: 190px;
 }
-.hero .hero-items .text-items h2, .hero .hero-items .text-items h4 {
+.hero .hero-items .text-items h2, .hero .hero-items .text-items h6 {
   color: var(--color2);
 }
 .hero .hero-items .img img {
