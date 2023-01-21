@@ -34,6 +34,14 @@ a:hover {
   text-align: center;
 }
 
+.icons {
+  transition: all 0.8s ease-in-out;
+}
+.icons:hover {
+  opacity: 0.6;
+  transform: rotate(360deg) scale(1.1);
+}
+
 /* End Link */
 /* Start Text */
 p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
@@ -393,13 +401,9 @@ bootstrap 5 responsive screen sizes:
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.8s ease-in-out;
-  transform: rotate3d(0, 0, 0, 0deg);
 }
 .skills .skills-items .prog-items .prog-item:hover {
   flex-direction: column-reverse;
-  opacity: 0.6;
-  transform: rotate3d(23, 1, 23, 20deg) scale(1.1);
 }
 .skills .skills-items .prog-items .prog-item:hover h5 {
   margin: 15px 0 0 0;

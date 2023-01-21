@@ -34,6 +34,17 @@ a:hover {
   text-align: center;
 }
 
+.icons {
+  transition: all 0.8s ease-in-out;
+}
+.icons:hover {
+  opacity: 0.6;
+  -webkit-transform: rotate(360deg) scale(1.1);
+  -moz-transform: rotate(360deg) scale(1.1);
+  -o-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
+}
+
 /* End Link */
 /* Start Text */
 p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {

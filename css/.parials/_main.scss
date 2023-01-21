@@ -52,19 +52,27 @@
         justify-content: center;
         align-items: center;
         // transform: skew(15deg);
-        transition: all .8s ease-in-out;
-        -webkit-transform: rotate3d(0,0,0,0deg);
-        -moz-transform: rotate3d(0,0,0,0deg);
-        -o-transform: rotate3d(0,0,0,0deg);
-        transform: rotate3d(0,0,0,0deg);
+        
+        // transition: all .8s ease-in-out;
+        // -webkit-transform: rotate3d(0,0,0,0deg);
+        // -moz-transform: rotate3d(0,0,0,0deg);
+        // -o-transform: rotate3d(0,0,0,0deg);
+        // transform: rotate3d(0,0,0,0deg);
 
         &:hover {
           flex-direction: column-reverse;
-          opacity: .6;
-          -webkit-transform: rotate3d(23,1,23,20deg) scale(1.1);
-          -moz-transform: rotate3d(23,1,23,20deg) scale(1.1);
-          -o-transform: rotate3d(23,1,23,20deg) scale(1.1);
-          transform: rotate3d(23,1,23,20deg) scale(1.1);
+          // opacity: .6;
+          
+          // -webkit-transform: rotate3d(23,1,23,20deg) scale(1.1);
+          // -moz-transform: rotate3d(23,1,23,20deg) scale(1.1);
+          // -o-transform: rotate3d(23,1,23,20deg) scale(1.1);
+          // transform: rotate3d(23,1,23,20deg) scale(1.1);
+
+          // -webkit-transform: rotate(360deg) scale(1.1);
+          // -moz-transform: rotate(360deg) scale(1.1);
+          // -o-transform: rotate(360deg) scale(1.1);
+          // transform: rotate(360deg) scale(1.1);
+
 
           h5 {
             margin: 15px 0 0 0;
