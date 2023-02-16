@@ -550,30 +550,33 @@ bootstrap 5 responsive screen sizes:
   color: #8411f6;
 }
 
+.projects .projects-items {
+  gap: 55px 55px;
+}
 .projects .projects-items .project-item {
-  width: 229px;
-  margin: auto;
-  text-align: center;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .projects .projects-items .project-item img {
-  width: 100%;
-  height: 283px;
+  width: 275px;
+  height: 100%;
+  margin-bottom: 10px;
   transition: 0.5s ease;
 }
 .projects .projects-items .project-item img:hover {
   opacity: 0.8;
 }
 .projects .projects-items .project-item a {
-  position: relative;
-}
-.projects .projects-items .project-item h5 {
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
   color: var(--color10);
   transition: 0.5s ease;
 }
-.projects .projects-items .project-item h5:hover {
+.projects .projects-items .project-item a:hover {
   transform: scale(1.1);
 }
 
