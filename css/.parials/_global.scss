@@ -62,9 +62,13 @@ a
 
 
 /* Start Text */ 
-p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2
+p, h2, h3, h4, h5, h6, a, button, .button-1, .button-2
 {
-    text-transform: capitalize;
+    text-transform: initial;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 p

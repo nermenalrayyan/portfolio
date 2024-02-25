@@ -44,8 +44,12 @@ a:hover {
 
 /* End Link */
 /* Start Text */
-p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
-  text-transform: capitalize;
+p, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  text-transform: initial;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 p {
@@ -195,7 +199,7 @@ header .header-items nav .menu-nav ul .active {
   height: 455px;
   gap: 190px;
 }
-.hero .hero-items .text-items h2, .hero .hero-items .text-items h6 {
+.hero .hero-items .text-items h2, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color2);
 }
 .hero .hero-items .img img {
@@ -442,28 +446,19 @@ bootstrap 5 responsive screen sizes:
   border-radius: 20px;
 }
 .skills .skills-items .prog-items .prog-item .html {
-  -webkit-animation: html 1s;
-          animation: html 1s;
+  animation: html 1s;
 }
 .skills .skills-items .prog-items .prog-item .css {
-  -webkit-animation: css 1s;
-          animation: css 1s;
+  animation: css 1s;
 }
 .skills .skills-items .prog-items .prog-item .sass {
-  -webkit-animation: sass 1s;
-          animation: sass 1s;
+  animation: sass 1s;
 }
 .skills .skills-items .prog-items .prog-item .bootstrap {
-  -webkit-animation: bootstrap 1s;
-          animation: bootstrap 1s;
+  animation: bootstrap 1s;
 }
-@-webkit-keyframes html {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 65%;
-  }
+.skills .skills-items .prog-items .prog-item .bootstrap {
+  animation: bootstrap 1s;
 }
 @keyframes html {
   0% {
@@ -471,14 +466,6 @@ bootstrap 5 responsive screen sizes:
   }
   100% {
     height: 65%;
-  }
-}
-@-webkit-keyframes css {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 70%;
   }
 }
 @keyframes css {
@@ -489,28 +476,12 @@ bootstrap 5 responsive screen sizes:
     height: 70%;
   }
 }
-@-webkit-keyframes sass {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 50%;
-  }
-}
 @keyframes sass {
   0% {
     height: 0%;
   }
   100% {
     height: 50%;
-  }
-}
-@-webkit-keyframes bootstrap {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 40%;
   }
 }
 @keyframes bootstrap {
@@ -521,14 +492,6 @@ bootstrap 5 responsive screen sizes:
     height: 40%;
   }
 }
-@-webkit-keyframes javascript {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 19%;
-  }
-}
 @keyframes javascript {
   0% {
     height: 0%;
@@ -537,17 +500,20 @@ bootstrap 5 responsive screen sizes:
     height: 19%;
   }
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(1) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(1) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1) i {
   color: #e44f26;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
   color: #cf649a;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
   color: #8411f6;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
+  color: rgb(52, 123, 167);
 }
 
 .projects .projects-items {
@@ -569,14 +535,14 @@ bootstrap 5 responsive screen sizes:
 .projects .projects-items .project-item img:hover {
   opacity: 0.8;
 }
-.projects .projects-items .project-item a {
+.projects .projects-items .project-item span {
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
   color: var(--color10);
   transition: 0.5s ease;
 }
-.projects .projects-items .project-item a:hover {
+.projects .projects-items .project-item span:hover {
   transform: scale(1.1);
 }
 
