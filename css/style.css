@@ -238,6 +238,7 @@ header .header-items nav .menu-nav ul .active {
   }
   header .header-items {
     justify-content: center !important;
+    height: 100%;
   }
   header .header-items nav {
     display: none !important;
