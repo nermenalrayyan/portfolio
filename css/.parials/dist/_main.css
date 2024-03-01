@@ -154,7 +154,6 @@
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
-  color: var(--color10);
   transition: 0.5s ease;
 }
 .projects .projects-items .project-item span:hover {

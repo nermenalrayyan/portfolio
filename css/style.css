@@ -19,11 +19,11 @@ body {
 /* Start Link */
 a {
   text-decoration: none !important;
-  color: var(--font-color2);
+  color: var(--color6);
   font-size: 1.3em;
 }
 a:hover {
-  color: var(--font-color4);
+  color: var(--color4);
 }
 
 .link {
@@ -123,8 +123,6 @@ section {
 header {
   background-color: var(--color10);
   height: 70px;
-  position: fixed;
-  z-index: 1000;
 }
 header .header-items .logo {
   color: var(--color1);
@@ -196,11 +194,9 @@ header .header-items nav .menu-nav ul .active {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  margin-top: 70px;
 }
 .hero .hero-items {
   height: 455px;
-  gap: 190px;
 }
 .hero .hero-items .text-items h2, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color2);
@@ -225,20 +221,12 @@ header .header-items nav .menu-nav ul .active {
     flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .hero .hero-items {
-    gap: 91px;
-  }
-}
 @media screen and (max-width: 991px) and (min-width: 420px) {
   .hero .hero-items {
     height: 360px;
   }
 }
 @media screen and (max-width: 767px) {
-  .hero .hero-items {
-    gap: 77px;
-  }
   header .header-items {
     justify-content: center !important;
     height: 100%;
@@ -349,23 +337,20 @@ bootstrap 5 responsive screen sizes:
 * Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
 */
 .contact {
-  background-color: var(--color10);
-  color: var(--color1);
+  padding: 10px 0;
 }
 .contact .social-media {
   position: fixed;
-  top: 42%;
+  top: 36%;
   left: -10px;
   width: auto;
 }
 .contact .social-media i {
   margin: 10px 0;
   font-size: 1.7em;
-  color: var(--color6);
   transition: 0.7s ease;
 }
 .contact .social-media i:hover {
-  color: var(--color4);
   transform: scale(1.1);
 }
 .contact .myinfo {
@@ -543,7 +528,6 @@ bootstrap 5 responsive screen sizes:
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
-  color: var(--color10);
   transition: 0.5s ease;
 }
 .projects .projects-items .project-item span:hover {
@@ -587,7 +571,7 @@ footer .first-row .item .link-pages li a:hover {
 }
 footer .copy {
   background-color: var(--color9);
-  padding: 10px;
+  padding: 1px;
 }
 footer .copy p {
   color: var(--color2);
@@ -602,7 +586,7 @@ footer .copy i {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {

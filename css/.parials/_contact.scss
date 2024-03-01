@@ -1,12 +1,13 @@
 .contact
 {
-    background-color: var(--color10);
-    color: var(--color1);
+    // background-color: var(--color10);
+    // color: var(--color1);
+    padding: 10px 0;
 
     .social-media
     {
         position: fixed;
-        top: 42%;
+        top: 36%;
         left: -10px;
         width: auto;
     
@@ -14,12 +15,12 @@
         {
             margin: 10px 0;
             font-size: 1.7em;
-            color: var(--color6);
+            // color: var(--color6);
             transition: 0.7s ease;
 
             &:hover
             {
-                color: var(--color4);
+                // color: var(--color4);
                 transform: scale(1.1);
             }
         }

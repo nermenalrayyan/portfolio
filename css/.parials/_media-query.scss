@@ -120,13 +120,13 @@
   }
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px){
-  .hero {
-    .hero-items {
-      gap: 91px;
-    }
-  }
-}
+// @media screen and (max-width: 991px) and (min-width: 768px){
+//   .hero {
+//     .hero-items {
+//       gap: 91px;
+//     }
+//   }
+// }
 
 @media screen and (max-width: 991px) and (min-width: 420px){
   .hero {
@@ -158,7 +158,7 @@
 
   .hero {
     .hero-items {
-      gap: 77px;
+      // gap: 77px;
     }
   }
 
