@@ -168,6 +168,14 @@
         {
             justify-content: center !important;
             height: 100%;
+
+            .logo {
+              width: 250px;
+
+              img {
+                width: 100%
+              }
+            }
         
             nav
             {
