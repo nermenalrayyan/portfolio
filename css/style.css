@@ -129,7 +129,10 @@ header {
 header .header-items .logo {
   color: var(--color1);
   font-family: initial;
-  font-size: 1.7em;
+  width: 15em;
+}
+header .header-items .logo img {
+  width: 100%;
 }
 header .header-items .logo span {
   color: var(--color3);
@@ -239,12 +242,6 @@ header .header-items nav .menu-nav ul .active {
   header .header-items {
     justify-content: center !important;
     height: 100%;
-  }
-  header .header-items .logo {
-    width: 250px;
-  }
-  header .header-items .logo img {
-    width: 100%;
   }
   header .header-items nav {
     display: none !important;
