@@ -19,7 +19,7 @@ body {
 /* Start Link */
 a {
   text-decoration: none !important;
-  color: var(--color6);
+  color: var(--color10);
   font-size: 1.3em;
 }
 a:hover {

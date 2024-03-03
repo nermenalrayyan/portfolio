@@ -1,7 +1,5 @@
 .contact
 {
-    // background-color: var(--color10);
-    // color: var(--color1);
     padding: 10px 0;
 
     .social-media
@@ -15,12 +13,10 @@
         {
             margin: 10px 0;
             font-size: 1.7em;
-            // color: var(--color6);
             transition: 0.7s ease;
 
             &:hover
             {
-                // color: var(--color4);
                 transform: scale(1.1);
             }
         }
@@ -28,7 +24,6 @@
 
     .myinfo
     {
-        // width: 47%;
         margin-bottom: 0;    
         padding-left: 0;
 
@@ -36,13 +31,11 @@
         {
             display: flex;
             align-items: center;
-            // justify-content: space-between;
             height: 30px;
 
             text-transform: lowercase;
             font-size: 16px;
             font-family: fangsong;
-            // margin: 5px 10px;
 
             i
             {

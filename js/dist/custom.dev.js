@@ -5,6 +5,6 @@
 // const sidebar = document.getElementById('sidebar');
 // End Close Links Menu Bar
 // Start Current Year
-var yearSpam = document.querySelector("#currentYear");
-var currentYear = new Year();
+var newYear = new Date();
+var currentYear = newYear.getFullYear();
 document.querySelector("#currentYear").innerHTML = currentYear; // End Current Year

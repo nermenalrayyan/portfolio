@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--bg-color2);
+  background-color: var(--color10);
 }
 footer .first-row {
   display: flex;
@@ -34,7 +34,6 @@ footer .first-row .item .link-pages li a:hover {
   text-decoration: underline;
 }
 footer .copy {
-  background-color: var(--color9);
   padding: 1px;
 }
 footer .copy p {

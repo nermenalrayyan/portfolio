@@ -33,6 +33,9 @@
 .skills .skills-items .prog-items .prog-item i {
   font-size: 55px;
 }
+.skills .skills-items .prog-items .prog-item img {
+  width: 55px;
+}
 .skills .skills-items .prog-items .prog-item .prog {
   background-color: var(--color3);
   height: 20rem;
@@ -129,6 +132,11 @@
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
   color: #347ba7;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
+  background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .projects .projects-items {

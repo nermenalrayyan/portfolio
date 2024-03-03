@@ -25,7 +25,7 @@ body
 a
 {
     text-decoration: none !important;
-    color: var(--color6);
+    color: var(--color10);
     font-size: 1.3em;
 
     &:hover
@@ -36,9 +36,7 @@ a
 
 .link
 {
-    // color: #ffffff;
     padding: 10px;
-    // font-size: 17px;
 }
 
 .more
@@ -80,7 +78,6 @@ p
     letter-spacing: 1px;
     color: var(--color12);
     text-align: center;
-    // width: 65%;
 }
 
 h1

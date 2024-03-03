@@ -5,9 +5,9 @@
 
 
 // Start Current Year
-const yearSpam = document.querySelector("#currentYear");
-const currentYear = new Year();
+const newYear = new Date();
+const currentYear = newYear.getFullYear();
 
 document.querySelector("#currentYear").innerHTML = currentYear;
-
 // End Current Year
+
