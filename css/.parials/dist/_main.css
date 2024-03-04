@@ -75,8 +75,8 @@
 .skills .skills-items .prog-items .prog-item .bootstrap {
   animation: bootstrap 1s;
 }
-.skills .skills-items .prog-items .prog-item .bootstrap {
-  animation: bootstrap 1s;
+.skills .skills-items .prog-items .prog-item .javascript {
+  animation: javascript 1s;
 }
 @keyframes html {
   0% {
@@ -125,15 +125,18 @@
   color: #1572b6;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(3) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
-  color: #cf649a;
+  color: #efbe24;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
-  color: #8411f6;
+  color: #cf649a;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
-  color: #347ba7;
+  color: #8411f6;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
+  color: #347ba7;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(7) i {
   background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -153,7 +156,7 @@
   width: 275px;
   height: 100%;
   margin-bottom: 10px;
-  transition: 0.5s ease;
+  transition: all 0.7s ease-in-out;
 }
 .projects .projects-items .project-item img:hover {
   opacity: 0.8;
@@ -162,7 +165,7 @@
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
-  transition: 0.5s ease;
+  transition: all 0.7s ease-in-out;
 }
 .projects .projects-items .project-item span:hover {
   transform: scale(1.1);
