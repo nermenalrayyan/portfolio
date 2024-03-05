@@ -139,7 +139,7 @@
 .skills .skills-items .prog-items .prog-item:nth-of-type(7) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(7) i {
   background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
 }
 
 .projects .projects-items {

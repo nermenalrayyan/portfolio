@@ -513,7 +513,7 @@ bootstrap 5 responsive screen sizes:
 .skills .skills-items .prog-items .prog-item:nth-of-type(7) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(7) i {
   background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
 }
 
 .projects .projects-items {
