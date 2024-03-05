@@ -26,19 +26,3 @@ setTimeout(() => {
     loadingPage.style.display = 'none';
     // loadingPage.style.transition = 'all 0.2s ease-out'
 }, 1000);
-
-
-
-// const LoadingPage = document.getElementById('preload');
-
-// function delay () {
-//     setTimeout( function() {
-    
-//         window.onload = function() {
-//             document.getElementById('preload').style.display = "none";
-//         }
-//     ;}, 500);
-// }
-
-
-

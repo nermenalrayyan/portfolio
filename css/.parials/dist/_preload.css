@@ -16,7 +16,7 @@ body {
   background: var(--color10) url(../images/nermen-alrayyan-loading.gif) no-repeat center center;
   background-size: 150px;
   position: fixed;
-  z-index: 1000;
   height: 100vh;
   width: 100%;
+  z-index: 1000;
 }

@@ -3,9 +3,10 @@
 }
 .contact .social-media {
   position: fixed;
-  top: 36%;
+  top: 28%;
   left: -10px;
   width: auto;
+  text-align: center;
 }
 .contact .social-media i {
   margin: 10px 0;

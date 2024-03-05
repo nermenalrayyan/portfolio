@@ -341,9 +341,10 @@ bootstrap 5 responsive screen sizes:
 }
 .contact .social-media {
   position: fixed;
-  top: 36%;
+  top: 28%;
   left: -10px;
   width: auto;
+  text-align: center;
 }
 .contact .social-media i {
   margin: 10px 0;
@@ -632,7 +633,7 @@ body {
   background: var(--color10) url(../images/nermen-alrayyan-loading.gif) no-repeat center center;
   background-size: 150px;
   position: fixed;
-  z-index: 1000;
   height: 100vh;
   width: 100%;
+  z-index: 1000;
 }/*# sourceMappingURL=style.css.map */
