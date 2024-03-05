@@ -345,6 +345,8 @@ bootstrap 5 responsive screen sizes:
   left: -10px;
   width: auto;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 0 45px;
 }
 .contact .social-media i {
   margin: 10px 0;
