@@ -252,6 +252,7 @@ header .header-items nav .menu-nav ul .active {
 }
 @media screen and (min-width: 321px) and (max-width: 576px) {
   .skills .prog-items {
+    gap: 50px 0 !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -391,7 +392,7 @@ bootstrap 5 responsive screen sizes:
   background-color: var(--color2);
 }
 .skills .skills-items .prog-items {
-  gap: 50px 0;
+  gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
   width: 165px;
@@ -553,7 +554,7 @@ bootstrap 5 responsive screen sizes:
 }
 
 .projects .projects-items {
-  gap: 55px 55px;
+  gap: 55px;
 }
 .projects .projects-items .project-item {
   /* text-align: center; */

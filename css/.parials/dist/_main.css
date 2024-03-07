@@ -15,7 +15,7 @@
   background-color: var(--color2);
 }
 .skills .skills-items .prog-items {
-  gap: 50px 0;
+  gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
   width: 165px;
@@ -173,7 +173,7 @@
 }
 
 .projects .projects-items {
-  gap: 55px 55px;
+  gap: 55px;
 }
 .projects .projects-items .project-item {
   /* text-align: center; */
