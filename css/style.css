@@ -44,12 +44,9 @@ a:hover {
 
 /* End Link */
 /* Start Text */
-p, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
-  text-transform: initial;
-}
-
-h1 {
-  text-transform: uppercase;
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  line-height: 0.9;
+  letter-spacing: 1.5px;
 }
 
 p {
@@ -62,14 +59,11 @@ p {
   text-align: center;
 }
 
-h1 {
+h2 {
   text-align: center;
-  color: var(--color13);
   margin: 0 0 35px 0 !important;
   font-size: 3em !important;
-}
-
-h2 {
+  text-transform: uppercase;
   color: var(--color10);
 }
 
@@ -198,7 +192,7 @@ header .header-items nav .menu-nav ul .active {
 .hero .hero-items {
   height: 455px;
 }
-.hero .hero-items .text-items h2, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
+.hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color2);
 }
 .hero .hero-items .img img {
@@ -222,8 +216,11 @@ header .header-items nav .menu-nav ul .active {
   }
 }
 @media screen and (max-width: 991px) and (min-width: 420px) {
-  .hero .hero-items {
-    height: 360px;
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.7em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -277,15 +274,18 @@ header .header-items nav .menu-nav ul .active {
 }
 @media screen and (max-width: 419px) {
   .hero .hero-items {
-    height: 360px;
+    height: 385px;
+  }
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.5em !important;
   }
 }
 @media screen and (max-width: 320px) {
   p {
     font-size: 6vw !important;
-  }
-  h1 {
-    font-size: 15vw !important;
   }
   h5 {
     font-size: 7vw !important;
@@ -384,6 +384,9 @@ bootstrap 5 responsive screen sizes:
   width: 85%;
   margin: 0 auto;
 }
+.about .about-items p {
+  text-transform: initial;
+}
 
 .skills {
   background-color: var(--color2);
@@ -392,7 +395,7 @@ bootstrap 5 responsive screen sizes:
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 88px;
+  width: 165px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -501,7 +504,7 @@ bootstrap 5 responsive screen sizes:
 .skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5 {
   color: #efbe24;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
@@ -513,9 +516,40 @@ bootstrap 5 responsive screen sizes:
 .skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
   color: rgb(52, 123, 167);
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(7) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
   background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
+  background: linear-gradient(0deg, rgb(102, 102, 204) 0%, rgb(255, 0, 255) 51%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
+  background: linear-gradient(90deg, rgb(0, 86, 233) 0%, rgb(0, 124, 226) 35%, rgb(0, 175, 216) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5 {
+  background: linear-gradient(90deg, rgb(76, 175, 80) 0%, rgb(255, 193, 7) 55%, rgb(33, 150, 243) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
   --webkit-background-clip: text;
 }
 

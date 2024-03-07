@@ -7,6 +7,9 @@
   width: 85%;
   margin: 0 auto;
 }
+.about .about-items p {
+  text-transform: initial;
+}
 
 .skills {
   background-color: var(--color2);
@@ -15,7 +18,7 @@
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 88px;
+  width: 165px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +127,7 @@
 .skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5 {
   color: #efbe24;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
@@ -136,9 +139,36 @@
 .skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
   color: #347ba7;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(7) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
   background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
+  background: linear-gradient(0deg, #6666cc 0%, fuchsia 51%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
+  background: linear-gradient(90deg, #0056e9 0%, #007ce2 35%, #00afd8 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5 {
+  background: linear-gradient(90deg, #4caf50 0%, #ffc107 55%, #2196f3 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
   --webkit-background-clip: text;
 }
 

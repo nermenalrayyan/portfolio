@@ -12,6 +12,10 @@
       width: 85%;
       margin: 0 auto;
 
+      p {
+        text-transform: initial;
+      }
+
       // margin-left: 8%;
     }
 
@@ -44,9 +48,7 @@
   
       .prog-item
       {
-        // width: 15%;
-        // width: 144px;
-        width: 88px;
+        width: 165px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -294,7 +296,7 @@
       }
       
       .prog-item:nth-of-type(3) {
-        h5, i {
+        h5 {
           color: #efbe24;
         }
       }
@@ -317,9 +319,46 @@
       }
 
       .prog-item:nth-of-type(7) {
-        h5, i {
+        h5 {
           background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
           -webkit-text-fill-color: transparent;
+          background-clip: text;
+          --ms-background-clip: text;
+          --o-background-clip: text;
+          --webkit-background-clip: text;
+        }
+      }
+
+      .prog-item:nth-of-type(8) {
+        h5 {
+          background: linear-gradient(0deg, rgb(102, 102, 204) 0%, rgb(255, 0, 255) 51%);
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          --ms-background-clip: text;
+          --o-background-clip: text;
+          --webkit-background-clip: text;
+        }
+      }
+
+      .prog-item:nth-of-type(9) {
+
+        h5 {
+          background: linear-gradient(90deg, rgb(0, 86, 233) 0%, rgb(0, 124, 226) 35%, rgb(0, 175, 216) 100%);
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          --ms-background-clip: text;
+          --o-background-clip: text;
+          --webkit-background-clip: text;
+        }
+      }
+
+      .prog-item:nth-of-type(10) {
+        h5 {
+          background: linear-gradient(90deg, rgb(76, 175, 80) 0%, rgb(255, 193, 7) 55%, rgb(33, 150, 243) 100%);
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          --ms-background-clip: text;
+          --o-background-clip: text;
           --webkit-background-clip: text;
         }
       }

@@ -47,12 +47,9 @@ a:hover {
 
 /* End Link */
 /* Start Text */
-p, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
-  text-transform: initial;
-}
-
-h1 {
-  text-transform: uppercase;
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  line-height: 0.9;
+  letter-spacing: 1.5px;
 }
 
 p {
@@ -65,14 +62,11 @@ p {
   text-align: center;
 }
 
-h1 {
+h2 {
   text-align: center;
-  color: var(--color13);
   margin: 0 0 35px 0 !important;
   font-size: 3em !important;
-}
-
-h2 {
+  text-transform: uppercase;
   color: var(--color10);
 }
 

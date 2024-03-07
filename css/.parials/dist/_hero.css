@@ -8,7 +8,7 @@
 .hero .hero-items {
   height: 455px;
 }
-.hero .hero-items .text-items h2, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
+.hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color2);
 }
 .hero .hero-items .img img {

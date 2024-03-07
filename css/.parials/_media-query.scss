@@ -131,7 +131,15 @@
 @media screen and (max-width: 991px) and (min-width: 420px){
   .hero {
     .hero-items {
-      height: 360px;
+      // height: 360px;
+    
+      & > div {
+        text-align: center;    
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
     }
   }
 }
@@ -340,6 +348,7 @@
     .img {
       width: 426px !important;
     }
+
   }
     .contact
     {
@@ -360,33 +369,38 @@
 @media screen and (max-width: 419px){
   .hero {
     .hero-items {
-      height: 360px;
+      height: 385px;
+
+      & > div {
+        text-align: center;    
+      }
+      h1 {
+        font-size: 1.5em !important;
+      }
     }
   }
 }
 
 @media screen and (max-width: 320px)
 {
-    p {
-        font-size: 6vw !important;
-    }
+  p {
+      font-size: 6vw !important;
+  }
     
-    h1 {
-        font-size: 15vw !important;
-    }
 
-    h5 {
-        font-size: 7vw !important;
-    }
 
-    header
-    {
-        .logo
-        {
-            font-size: 8.5vw !important;
-            text-align: center;
-        }
-    }
+  h5 {
+      font-size: 7vw !important;
+  }
+
+  header
+  {
+      .logo
+      {
+          font-size: 8.5vw !important;
+          text-align: center;
+      }
+  }
 
     .skills
     {

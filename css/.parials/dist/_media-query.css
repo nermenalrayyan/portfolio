@@ -15,8 +15,11 @@
   }
 }
 @media screen and (max-width: 991px) and (min-width: 420px) {
-  .hero .hero-items {
-    height: 360px;
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.7em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -74,16 +77,18 @@
 }
 @media screen and (max-width: 419px) {
   .hero .hero-items {
-    height: 360px;
+    height: 385px;
+  }
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.5em !important;
   }
 }
 @media screen and (max-width: 320px) {
   p {
     font-size: 6vw !important;
-  }
-
-  h1 {
-    font-size: 15vw !important;
   }
 
   h5 {
