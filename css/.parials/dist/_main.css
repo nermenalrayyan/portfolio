@@ -15,7 +15,7 @@
   background-color: var(--color2);
 }
 .skills .skills-items .prog-items {
-  gap: 50px;
+  gap: 50px 0;
 }
 .skills .skills-items .prog-items .prog-item {
   width: 165px;
@@ -140,7 +140,7 @@
   color: #347ba7;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
-  background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
+  background: linear-gradient(90deg, #0056e9 0%, #007ce2 35%, #00afd8 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   --ms-background-clip: text;
@@ -148,7 +148,7 @@
   --webkit-background-clip: text;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
-  background: linear-gradient(0deg, #6666cc 0%, fuchsia 51%);
+  background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   --ms-background-clip: text;
@@ -156,7 +156,7 @@
   --webkit-background-clip: text;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
-  background: linear-gradient(90deg, #0056e9 0%, #007ce2 35%, #00afd8 100%);
+  background: linear-gradient(0deg, #6666cc 0%, fuchsia 51%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   --ms-background-clip: text;

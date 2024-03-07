@@ -42,7 +42,7 @@
 
     .prog-items
     {
-      gap: 50px;
+      gap: 50px 0;
       // display: flex;
       // justify-content: center;
   
@@ -319,8 +319,9 @@
       }
 
       .prog-item:nth-of-type(7) {
+
         h5 {
-          background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
+          background: linear-gradient(90deg, rgb(0, 86, 233) 0%, rgb(0, 124, 226) 35%, rgb(0, 175, 216) 100%);
           -webkit-text-fill-color: transparent;
           background-clip: text;
           --ms-background-clip: text;
@@ -331,7 +332,7 @@
 
       .prog-item:nth-of-type(8) {
         h5 {
-          background: linear-gradient(0deg, rgb(102, 102, 204) 0%, rgb(255, 0, 255) 51%);
+          background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
           -webkit-text-fill-color: transparent;
           background-clip: text;
           --ms-background-clip: text;
@@ -341,9 +342,8 @@
       }
 
       .prog-item:nth-of-type(9) {
-
         h5 {
-          background: linear-gradient(90deg, rgb(0, 86, 233) 0%, rgb(0, 124, 226) 35%, rgb(0, 175, 216) 100%);
+          background: linear-gradient(0deg, rgb(102, 102, 204) 0%, rgb(255, 0, 255) 51%);
           -webkit-text-fill-color: transparent;
           background-clip: text;
           --ms-background-clip: text;
