@@ -6,24 +6,30 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: bold !important;
-  font-family: "Cormorant Garamond", serif;
-  text-transform: capitalize;
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color1) !important;
+  font-weight: bold !important;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /* Start Link */
 a {
   text-decoration: none !important;
-  color: var(--color10);
+  color: var(--color5);
   font-size: 1.3em;
+  font-weight: bold;
+  transition: all 0.7s ease-in-out;
 }
 a:hover {
-  color: var(--color4);
+  color: var(--color4) !important;
 }
 
 .link {
@@ -34,10 +40,10 @@ a:hover {
   text-align: center;
 }
 
-.icons {
-  transition: all 0.8s ease-in-out;
+.icons, .prog-item {
+  transition: all 0.9s ease-in-out;
 }
-.icons:hover {
+.icons:hover, .prog-item:hover {
   opacity: 0.6;
   -webkit-transform: rotate(360deg) scale(1.1);
   -moz-transform: rotate(360deg) scale(1.1);
@@ -54,20 +60,26 @@ p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
 
 p {
   font-size: 1.2em;
-  line-height: 28px;
+  line-height: 35px;
   margin-top: 18px;
   margin-bottom: 0;
   letter-spacing: 1px;
-  color: var(--color12);
+  color: var(--color1);
   text-align: center;
+  padding: 0 1rem;
 }
 
 h2 {
+  margin: 0 auto 100px auto !important;
   text-align: center;
-  margin: 0 0 35px 0 !important;
+  width: 340px;
   font-size: 3em !important;
   text-transform: uppercase;
-  color: var(--color10);
+  color: var(--color1);
+  position: relative;
+  border-top: 3px solid var(--color5);
+  border-bottom: 3px solid var(--color5);
+  padding: 20px 0;
 }
 
 h5 {
@@ -90,10 +102,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-
-a, button {
-  transition: 0.6s;
 }
 
 section {

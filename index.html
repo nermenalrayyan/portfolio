@@ -19,6 +19,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <!-- End Google Font -->
 
         <!-- Start Font-awesome -->
@@ -27,7 +31,7 @@
         
         <!-- Start Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Start Style CSS -->
         <link rel="stylesheet" href="css/style.css">
@@ -37,40 +41,36 @@
         <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
 
         <!-- Start icon -->
-        <link rel="icon" href="images/nermen-alrayyan-icon.png"><!--هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح-->
+        <link rel="icon" href="images/n-a-icon.svg"><!--هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح-->
         <!-- end links -->
     </head>
     <body>
     <div id="preload"></div>    
     <!-- start header -->
     <header class="w-100">
-        <div class="container container-xxl container-xl container-lg container-md container-sm d-flex justify-content-center align-items-center header-items">
-            
-            <!-- <a href="index.html" class="logo">
-                <span>n</span>ermen <span>a</span>lrayyan
-            </a> -->
-            <a href="index.html" class="logo"><img src="images/nermenalrayyan1.png" alt=""></a>
+        <div class="container-xxl container-xl container-lg container-md d-flex justify-content-between align-items-center header-items">
+            <a href="index.html" class="logo"><img src="images/n-a-icon.svg" alt=""></a>
             
             <nav class="d-flex justify-content-between align-items-center">
                 
-                <input type="checkbox" class="list-nav" id="menu" placeholder="click">
-                <label for="menu" class="open">
+                <!-- <input type="checkbox" class="list-nav" id="menu" placeholder="click"> -->
+                <!-- <label for="menu" class="open">
                     <i class="fa fa-bars"></i>
-                </label>
+                </label> -->
 
-                <!-- <div class="menu-nav">
-                    <ul class="d-inline-flex mb-0">
-                        <li><a href="index.html" class="active">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#projects">projects</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul> -->
-    
-                    <label for="menu" class="close">
-                        <i class="fa fa-times"></i>
-                    </label>
+                <div id="menuNav">
+                    <div id="menu">
+                        <div id="closeMenu"><i class="fa fa-times"></i></div>
+                        <ul class="d-inline-flex mb-0">
+                            <li><a href="index.html" class="linkMenu active">home</a></li>
+                            <li><a href="#about" class="linkMenu">about</a></li>
+                            <li><a href="#skills" class="linkMenu">skills</a></li>
+                            <li><a href="#projects" class="linkMenu">projects</a></li>
+                            <!-- <li><a href="#contact">contact</a></li> -->
+                        </ul>
+                    </div>
                 </div>
+                <div id="openMenu"><i class="fa fa-bars"></i></div>
             </nav>
         </div>       
     </header>
@@ -82,14 +82,13 @@
       <div class="container container-xxl container-xl container-lg container-md container-sm"> 
           <div class="row hero-items justify-content-around align-items-center flex-wrap">
             <div class="col-xl-4 col-lg-5 col-sm-9 text-left text-items">
-              <!-- <h3>hello</h3> -->
-              <!-- <h2>nermen alrayyan</h2> -->
+             
               <h1>Front-end development</h1>
               <h1>Digital Marketing</h1>
-              <h1>Wordpress</h1>
+              <h1>WordPress</h1>
             </div>
-            <div class="col-xl-7 col-lg-6 col-md-7 col-sm-10 img">
-              <img src="images/close-tag.svg" alt="">
+            <div class="col-xl-7 col-lg-6 col-md-7 col-sm-10 img">  
+            <img src="images/build-website.gif" alt="">
             </div>
           </div>
       </div>
@@ -99,9 +98,14 @@
   
   <!-- Start About -->
   <section class="about" id="about">
-      <div class="container container-xxl container-xl container-lg container-md container-sm about-items">
-          <h2>about</h2>
-          <p>I have good experience in converting UI website design to HTML or WordPress</p>
+      <div class="container container-xxl container-xl container-lg container-md container-sm">
+        <div class="about-items">
+            <h2>about</h2>
+            <p>
+                Hello everyone, I'm Nermen Alrayyan,
+                <br> I create Websites, Landing Page, E-Commerce, And Portfolio using WordPress <br> and make it Responsive Design, <br> And i have good experience in converting UI website design to HTML or WordPress.
+            </p>
+        </div>
       </div>
   </section>
   <!-- End About -->
@@ -113,68 +117,62 @@
         <div class="skills-items d-flex flex-column">
           <h2>skills</h2>
           <div class="prog-items d-flex justify-content-center flex-wrap">
-            <div class="prog-item icons" title="HTML">
+            <div class="prog-item" title="HTML">
                 <h5 class="text-uppercase">html</h5>
-                <i class="fa-brands fa-html5" alt="HTML"></i>
-                <!-- <div class="prog">
-                    <span data-progress="65%" style="height: 65%;" class="html"></span>
-                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-html5" alt="HTML"></i>
+                </div>
             </div>
-            <div class="prog-item icons" title="CSS">
+            <div class="prog-item" title="CSS">
                 <h5 class="text-uppercase">css</h5>
-                <i class="fa-brands fa-css3-alt" alt="CSS"></i>
-                <!-- <div class="prog">
-                    <span data-progress="70%" style="height: 70%;" class="css"></span>
-                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-css3-alt" alt="CSS"></i>
+                </div>
             </div>
-            <div class="prog-item icons" title="JavaScript">
+            <div class="prog-item" title="JavaScript">
                 <h5>JavaScript</h5>
-                <img src="images/Icons/javascript.png" alt="JavaScript">
-                <!-- <div class="prog-item">
-                  <h5>javascript</h5>
-                  <div class="prog">
-                      <span class="javascript"></span>
-                  </div>
-                </div> -->
-
+                <div class="icon">
+                    <i class="fa-brands fa-js" alt="javascript"></i>
+                </div>
             </div>
-            <div class="prog-item icons" title="SASS">
+            <div class="prog-item" title="SASS">
                 <h5 class="text-uppercase">sass</h5>
-                <i class="fa-brands fa-sass" alt="SASS"></i>
-                <!-- <div class="prog">
-                    <span data-progress="50%" style="height: 50%;" class="sass"></span>
-                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-sass" alt="SASS"></i>
+                </div>
             </div>
-            <div class="prog-item icons" title="Bootstrap">
+            <div class="prog-item" title="Bootstrap">
                 <h5>Bootstrap</h5>
-                <i class="fa-brands fa-bootstrap" alt="Bootstrap"></i>
-                <!-- <div class="prog">
-                    <span data-progress="40%" style="height: 40%;" class="bootstrap"></span>
-                </div> -->
+                <div class="icon">
+                    <i class="fa-brands fa-bootstrap" alt="Bootstrap"></i>
+                </div>
             </div>
-            <div class="prog-item icons" title="WordPress">
+            <div class="prog-item" title="WordPress">
                 <h5>WordPress</h5>
-                <i class="fa-brands fa-wordpress" alt="WordPress"></i>
+                <div class="icon">
+                    <i class="fa-brands fa-wordpress" alt="WordPress"></i>
+                </div>
             </div>
 
-            <div class="prog-item icons" title="Web Analytics">
-                <h5>Web Analytics</h5>
-                <img src="images/icons/web-analytics.png" alt="Web Analytics">
+            <div class="prog-item" title="Web Analytics">
+                <h5>Google Analytics</h5>
+                <div class="icon">
+                    <svg width="100px" height="100px" viewBox="-14 0 284 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M256.003159,247.933017 C256.055907,258.030289 251.77298,267.664804 244.241349,274.390297 C236.709718,281.11579 226.653817,284.285366 216.626905,283.094249 C198.58347,280.424364 185.360959,264.722632 185.800619,246.488035 L185.800619,36.8452103 C185.364944,18.5907614 198.619678,2.88144681 216.687112,0.238996295 C226.704325,-0.933476157 236.743571,2.24455542 244.261279,8.9678962 C251.778988,15.691237 256.053811,25.3147619 256.003159,35.4002282 L256.003159,247.933017 Z" fill="#F9AB00"> </path> <path d="M35.1010243,213.193238 C54.4867848,213.193238 70.2020487,228.908502 70.2020487,248.294263 C70.2020487,267.680023 54.4867848,283.395287 35.1010243,283.395287 C15.7152639,283.395287 0,267.680023 0,248.294263 C0,228.908502 15.7152639,213.193238 35.1010243,213.193238 Z M127.459466,106.806429 C107.981896,107.874068 92.8698765,124.212107 93.3217628,143.713681 L93.3217628,237.998765 C93.3217628,263.58699 104.580582,279.120548 121.077461,282.431965 C131.434034,284.530959 142.185473,281.860819 150.356699,275.160414 C158.527925,268.460009 163.252393,258.439904 163.222912,247.872809 L163.222912,142.088076 C163.240039,132.641687 159.462041,123.584285 152.737293,116.950107 C146.012546,110.315928 136.904752,106.661084 127.459466,106.806429 L127.459466,106.806429 Z" fill="#E37400"> </path> </g> </g></svg>
+                </div>                
             </div>
 
-            <div class="prog-item icons" title="SEO">
+            <!-- <div class="prog-item icons" title="SEO">
                 <h5>SEO</h5>
                 <img src="images/icons/seo.png" alt="SEO">
-            </div>
+            </div> -->
 
-            <div class="prog-item icons" title="SEM">
-                <h5>SEM</h5>
-                <img src="images/icons/sem.png" alt="SEM">
-            </div>
-
-            <div class="prog-item icons" title="Google Ads">
-                <h5>Google Ads</h5>
-                <img src="images/icons/google-ads.png" alt="Google Ads">
+            <div class="prog-item" title="Google Ads">
+                <h5>google ads</h5>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                    <polygon fill="#ffc107" points="30.129,15.75 18.871,9.25 5.871,31.25 17.129,37.75"></polygon><path fill="#1e88e5" d="M31.871,37.75c1.795,3.109,5.847,4.144,8.879,2.379c3.103-1.806,4.174-5.77,2.379-8.879l-13-22 c-1.795-3.109-5.835-4.144-8.879-2.379c-3.106,1.801-4.174,5.77-2.379,8.879L31.871,37.75z"></path><circle cx="11.5" cy="34.5" r="6.5" fill="#43a047"></circle>
+                    </svg>
+                </div>
             </div>
           </div>
         </div>
@@ -256,30 +254,39 @@
         <div class="row projects-items justify-content-center">
             <!-- <div class="project-item">
                 <img src="images/projects/trees-template.jpeg" alt="">
-                <a href="https://nermenalrayyan.github.io/trees-template/"> -->
-                  <!-- <i class="fas fa-link"></i> -->
-                <!-- <h5>trees template</h5>
+                <a href="https://nermenalrayyan.github.io/trees-template/">
+                   <i class="fas fa-link"></i>
+                <h5>trees template</h5>
                 </a>
             </div> -->
 
-            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-6" href="https://nermenalrayyan.github.io/university_hope/" target="_blank" rel="noopener">
+            <!-- <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-10" href="https://nermenalrayyan.github.io/trees-template/" target="_blank" rel="noopener" title="University Template">
+                <img src="images/projects/trees-template.jpeg" class="d-block" alt="">
+                <i class="bi bi-link-45deg"></i>
+            </a> -->
+
+            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-10" href="https://nermenalrayyan.github.io/university_hope/" target="_blank" rel="noopener" title="University Template">
                 <img src="images/projects/university-template/university-template1.png" class="d-block" alt="">
-                <span>university template</span>
+                <!-- <span>university template</span> -->
+                <i class="bi bi-link-45deg"></i>
             </a>
 
-            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-6" href="https://nermenalrayyan.github.io/sauldesign-portfolio-template/" target="_blank" rel="noopener">
-              <img src="images/projects/sauldesign-template.png" class="d-block" alt="">
-              <span>sauldesign template</span>
+            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-10" href="https://nermenalrayyan.github.io/sauldesign-portfolio-template/" target="_blank" rel="noopener" title="Sauldesign Template">
+                <img src="images/projects/sauldesign-template.png" class="d-block" alt="">
+                <!-- <span>sauldesign template</span> -->
+                <i class="bi bi-link-45deg"></i>
             </a>
 
-            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-6" href="https://nermenalrayyan.github.io/agency-landing-page/" target="_blank" rel="noopener">
+            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-10" href="https://nermenalrayyan.github.io/agency-landing-page/" target="_blank" rel="noopener" title="Agency LandingPage Template">
                 <img src="images/projects/landing-page/landing-page-desktop.png" class="d-block" alt="">
-                <span>agency landing page template</span>
+                <!-- <span>agency landing page template</span> -->
+                <i class="bi bi-link-45deg"></i>
             </a>
 
-            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-6" href="https://enver.rf.gd/" target="_blank" rel="noopener">
+            <a class="project-item col-xl-4 col-lg-5 col-md-5 col-sm-10" href="https://enver.rf.gd/" target="_blank" rel="noopener" title="Enver LandingPage Template">
                 <img src="images/projects/enver-template/enver-laptup.png" class="d-block" alt="">
-                <span>enver landing page template</span>
+                <!-- <span>enver landing page template</span> -->
+                <i class="bi bi-link-45deg"></i>
             </a>
         </div>
     </div>

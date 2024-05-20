@@ -13,7 +13,7 @@ body {
   }
 }
 #preload {
-  background: var(--color10) url(../images/nermen-alrayyan-loading.gif) no-repeat center center;
+  background: var(--color4) url(../images/NERMEN-ALRAYYAN.gif) no-repeat center center;
   background-size: 150px;
   position: fixed;
   height: 100vh;

@@ -1,10 +1,6 @@
 .hero
 {
-  background-image: url(../images/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  padding-top: 100px;
 
   .hero-items
   {   
@@ -15,7 +11,8 @@
 
       h1, h4, h6
       {
-        color: var(--color2);
+        color: var(--color1);
+        font-size: 29px;
       }
     }
 

@@ -1,15 +1,12 @@
 .hero {
-  background-image: url(../images/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  padding-top: 100px;
 }
 .hero .hero-items {
   height: 455px;
 }
 .hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
-  color: var(--color2);
+  color: var(--color1);
+  font-size: 29px;
 }
 .hero .hero-items .img img {
   width: 100%;

@@ -1,51 +1,52 @@
 header {
-  background-color: var(--color10);
+  background-color: var(--color5);
   height: 70px;
 }
+header .header-items {
+  position: relative;
+  z-index: 100;
+  height: 117px;
+}
 header .header-items .logo {
-  color: var(--color1);
-  font-family: initial;
-  width: 15em;
+  width: 185px;
+  padding: 15px 45px;
+  border-radius: 50%;
+  background-color: var(--color5);
 }
 header .header-items .logo img {
   width: 100%;
 }
-header .header-items .logo span {
-  color: var(--color3);
-  font-size: 1.5em;
-  font-weight: bold;
-}
 header .header-items nav {
   min-height: 70px;
+  padding-bottom: 50px;
 }
-header .header-items nav .list-nav {
-  position: absolute;
-  visibility: hidden;
-  left: -9999px;
-}
-header .header-items nav label {
-  display: none;
-}
-header .header-items nav label i {
-  font-size: 30px;
-  margin-top: 5px;
-  color: beige;
-}
-header .header-items nav .menu-nav {
+header .header-items nav #menuNav {
   z-index: 99999;
 }
-header .header-items nav .menu-nav ul {
-  margin: 0;
+header .header-items nav #menuNav #closeMenu {
+  display: none;
 }
-header .header-items nav .menu-nav ul a {
+header .header-items nav #menuNav ul {
+  margin: 0;
+  z-index: 100;
+}
+header .header-items nav #menuNav ul a {
   display: block;
   color: var(--color1);
   padding: 15px;
-  transition: 0.7s ease;
+  text-transform: uppercase;
+  font-size: 16px !important;
 }
-header .header-items nav .menu-nav ul a:hover {
-  color: var(--color6);
+header .header-items nav #menuNav ul .active {
+  color: var(--color4);
 }
-header .header-items nav .menu-nav ul .active {
-  color: var(--color6);
+header .header-items nav #openMenu {
+  display: none;
+  color: var(--color4);
+  padding: 15px;
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+}
+header .header-items nav #openMenu:hover {
+  color: var(--color1);
 }

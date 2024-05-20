@@ -23,15 +23,46 @@
   }
 }
 @media screen and (max-width: 767px) {
-  header .header-items {
-    justify-content: center !important;
-    height: 100%;
+  header .header-items nav #openMenu, header .header-items nav #closeMenu {
+    display: block !important;
+    font-size: 30px;
   }
-  header .header-items nav {
-    display: none !important;
+  header .header-items nav #menuNav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
   }
-  header .header-items nav a {
-    display: none !important;
+  header .header-items nav #menuNav #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 282px;
+    height: 366px;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--color4);
+    border-radius: 0 0 0 20px;
+    transition: all 0.7s !important;
+    background-color: var(--color5);
+    box-shadow: 0 0 30px 10px var(--color4);
+  }
+  header .header-items nav #menuNav #menu #closeMenu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  header .header-items nav #menuNav #menu #closeMenu i:hover {
+    color: var(--color1) !important;
+  }
+  header .header-items nav #menuNav #menu ul {
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+  header .header-items nav #menuNav #menu ul .active {
+    color: var(--color4) !important;
   }
 
   .about::before {
@@ -47,24 +78,6 @@
     align-items: center;
     padding-left: 0 !important;
   }
-}
-@media screen and (max-width: 576px) {
-  header nav {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 576px) {
-  .skills .prog-items {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-}
-@media screen and (max-width: 576px) {
-  .hero .img {
-    width: 426px !important;
-  }
-
   .contact .social-media {
     top: 0 !important;
     left: 0 !important;
@@ -73,6 +86,30 @@
     justify-content: center;
     gap: 50px;
     padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 576px) {
+  .skills .prog-items {
+    gap: 50px 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .projects .projects-items {
+    gap: 55px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero .img {
+    width: 426px !important;
   }
 }
 @media screen and (max-width: 419px) {

@@ -1,43 +1,43 @@
 .about .about-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  width: 85%;
   margin: 0 auto;
 }
 .about .about-items p {
   text-transform: initial;
 }
 
-.skills {
-  background-color: var(--color2);
-}
 .skills .skills-items .prog-items {
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 165px;
+  width: 150px;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .skills .skills-items .prog-items .prog-item:hover {
   flex-direction: column-reverse;
 }
-.skills .skills-items .prog-items .prog-item:hover h5 {
-  margin: 15px 0 0 0;
-}
 .skills .skills-items .prog-items .prog-item h5 {
-  color: var(--color12);
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--color1);
+  transition: all 0.7s ease-in-out;
 }
-.skills .skills-items .prog-items .prog-item i {
-  font-size: 55px;
+.skills .skills-items .prog-items .prog-item h5:hover {
+  opacity: 1;
+}
+.skills .skills-items .prog-items .prog-item .icon {
+  height: 70px;
+}
+.skills .skills-items .prog-items .prog-item i, .skills .skills-items .prog-items .prog-item svg, .skills .skills-items .prog-items .prog-item img {
+  font-size: 70px;
+  color: var(--color1);
 }
 .skills .skills-items .prog-items .prog-item img {
-  width: 55px;
+  width: 100%;
 }
 .skills .skills-items .prog-items .prog-item .prog {
   background-color: var(--color3);
@@ -121,41 +121,74 @@
     height: 19%;
   }
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(1) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(1):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1):hover i {
   color: #e44f26;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(2):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2):hover i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(3):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3):hover i {
   color: #efbe24;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(4):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4):hover i {
   color: #cf649a;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(5):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5):hover i {
   color: #8411f6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(6):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6):hover i {
   color: #347ba7;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
-  background: linear-gradient(90deg, #0056e9 0%, #007ce2 35%, #00afd8 100%);
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) svg {
+  height: 70px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) path {
+  fill: var(--color1);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(1) {
+  fill: #f9ab00;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(2),
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(3) {
+  fill: #ffc107;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover h5 {
+  background: linear-gradient(90deg, #ffc107 55%, #ffa000 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   --ms-background-clip: text;
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
-  background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) svg {
+  height: 83px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) polygon, .skills .skills-items .prog-items .prog-item:nth-of-type(8) path, .skills .skills-items .prog-items .prog-item:nth-of-type(8) circle {
+  fill: var(--color1);
+  stroke: black;
+  stroke-width: 0.5px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover polygon, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover path, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover circle {
+  stroke: none;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover polygon {
+  fill: #ffc107;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover path {
+  fill: #1e88e5;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover circle {
+  fill: #43a047;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover h5 {
+  background: linear-gradient(90deg, #4caf50 0%, #ffc107 55%, #2196f3 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   --ms-background-clip: text;
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5:hover {
   background: linear-gradient(0deg, #6666cc 0%, fuchsia 51%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -163,7 +196,7 @@
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5:hover {
   background: linear-gradient(90deg, #4caf50 0%, #ffc107 55%, #2196f3 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -176,6 +209,8 @@
   gap: 55px;
 }
 .projects .projects-items .project-item {
+  position: relative;
+  padding: 0;
   /* text-align: center; */
   justify-content: center;
   display: flex;
@@ -183,20 +218,28 @@
   align-items: center;
 }
 .projects .projects-items .project-item img {
-  width: 275px;
+  width: 100%;
   height: 100%;
-  margin-bottom: 10px;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 0px 3px 10px 3px;
+}
+.projects .projects-items .project-item i {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: auto;
+  color: var(--color1);
+  background-color: var(--color5);
   transition: all 0.7s ease-in-out;
+  border-radius: 50px 0 50px 0;
 }
-.projects .projects-items .project-item img:hover {
-  opacity: 0.8;
-}
-.projects .projects-items .project-item span {
-  margin-top: 15px;
-  margin-bottom: 0 !important;
-  text-align: center;
-  transition: all 0.7s ease-in-out;
-}
-.projects .projects-items .project-item span:hover {
-  transform: scale(1.1);
+.projects .projects-items .project-item i:hover {
+  opacity: 0.7;
+  border: 1px solid var(--color5);
+  box-shadow: 0px 3px 10px 3px var(--color5);
 }

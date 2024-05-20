@@ -47,12 +47,9 @@ a:hover {
 
 /* End Link */
 /* Start Text */
-p, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
-  text-transform: initial;
-}
-
-h1 {
-  text-transform: uppercase;
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  line-height: 0.9;
+  letter-spacing: 1.5px;
 }
 
 p {
@@ -65,21 +62,17 @@ p {
   text-align: center;
 }
 
-h1 {
+h2 {
   text-align: center;
-  color: var(--color13);
   margin: 0 0 35px 0 !important;
   font-size: 3em !important;
-}
-
-h2 {
+  text-transform: uppercase;
   color: var(--color10);
 }
 
 h5 {
   color: var(--font-color6);
   margin-bottom: 15px;
-  font-size: x-large;
 }
 
 h6 {
@@ -201,7 +194,7 @@ header .header-items nav .menu-nav ul .active {
 .hero .hero-items {
   height: 455px;
 }
-.hero .hero-items .text-items h2, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
+.hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color2);
 }
 .hero .hero-items .img img {
@@ -225,8 +218,11 @@ header .header-items nav .menu-nav ul .active {
   }
 }
 @media screen and (max-width: 991px) and (min-width: 420px) {
-  .hero .hero-items {
-    height: 360px;
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.7em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -262,6 +258,7 @@ header .header-items nav .menu-nav ul .active {
 }
 @media screen and (min-width: 321px) and (max-width: 576px) {
   .skills .prog-items {
+    gap: 50px 0 !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -284,16 +281,18 @@ header .header-items nav .menu-nav ul .active {
 }
 @media screen and (max-width: 419px) {
   .hero .hero-items {
-    height: 360px;
+    height: 385px;
+  }
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.5em !important;
   }
 }
 @media screen and (max-width: 320px) {
   p {
     font-size: 6vw !important;
-  }
-
-  h1 {
-    font-size: 15vw !important;
   }
 
   h5 {
@@ -354,9 +353,12 @@ bootstrap 5 responsive screen sizes:
 }
 .contact .social-media {
   position: fixed;
-  top: 36%;
+  top: 28%;
   left: -10px;
   width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 0 45px;
 }
 .contact .social-media i {
   margin: 10px 0;
@@ -394,6 +396,9 @@ bootstrap 5 responsive screen sizes:
   width: 85%;
   margin: 0 auto;
 }
+.about .about-items p {
+  text-transform: initial;
+}
 
 .skills {
   background-color: var(--color2);
@@ -402,7 +407,7 @@ bootstrap 5 responsive screen sizes:
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 88px;
+  width: 165px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -462,8 +467,8 @@ bootstrap 5 responsive screen sizes:
 .skills .skills-items .prog-items .prog-item .bootstrap {
   animation: bootstrap 1s;
 }
-.skills .skills-items .prog-items .prog-item .bootstrap {
-  animation: bootstrap 1s;
+.skills .skills-items .prog-items .prog-item .javascript {
+  animation: javascript 1s;
 }
 @keyframes html {
   0% {
@@ -511,23 +516,53 @@ bootstrap 5 responsive screen sizes:
 .skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3) i {
-  color: #cf649a;
+.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5 {
+  color: #efbe24;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
-  color: #8411f6;
+  color: #cf649a;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
-  color: #347ba7;
+  color: #8411f6;
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
+  color: #347ba7;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
+  background: linear-gradient(90deg, #0056e9 0%, #007ce2 35%, #00afd8 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
   background: linear-gradient(90deg, #9f2fff 0%, #9f2fff 35%, #0bb1d3 100%);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
+  background: linear-gradient(0deg, #6666cc 0%, fuchsia 51%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5 {
+  background: linear-gradient(90deg, #4caf50 0%, #ffc107 55%, #2196f3 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --ms-background-clip: text;
+  --o-background-clip: text;
+  --webkit-background-clip: text;
 }
 
 .projects .projects-items {
-  gap: 55px 55px;
+  gap: 55px;
 }
 .projects .projects-items .project-item {
   /* text-align: center; */
@@ -540,7 +575,7 @@ bootstrap 5 responsive screen sizes:
   width: 275px;
   height: 100%;
   margin-bottom: 10px;
-  transition: 0.5s ease;
+  transition: all 0.7s ease-in-out;
 }
 .projects .projects-items .project-item img:hover {
   opacity: 0.8;
@@ -549,7 +584,7 @@ bootstrap 5 responsive screen sizes:
   margin-top: 15px;
   margin-bottom: 0 !important;
   text-align: center;
-  transition: 0.5s ease;
+  transition: all 0.7s ease-in-out;
 }
 .projects .projects-items .project-item span:hover {
   transform: scale(1.1);
@@ -615,26 +650,33 @@ footer .copy i {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color8);
-  transition-duration: 0.8s ease-in-out;
+  transition: background-color 3s ease;
+  box-shadow: 0 0 25px 30px var(--color8);
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color3);
-  box-shadow: 0 0 40px 25px var(--color3);
+  box-shadow: 0 0 25px 30px var(--color3);
 }
 
-::-webkit-scrollbar {
-  width: 15px;
+body {
+  animation: fadeingAnimation ease-in-out 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-::-webkit-scrollbar-track {
-  background-color: var(--color1);
+@keyframes fadeingAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--color8);
-  transition-duration: 0.8s ease-in-out;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color3);
-  box-shadow: 0 0 40px 25px var(--color3);
+#preload {
+  background: var(--color10) url(../images/nermen-alrayyan-loading.gif) no-repeat center center;
+  background-size: 150px;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
 }

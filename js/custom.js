@@ -1,7 +1,40 @@
-// Start Close Links Menu Bar
-    // const toggle = document.getElementById('toggle');
-    // const sidebar = document.getElementById('sidebar');
-// End Close Links Menu Bar
+// Start Menubar
+
+function menuNav() {
+    const menuNav = document.getElementById('menuNav'),
+        linkMenu = document.querySelectorAll('.linkMenu'),
+        closeMenu = document.getElementById('closeMenu'),   
+        openMenu = document.getElementById('openMenu');    
+
+        openMenu.addEventListener('click', () => {
+            menuNav.style.display = 'block';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menuNav.style.display = 'none';
+        });
+
+        linkMenu.forEach(el => el.addEventListener('click', event => {
+            menuNav.click(event);
+        }));
+
+        window.onclick = function(event) {
+            if (event.target.matches('#menuNav')) {
+                menuNav.style.display = 'none';
+            }
+        };
+
+
+        for (var i = 0; i < linkMenu.length; i++) {
+            linkMenu[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            })
+        };
+}
+menuNav();
+// End Menubar
 
 
 

@@ -6,24 +6,30 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: bold !important;
-  font-family: "Cormorant Garamond", serif;
-  text-transform: capitalize;
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color1) !important;
+  font-weight: bold !important;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 /* Start Link */
 a {
   text-decoration: none !important;
-  color: var(--color10);
+  color: var(--color5);
   font-size: 1.3em;
+  font-weight: bold;
+  transition: all 0.7s ease-in-out;
 }
 a:hover {
-  color: var(--color4);
+  color: var(--color4) !important;
 }
 
 .link {
@@ -34,10 +40,10 @@ a:hover {
   text-align: center;
 }
 
-.icons {
-  transition: all 0.8s ease-in-out;
+.icons, .prog-item {
+  transition: all 0.9s ease-in-out;
 }
-.icons:hover {
+.icons:hover, .prog-item:hover {
   opacity: 0.6;
   transform: rotate(360deg) scale(1.1);
 }
@@ -51,20 +57,26 @@ p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
 
 p {
   font-size: 1.2em;
-  line-height: 28px;
+  line-height: 35px;
   margin-top: 18px;
   margin-bottom: 0;
   letter-spacing: 1px;
-  color: var(--color12);
+  color: var(--color1);
   text-align: center;
+  padding: 0 1rem;
 }
 
 h2 {
+  margin: 0 auto 100px auto !important;
   text-align: center;
-  margin: 0 0 35px 0 !important;
+  width: 340px;
   font-size: 3em !important;
   text-transform: uppercase;
-  color: var(--color10);
+  color: var(--color1);
+  position: relative;
+  border-top: 3px solid var(--color5);
+  border-bottom: 3px solid var(--color5);
+  padding: 20px 0;
 }
 
 h5 {
@@ -89,10 +101,6 @@ ul li {
   list-style: none;
 }
 
-a, button {
-  transition: 0.6s;
-}
-
 section {
   padding: 50px 0;
 }
@@ -114,85 +122,75 @@ section {
 }
 
 header {
-  background-color: var(--color10);
+  background-color: var(--color5);
   height: 70px;
 }
+header .header-items {
+  position: relative;
+  z-index: 100;
+  height: 117px;
+}
 header .header-items .logo {
-  color: var(--color1);
-  font-family: initial;
-  width: 15em;
+  width: 185px;
+  padding: 15px 45px;
+  border-radius: 50%;
+  background-color: var(--color5);
 }
 header .header-items .logo img {
   width: 100%;
 }
-header .header-items .logo span {
-  color: var(--color3);
-  font-size: 1.5em;
-  font-weight: bold;
-}
 header .header-items nav {
   min-height: 70px;
+  padding-bottom: 50px;
 }
-header .header-items nav .list-nav {
-  position: absolute;
-  visibility: hidden;
-  left: -9999px;
-}
-header .header-items nav label {
-  display: none;
-}
-header .header-items nav label i {
-  font-size: 30px;
-  margin-top: 5px;
-  color: beige;
-}
-header .header-items nav .menu-nav {
+header .header-items nav #menuNav {
   z-index: 99999;
 }
-header .header-items nav .menu-nav ul {
-  margin: 0;
+header .header-items nav #menuNav #closeMenu {
+  display: none;
 }
-header .header-items nav .menu-nav ul a {
+header .header-items nav #menuNav ul {
+  margin: 0;
+  z-index: 100;
+}
+header .header-items nav #menuNav ul a {
   display: block;
   color: var(--color1);
   padding: 15px;
-  transition: 0.7s ease;
+  text-transform: uppercase;
+  font-size: 16px !important;
 }
-header .header-items nav .menu-nav ul a:hover {
-  color: var(--color6);
+header .header-items nav #menuNav ul .active {
+  color: var(--color4);
 }
-header .header-items nav .menu-nav ul .active {
-  color: var(--color6);
+header .header-items nav #openMenu {
+  display: none;
+  color: var(--color4);
+  padding: 15px;
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+}
+header .header-items nav #openMenu:hover {
+  color: var(--color1);
 }
 
 :root {
-  --color1: #e3f2fd;
-  --color2: #BBDEFB;
-  --color3: #90CAF9;
-  --color4: #64B5F6;
-  --color5: #42A5F5;
-  --color6: #2196F3;
-  --color7: #1E88E5;
-  --color8: #1976D2;
-  --color9: #1565C0;
-  --color10: #0D47A1;
-  --color11: honeydew;
-  --color12: #343a40;
-  --color13: #383c40;
+  --color1: #E2E5E9;
+  --color2: #9EB8C9;
+  --color3: #487DA0;
+  --color4: #1F3753;
+  --color5: #EC7929;
 }
 
 .hero {
-  background-image: url(../images/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  padding-top: 100px;
 }
 .hero .hero-items {
   height: 455px;
 }
 .hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
-  color: var(--color2);
+  color: var(--color1);
+  font-size: 29px;
 }
 .hero .hero-items .img img {
   width: 100%;
@@ -223,15 +221,46 @@ header .header-items nav .menu-nav ul .active {
   }
 }
 @media screen and (max-width: 767px) {
-  header .header-items {
-    justify-content: center !important;
-    height: 100%;
+  header .header-items nav #openMenu, header .header-items nav #closeMenu {
+    display: block !important;
+    font-size: 30px;
   }
-  header .header-items nav {
-    display: none !important;
+  header .header-items nav #menuNav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
   }
-  header .header-items nav a {
-    display: none !important;
+  header .header-items nav #menuNav #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 282px;
+    height: 366px;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--color4);
+    border-radius: 0 0 0 20px;
+    transition: all 0.7s !important;
+    background-color: var(--color5);
+    box-shadow: 0 0 30px 10px var(--color4);
+  }
+  header .header-items nav #menuNav #menu #closeMenu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  header .header-items nav #menuNav #menu #closeMenu i:hover {
+    color: var(--color1) !important;
+  }
+  header .header-items nav #menuNav #menu ul {
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+  header .header-items nav #menuNav #menu ul .active {
+    color: var(--color4) !important;
   }
   .about::before {
     display: none;
@@ -242,6 +271,15 @@ header .header-items nav .menu-nav ul .active {
   .contact .myinfo {
     flex-direction: column;
     align-items: center;
+    padding-left: 0 !important;
+  }
+  .contact .social-media {
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 50px;
     padding-left: 0 !important;
   }
 }
@@ -257,19 +295,15 @@ header .header-items nav .menu-nav ul .active {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+  .projects .projects-items {
+    gap: 55px;
+    width: 90%;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 576px) {
   .hero .img {
     width: 426px !important;
-  }
-  .contact .social-media {
-    top: 0 !important;
-    left: 0 !important;
-    position: relative !important;
-    display: flex !important;
-    justify-content: center;
-    gap: 50px;
-    padding-left: 0 !important;
   }
 }
 @media screen and (max-width: 419px) {
@@ -376,45 +410,45 @@ bootstrap 5 responsive screen sizes:
 }
 
 .about .about-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  width: 85%;
   margin: 0 auto;
 }
 .about .about-items p {
   text-transform: initial;
 }
 
-.skills {
-  background-color: var(--color2);
-}
 .skills .skills-items .prog-items {
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 165px;
+  width: 150px;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .skills .skills-items .prog-items .prog-item:hover {
   flex-direction: column-reverse;
 }
-.skills .skills-items .prog-items .prog-item:hover h5 {
-  margin: 15px 0 0 0;
-}
 .skills .skills-items .prog-items .prog-item h5 {
-  color: var(--color12);
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--color1);
+  transition: all 0.7s ease-in-out;
 }
-.skills .skills-items .prog-items .prog-item i {
-  font-size: 55px;
+.skills .skills-items .prog-items .prog-item h5:hover {
+  opacity: 1;
+}
+.skills .skills-items .prog-items .prog-item .icon {
+  height: 70px;
+}
+.skills .skills-items .prog-items .prog-item i, .skills .skills-items .prog-items .prog-item svg, .skills .skills-items .prog-items .prog-item img {
+  font-size: 70px;
+  color: var(--color1);
 }
 .skills .skills-items .prog-items .prog-item img {
-  width: 55px;
+  width: 100%;
 }
 .skills .skills-items .prog-items .prog-item .prog {
   background-color: var(--color3);
@@ -498,26 +532,39 @@ bootstrap 5 responsive screen sizes:
     height: 19%;
   }
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(1) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(1):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1):hover i {
   color: #e44f26;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(2) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(2):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2):hover i {
   color: #1572b6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(3) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(3):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3):hover i {
   color: #efbe24;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(4) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(4):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4):hover i {
   color: #cf649a;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(5) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(5):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5):hover i {
   color: #8411f6;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(6) h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6) i {
+.skills .skills-items .prog-items .prog-item:nth-of-type(6):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6):hover i {
   color: rgb(52, 123, 167);
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(7) h5 {
-  background: linear-gradient(90deg, rgb(0, 86, 233) 0%, rgb(0, 124, 226) 35%, rgb(0, 175, 216) 100%);
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) svg {
+  height: 70px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7) path {
+  fill: var(--color1);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(1) {
+  fill: rgb(249, 171, 0);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(2),
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(3) {
+  fill: rgb(255, 193, 7);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover h5 {
+  background: linear-gradient(90deg, rgb(255, 193, 7) 55%, rgb(255, 160, 0) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -525,8 +572,28 @@ bootstrap 5 responsive screen sizes:
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(8) h5 {
-  background: linear-gradient(90deg, rgb(159, 47, 255) 0%, rgb(159, 47, 255) 35%, rgb(11, 177, 211) 100%);
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) svg {
+  height: 83px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8) polygon, .skills .skills-items .prog-items .prog-item:nth-of-type(8) path, .skills .skills-items .prog-items .prog-item:nth-of-type(8) circle {
+  fill: var(--color1);
+  stroke: black;
+  stroke-width: 0.5px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover polygon, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover path, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover circle {
+  stroke: none;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover polygon {
+  fill: rgb(255, 193, 7);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover path {
+  fill: rgb(30, 136, 229);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover circle {
+  fill: rgb(67, 160, 71);
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover h5 {
+  background: linear-gradient(90deg, rgb(76, 175, 80) 0%, rgb(255, 193, 7) 55%, rgb(33, 150, 243) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -534,7 +601,7 @@ bootstrap 5 responsive screen sizes:
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(9) h5:hover {
   background: linear-gradient(0deg, rgb(102, 102, 204) 0%, rgb(255, 0, 255) 51%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -543,7 +610,7 @@ bootstrap 5 responsive screen sizes:
   --o-background-clip: text;
   --webkit-background-clip: text;
 }
-.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5 {
+.skills .skills-items .prog-items .prog-item:nth-of-type(10) h5:hover {
   background: linear-gradient(90deg, rgb(76, 175, 80) 0%, rgb(255, 193, 7) 55%, rgb(33, 150, 243) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -557,6 +624,8 @@ bootstrap 5 responsive screen sizes:
   gap: 55px;
 }
 .projects .projects-items .project-item {
+  position: relative;
+  padding: 0;
   /* text-align: center; */
   justify-content: center;
   display: flex;
@@ -564,22 +633,30 @@ bootstrap 5 responsive screen sizes:
   align-items: center;
 }
 .projects .projects-items .project-item img {
-  width: 275px;
+  width: 100%;
   height: 100%;
-  margin-bottom: 10px;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 0px 3px 10px 3px;
+}
+.projects .projects-items .project-item i {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: auto;
+  color: var(--color1);
+  background-color: var(--color5);
   transition: all 0.7s ease-in-out;
+  border-radius: 50px 0 50px 0;
 }
-.projects .projects-items .project-item img:hover {
-  opacity: 0.8;
-}
-.projects .projects-items .project-item span {
-  margin-top: 15px;
-  margin-bottom: 0 !important;
-  text-align: center;
-  transition: all 0.7s ease-in-out;
-}
-.projects .projects-items .project-item span:hover {
-  transform: scale(1.1);
+.projects .projects-items .project-item i:hover {
+  opacity: 0.7;
+  border: 1px solid var(--color5);
+  box-shadow: 0px 3px 10px 3px var(--color5);
 }
 
 footer {
@@ -621,7 +698,7 @@ footer .copy {
   padding: 1px;
 }
 footer .copy p {
-  color: var(--color2);
+  color: var(--color5);
   text-transform: lowercase;
   font-size: 17px;
   text-align: center;
@@ -637,18 +714,18 @@ footer .copy i {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color1);
+  background-color: var(--color5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color8);
-  -webkit-transition: background-color 3s ease;
-  transition: background-color 3s ease;
-  box-shadow: 0 0 25px 30px var(--color8);
+  background-color: var(--color4);
+  -webkit-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
+  box-shadow: 0 0 25px 30px var(--color4);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color3);
-  box-shadow: 0 0 25px 30px var(--color3);
+  background-color: var(--color1);
+  box-shadow: 0 0 25px 30px var(--color1);
 }
 
 body {
@@ -666,7 +743,7 @@ body {
   }
 }
 #preload {
-  background: var(--color10) url(../images/nermen-alrayyan-loading.gif) no-repeat center center;
+  background: var(--color4) url(../images/NERMEN-ALRAYYAN.gif) no-repeat center center;
   background-size: 150px;
   position: fixed;
   height: 100vh;
