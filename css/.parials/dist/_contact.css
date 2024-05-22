@@ -10,13 +10,17 @@
   flex-wrap: wrap;
   gap: 0 45px;
 }
-.contact .social-media i {
+.contact .social-media .icon:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+  -webkit-transform: rotate(360deg) scale(1.1);
+  -moz-transform: rotate(360deg) scale(1.1);
+  -o-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
+}
+.contact .social-media .icon i {
   margin: 10px 0;
   font-size: 1.7em;
-  transition: 0.7s ease;
-}
-.contact .social-media i:hover {
-  transform: scale(1.1);
 }
 .contact .myinfo {
   margin-bottom: 0;

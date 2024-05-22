@@ -18,6 +18,13 @@
 }
 .skills .skills-items .prog-items .prog-item:hover {
   flex-direction: column-reverse;
+  opacity: 0.6;
+}
+.skills .skills-items .prog-items .prog-item:hover .icon {
+  -webkit-transform: rotate(360deg) scale(1.1);
+  -moz-transform: rotate(360deg) scale(1.1);
+  -o-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
 }
 .skills .skills-items .prog-items .prog-item h5 {
   font-size: 15px;

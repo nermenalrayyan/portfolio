@@ -21,8 +21,7 @@ function menuNav() {
         window.onclick = function(event) {
             if (event.target.matches('#menuNav')) {
                 menuNav.style.display = 'none';
-            }
-        };
+            }};
 
 
         for (var i = 0; i < linkMenu.length; i++) {
