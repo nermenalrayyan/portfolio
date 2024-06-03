@@ -1,6 +1,6 @@
 .hero
 {
-  padding-top: 100px;
+  // padding-top: 100px;
 
   .hero-items
   {   
@@ -19,6 +19,7 @@
     .img {
       img {
         width: 100%;
+        filter: drop-shadow(0 0 7px var(--color5));
       }
     }
   }

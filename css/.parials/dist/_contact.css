@@ -1,5 +1,5 @@
 .contact {
-  padding: 10px 0;
+  padding-top: 50px !important;
 }
 .contact .social-media {
   position: fixed;
@@ -21,6 +21,7 @@
 .contact .social-media .icon i {
   margin: 10px 0;
   font-size: 1.7em;
+  filter: drop-shadow(0 0 5px var(--color5));
 }
 .contact .myinfo {
   margin-bottom: 0;

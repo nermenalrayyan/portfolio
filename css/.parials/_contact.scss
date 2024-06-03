@@ -1,6 +1,6 @@
 .contact
 {
-    padding: 10px 0;
+    padding-top: 50px !important;
 
     .social-media
     {
@@ -28,7 +28,7 @@
             {
                 margin: 10px 0;
                 font-size: 1.7em;
-                // transition: all 0.6s ease;
+                filter: drop-shadow(0 0 5px var(--color5));
             }
         }
     }

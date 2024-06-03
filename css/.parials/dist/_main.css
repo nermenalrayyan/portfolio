@@ -42,6 +42,7 @@
 .skills .skills-items .prog-items .prog-item i, .skills .skills-items .prog-items .prog-item svg, .skills .skills-items .prog-items .prog-item img {
   font-size: 70px;
   color: var(--color1);
+  filter: drop-shadow(0 0 5px var(--color5));
 }
 .skills .skills-items .prog-items .prog-item img {
   width: 100%;
@@ -131,20 +132,38 @@
 .skills .skills-items .prog-items .prog-item:nth-of-type(1):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(1):hover i {
   color: #e44f26;
 }
+.skills .skills-items .prog-items .prog-item:nth-of-type(1):hover i {
+  filter: drop-shadow(0 0 5px #e44f26);
+}
 .skills .skills-items .prog-items .prog-item:nth-of-type(2):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(2):hover i {
   color: #1572b6;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(2):hover i {
+  filter: drop-shadow(0 0 5px #1572b6);
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(3):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(3):hover i {
   color: #efbe24;
 }
+.skills .skills-items .prog-items .prog-item:nth-of-type(3):hover i {
+  filter: drop-shadow(0 0 5px #efbe24);
+}
 .skills .skills-items .prog-items .prog-item:nth-of-type(4):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(4):hover i {
   color: #cf649a;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(4):hover i {
+  filter: drop-shadow(0 0 5px #cf649a);
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(5):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(5):hover i {
   color: #8411f6;
 }
+.skills .skills-items .prog-items .prog-item:nth-of-type(5):hover i {
+  filter: drop-shadow(0 0 5px #8411f6);
+}
 .skills .skills-items .prog-items .prog-item:nth-of-type(6):hover h5, .skills .skills-items .prog-items .prog-item:nth-of-type(6):hover i {
   color: #347ba7;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(6):hover i {
+  filter: drop-shadow(0 0 5px #347ba7);
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(7) svg {
   height: 70px;
@@ -158,6 +177,9 @@
 .skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(2),
 .skills .skills-items .prog-items .prog-item:nth-of-type(7):hover path:nth-of-type(3) {
   fill: #ffc107;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(7):hover svg {
+  filter: drop-shadow(0 0 5px #f9ab00) drop-shadow(0 0 5px #ffc107);
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(7):hover h5 {
   background: linear-gradient(90deg, #ffc107 55%, #ffa000 100%);
@@ -174,6 +196,9 @@
   fill: var(--color1);
   stroke: black;
   stroke-width: 0.5px;
+}
+.skills .skills-items .prog-items .prog-item:nth-of-type(8):hover svg {
+  filter: drop-shadow(0 0 3px #43a047) drop-shadow(0 0 3px #ffc107) drop-shadow(0 0 3px #1e88e5);
 }
 .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover polygon, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover path, .skills .skills-items .prog-items .prog-item:nth-of-type(8):hover circle {
   stroke: none;
@@ -218,7 +243,6 @@
 .projects .projects-items .project-item {
   position: relative;
   padding: 0;
-  /* text-align: center; */
   justify-content: center;
   display: flex;
   flex-direction: column;

@@ -15,6 +15,8 @@
         <title>Nermen Alrayyan</title>
 
         <!-- start links -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Start Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,25 +46,20 @@
         <link rel="icon" href="images/n-a-icon.svg"><!--هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح-->
         <!-- end links -->
     </head>
-    <body>
+    <body id="home">
     <div id="preload"></div>    
     <!-- start header -->
-    <header class="w-100">
+    <header class="w-100" id="header">
         <div class="container-xxl container-xl container-lg container-md d-flex justify-content-between align-items-center header-items">
             <a href="index.html" class="logo"><img src="images/n-a-icon.svg" alt=""></a>
             
             <nav class="d-flex justify-content-between align-items-center">
-                
-                <!-- <input type="checkbox" class="list-nav" id="menu" placeholder="click"> -->
-                <!-- <label for="menu" class="open">
-                    <i class="fa fa-bars"></i>
-                </label> -->
 
                 <div id="menuNav">
                     <div id="menu">
                         <div id="closeMenu"><i class="fa fa-times"></i></div>
                         <ul class="d-inline-flex mb-0">
-                            <li><a href="index.html" class="linkMenu active">home</a></li>
+                            <li><a href="#home" class="linkMenu active">home</a></li>
                             <li><a href="#about" class="linkMenu">about</a></li>
                             <li><a href="#skills" class="linkMenu">skills</a></li>
                             <li><a href="#projects" class="linkMenu">projects</a></li>
@@ -82,7 +79,6 @@
       <div class="container container-xxl container-xl container-lg container-md container-sm"> 
           <div class="row hero-items justify-content-around align-items-center flex-wrap">
             <div class="col-xl-4 col-lg-5 col-sm-9 text-left text-items">
-             
               <h1>Front-end development</h1>
               <h1>Digital Marketing</h1>
               <h1>WordPress</h1>
@@ -103,7 +99,7 @@
             <h2>about</h2>
             <p>
                 Hello everyone, I'm Nermen Alrayyan,
-                <br> I create Websites, Landing Page, E-Commerce, And Portfolio using WordPress <br> and make it Responsive Design, <br> And i have good experience in converting UI website design to HTML or WordPress.
+                <br> I create Websites, Landing Page, And Portfolio using WordPress <br> and make it Responsive Design, <br> And i have good experience in converting UI website design to HTML or WordPress.
             </p>
         </div>
       </div>
@@ -324,9 +320,13 @@
   <!-- start links javascript -->
     <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
     <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- https://michalsnik.github.io/aos/ -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    
+    <script>AOS.init();</script>
     <script src="js/custom.js"></script>
   <!-- end links javascript -->         
   </body>

@@ -1,6 +1,26 @@
 header {
   background-color: var(--color5);
   height: 70px;
+  box-shadow: 0px 3px 10px 3px var(--color5);
+}
+header.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header.fixed-header .header-items {
+  height: 90px !important;
+  transition: width 0.9s linear;
+}
+header.fixed-header .header-items .logo {
+  height: 80px;
+}
+header.fixed-header .header-items .logo img {
+  width: 75px;
+}
+header.fixed-header .header-items nav {
+  padding-bottom: 17px !important;
 }
 header .header-items {
   position: relative;
@@ -8,17 +28,20 @@ header .header-items {
   height: 117px;
 }
 header .header-items .logo {
-  width: 185px;
-  padding: 15px 45px;
+  width: 175px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: var(--color5);
+  box-shadow: 0px 3px 10px 3px var(--color5);
 }
 header .header-items .logo img {
-  width: 100%;
+  width: 85px;
 }
 header .header-items nav {
-  min-height: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 header .header-items nav #menuNav {
   z-index: 99999;
@@ -36,6 +59,9 @@ header .header-items nav #menuNav ul a {
   padding: 15px;
   text-transform: uppercase;
   font-size: 16px !important;
+}
+header .header-items nav #menuNav ul a:hover {
+  color: var(--color4) !important;
 }
 header .header-items nav #menuNav ul .active {
   color: var(--color4);

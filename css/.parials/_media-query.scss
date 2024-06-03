@@ -4,135 +4,37 @@
   .hero { 
     .hero-items {
       height: 365px;
+      justify-content: center !important;
     }
   }
-  
-  // .about
-  // {
-  //     &::before 
-  //     {
-  //         top: 83% !important;
-  //         left: 19.9% !important;
-  //     }
-  // }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   .hero
   {
-    // padding-top: 140px;
-
-      // &::before
-      // {
-      //     top: 25% !important;
-      //     right: 25% !important;
-      //     width: 55%;     
-      // }
-
       .hero-items
       {
-        // text-align: center;
-        // justify-content: center;
-        // align-items: end;
-        // height: 365px;
-        // flex-direction: column-reverse;
+        padding-left: 30px;
+
+        justify-content: center !important;
         height: 360px;
-        gap: 80px;
-          // top: 75.5%;
-          // right: 24.1%;
       }
   }
-  
-  // .hero
-  // {
-  //   .hero-items
-  //   {
-  //     text-align: center;
-  //     justify-content: center;
-  //     align-items: end;
-  //     // height: 439px;
-
-  //     // &::before {
-  //     //     width: 55%;
-  //     // }
-  //   }
-  // }
 }
-
-// @media screen and (min-width: 1133px) and (max-width: 1326px)
-// {
-
-//     // .skills
-//     // {
-//     //     span::after 
-//     //     {
-//     //         left: 31px !important;
-//     //     }
-
-//     //     .prog
-//     //     {
-//     //         .javascript::after 
-//     //         {
-//     //             // top: 29px;
-//     //             left: 32px !important;
-//     //         }
-//     //     }
-//     // }
-// }
-
-
-// @media screen and (min-width: 1025px) and (max-width: 1199px)
-// {
-//     // .skills
-//     // {
-//     //     span::after 
-//     //     {
-//     //         left: 20px !important;
-//     //     }
-
-//     //     .prog
-//     //     {
-//     //         .javascript::after 
-//     //         {
-//     //             // top: 29px;
-//     //             // left: 21px !important;
-//     //         }
-//     //     }
-//     // }
-// }
-
-// @media screen and (min-width: 991px) and (max-width: 1024px)
-// {
-//     // .skills
-//     // {
-//     //     span::after 
-//     //     {
-//     //         left: 22px !important;
-//     //     }
-//     // }
-// }
 
 @media screen and (max-width: 991px){
   .hero {
+      padding-top: 60px !important;
+      
     .hero-items {
       flex-direction: column-reverse;
     }
   }
 }
 
-// @media screen and (max-width: 991px) and (min-width: 768px){
-//   .hero {
-//     .hero-items {
-//       gap: 91px;
-//     }
-//   }
-// }
-
 @media screen and (max-width: 991px) and (min-width: 420px){
   .hero {
-    .hero-items {
-      // height: 360px;
-    
+    .hero-items {    
       & > div {
         text-align: center;    
       }
@@ -142,34 +44,30 @@
       }
     }
   }
+
+  .contact
+  {
+      .myinfo {
+          flex-direction: column;
+          align-items: center;
+          padding-left: 0 !important;
+      }
+
+      .social-media 
+      {
+          top: 0 !important;
+          left: 0 !important;
+          position: relative !important;
+          display: flex !important;
+          justify-content: center;
+          gap: 50px;
+          padding-left: 0 !important;
+      }
+  }
 }
-
-// @media screen and (min-width: 576px) and (max-width:576px)
-// {
-//     // .skills
-//     // {
-//     //     .prog-item
-//     //     {
-//     //         margin-bottom: 5%;
-            
-//     //         // span::after 
-//     //         // {
-//     //         //     left: 63px !important;
-//     //         // }
-//     //     }
-//     // }
-// }
-
 
 @media screen and (max-width: 767px)
 {
-
-  // .hero {
-  //   .hero-items {
-  //     // gap: 77px;
-  //   }
-  // }
-
     header
     {
         .header-items
@@ -238,6 +136,7 @@
                         position: absolute;
                         top: 15px;
                         right: 30px;
+                        transition: all 0.7s ease-in-out;
 
                         i:hover
                         {
@@ -276,12 +175,8 @@
 
     .skills
     {
-      // padding: 50px 0 0 0;
-
       .prog-item
-      {
-        // margin-bottom: 6% !important;
-        
+      {        
         span::after 
         {
             left: 63px !important;
@@ -289,32 +184,30 @@
       }
     }
 
-    .contact
-    {
-        .myinfo {
-            flex-direction: column;
-            align-items: center;
-            padding-left: 0 !important;
-        }
+    // .contact
+    // {
+    //     .myinfo {
+    //         flex-direction: column;
+    //         align-items: center;
+    //         padding-left: 0 !important;
+    //     }
 
-        .social-media 
-        {
-            top: 0 !important;
-            left: 0 !important;
-            // width: auto;
-            position: relative !important;
-            display: flex !important;
-            justify-content: center;
-            gap: 50px;
-            padding-left: 0 !important;
-        }
-    }
+    //     .social-media 
+    //     {
+    //         top: 0 !important;
+    //         left: 0 !important;
+    //         position: relative !important;
+    //         display: flex !important;
+    //         justify-content: center;
+    //         gap: 50px;
+    //         padding-left: 0 !important;
+    //     }
+    // }
 }
 
 // Start Small Screens (Smaller Smartphones)
 @media screen and (max-width: 576px)
 {
-
     header
     {
         nav
@@ -322,35 +215,7 @@
             display: none !important;
         }
     }
-
-    // .skills
-    // {
-    //     .prog-item
-    //     {
-    //         // width: 45% !important;
-    //         margin: 3% 0;
-    //     }
-    // }
-
-    // .about
-    // {
-    //     .about-items
-    //     {
-    //         margin-left: 0 !important;
-    //     }
-    // }
-    
-    // .projects
-    // {
-    //     .project-item
-    //     {
-    //         // width: 55% !important;
-    //         // margin: 0 !important;
-    //     }
-    // }
 }
-
-
 
 @media screen and (min-width: 321px) and (max-width:576px)
 {
@@ -362,10 +227,6 @@
             display: grid !important;
             grid-template-columns: 1fr 1fr;
             justify-items: center;
-            
-            // .prog-item {
-            //     margin-bottom: 20% !important;
-            // }
         }
     }
 
@@ -408,8 +269,6 @@
   p {
       font-size: 6vw !important;
   }
-    
-
 
   h5 {
       font-size: 7vw !important;
@@ -417,60 +276,60 @@
 
   header
   {
-      .logo
-      {
-          font-size: 8.5vw !important;
-          text-align: center;
+    .logo
+    {
+        font-size: 8.5vw !important;
+        text-align: center;
+    }
+  }
+
+  .skills
+  {
+    
+      h1 {
+          font-size: 17vw !important;
+      }
+      
+      .prog-items {
+          display: grid !important;
+          grid-template-columns: 1fr;
+          justify-items: center;
+
+          h5 {
+              font-size: 7vw ;
+          }
+
+          .prog {
+              width: 8vw  !important;
+
+              span::after 
+              {
+                  font-size: 5vw;
+              }
+          }
       }
   }
 
-    .skills
-    {
-     
-        h1 {
-            font-size: 17vw !important;
-        }
-        
-        .prog-items {
-            display: grid !important;
-            grid-template-columns: 1fr;
-            justify-items: center;
+  .contact
+  {
+      .social-media
+      {
+          i {
+              font-size: 10vw !important;
+          }
+      }
 
-            h5 {
-                font-size: 7vw ;
-            }
+      li {
+          font-size: 5vw !important;
+      }
+  }
 
-            .prog {
-                width: 8vw  !important;
-
-                span::after 
-                {
-                    font-size: 5vw;
-                }
-            }
-        }
-    }
-
-    .contact
-    {
-        .social-media
-        {
-            i {
-                font-size: 10vw !important;
-            }
-        }
-
-        li {
-            font-size: 5vw !important;
-        }
-    }
-
-    footer
-    {
-        p {
-            font-size: 5vw !important;
-        }
-    }
+  footer
+  {
+      p {
+          font-size: 5vw !important;
+      }
+  }
 }
 
 /*

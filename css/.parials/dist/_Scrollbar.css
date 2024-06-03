@@ -8,7 +8,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color4);
-  transition: background-color 0.7s ease-in-out;
+  transition: background-color 1.1s ease-in-out;
   box-shadow: 0 0 25px 30px var(--color4);
 }
 ::-webkit-scrollbar-thumb:hover {
