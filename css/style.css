@@ -233,14 +233,6 @@ header .header-items nav #openMenu:hover {
   .hero .hero-items {
     flex-direction: column-reverse;
   }
-}
-@media screen and (max-width: 991px) and (min-width: 420px) {
-  .hero .hero-items > div {
-    text-align: center;
-  }
-  .hero .hero-items h1 {
-    font-size: 1.7em;
-  }
   .contact .myinfo {
     flex-direction: column;
     align-items: center;
@@ -254,6 +246,14 @@ header .header-items nav #openMenu:hover {
     justify-content: center;
     gap: 50px;
     padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 420px) {
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.7em;
   }
 }
 @media screen and (max-width: 767px) {

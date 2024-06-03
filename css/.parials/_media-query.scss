@@ -30,20 +30,6 @@
       flex-direction: column-reverse;
     }
   }
-}
-
-@media screen and (max-width: 991px) and (min-width: 420px){
-  .hero {
-    .hero-items {    
-      & > div {
-        text-align: center;    
-      }
-
-      h1 {
-        font-size: 1.7em;
-      }
-    }
-  }
 
   .contact
   {
@@ -63,6 +49,20 @@
           gap: 50px;
           padding-left: 0 !important;
       }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 420px){
+  .hero {
+    .hero-items {    
+      & > div {
+        text-align: center;    
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
+    }
   }
 }
 
