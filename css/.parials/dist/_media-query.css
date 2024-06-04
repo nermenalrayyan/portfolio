@@ -12,9 +12,6 @@
   }
 }
 @media screen and (max-width: 991px) {
-  .hero {
-    padding-top: 60px !important;
-  }
   .hero .hero-items {
     flex-direction: column-reverse;
   }
@@ -30,7 +27,6 @@
     position: relative !important;
     display: flex !important;
     justify-content: center;
-    gap: 50px;
     padding-left: 0 !important;
   }
 }
@@ -128,6 +124,13 @@
   .hero .hero-items h1 {
     font-size: 1.5em !important;
   }
+
+  .contact .social-media {
+    gap: 0 30px;
+  }
+  .contact .social-media i {
+    font-size: 30px !important;
+  }
 }
 @media screen and (max-width: 320px) {
   p {
@@ -159,13 +162,6 @@
   }
   .skills .prog-items .prog span::after {
     font-size: 5vw;
-  }
-
-  .contact .social-media i {
-    font-size: 10vw !important;
-  }
-  .contact li {
-    font-size: 5vw !important;
   }
 
   footer p {

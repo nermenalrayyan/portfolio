@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 991px){
   .hero {
-      padding-top: 60px !important;
+      // padding-top: 60px !important;
       
     .hero-items {
       flex-direction: column-reverse;
@@ -46,7 +46,7 @@
           position: relative !important;
           display: flex !important;
           justify-content: center;
-          gap: 50px;
+          // gap: 50px;
           padding-left: 0 !important;
       }
   }
@@ -262,6 +262,18 @@
       }
     }
   }
+
+  .contact
+  {
+    .social-media
+    {
+      gap: 0 30px;
+
+        i {
+            font-size: 30px !important;
+        }
+    }
+  }
 }
 
 @media screen and (max-width: 320px)
@@ -307,20 +319,6 @@
                   font-size: 5vw;
               }
           }
-      }
-  }
-
-  .contact
-  {
-      .social-media
-      {
-          i {
-              font-size: 10vw !important;
-          }
-      }
-
-      li {
-          font-size: 5vw !important;
       }
   }
 

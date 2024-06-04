@@ -213,186 +213,6 @@ header .header-items nav #openMenu:hover {
   filter: drop-shadow(0 0 7px var(--color5));
 }
 
-@media (max-width: 1326px) and (min-width: 1200px) {
-  .hero .hero-items {
-    height: 365px;
-    justify-content: center !important;
-  }
-}
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-  .hero .hero-items {
-    padding-left: 30px;
-    justify-content: center !important;
-    height: 360px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .hero {
-    padding-top: 60px !important;
-  }
-  .hero .hero-items {
-    flex-direction: column-reverse;
-  }
-  .contact .myinfo {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0 !important;
-  }
-  .contact .social-media {
-    top: 0 !important;
-    left: 0 !important;
-    position: relative !important;
-    display: flex !important;
-    justify-content: center;
-    gap: 50px;
-    padding-left: 0 !important;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 420px) {
-  .hero .hero-items > div {
-    text-align: center;
-  }
-  .hero .hero-items h1 {
-    font-size: 1.7em;
-  }
-}
-@media screen and (max-width: 767px) {
-  header .header-items nav #openMenu, header .header-items nav #closeMenu {
-    display: block !important;
-    font-size: 30px;
-  }
-  header .header-items nav #menuNav {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    display: none;
-  }
-  header .header-items nav #menuNav #menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 282px;
-    height: 366px;
-    padding: 40px 0;
-    text-align: center;
-    color: var(--color4);
-    border-radius: 0 0 0 20px;
-    transition: all 0.7s !important;
-    background-color: var(--color5);
-    box-shadow: 0 0 30px 10px var(--color4);
-  }
-  header .header-items nav #menuNav #menu #closeMenu {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    transition: all 0.7s ease-in-out;
-  }
-  header .header-items nav #menuNav #menu #closeMenu i:hover {
-    color: var(--color1) !important;
-  }
-  header .header-items nav #menuNav #menu ul {
-    flex-direction: column;
-    padding: 3rem 0 0 0;
-  }
-  header .header-items nav #menuNav #menu ul .active {
-    color: var(--color4) !important;
-  }
-  .about::before {
-    display: none;
-  }
-  .skills .prog-item span::after {
-    left: 63px !important;
-  }
-}
-@media screen and (max-width: 576px) {
-  header nav {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 576px) {
-  .skills .prog-items {
-    gap: 50px 0 !important;
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .projects .projects-items {
-    gap: 55px;
-    width: 90%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .hero .img {
-    width: 426px !important;
-  }
-}
-@media screen and (max-width: 419px) {
-  .hero .hero-items {
-    height: 385px;
-  }
-  .hero .hero-items > div {
-    text-align: center;
-  }
-  .hero .hero-items h1 {
-    font-size: 1.5em !important;
-  }
-}
-@media screen and (max-width: 320px) {
-  p {
-    font-size: 6vw !important;
-  }
-  h5 {
-    font-size: 7vw !important;
-  }
-  header .logo {
-    font-size: 8.5vw !important;
-    text-align: center;
-  }
-  .skills h1 {
-    font-size: 17vw !important;
-  }
-  .skills .prog-items {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .skills .prog-items h5 {
-    font-size: 7vw;
-  }
-  .skills .prog-items .prog {
-    width: 8vw !important;
-  }
-  .skills .prog-items .prog span::after {
-    font-size: 5vw;
-  }
-  .contact .social-media i {
-    font-size: 10vw !important;
-  }
-  .contact li {
-    font-size: 5vw !important;
-  }
-  footer p {
-    font-size: 5vw !important;
-  }
-}
-/*
-bootstrap 5 responsive screen sizes:
-
-* They include x-small which is between 0 and 576px.
-
-* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
-
-* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
-
-* Large, which has the lg class infix is 992px or larger.
-
-* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
-
-* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
-*/
 .contact {
   padding-top: 50px !important;
 }
@@ -801,4 +621,181 @@ body {
   height: 100vh;
   width: 100%;
   z-index: 1000;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 1326px) and (min-width: 1200px) {
+  .hero .hero-items {
+    height: 365px;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .hero .hero-items {
+    padding-left: 30px;
+    justify-content: center !important;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero .hero-items {
+    flex-direction: column-reverse;
+  }
+  .contact .myinfo {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0 !important;
+  }
+  .contact .social-media {
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: center;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 420px) {
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header-items nav #openMenu, header .header-items nav #closeMenu {
+    display: block !important;
+    font-size: 30px;
+  }
+  header .header-items nav #menuNav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+  header .header-items nav #menuNav #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 282px;
+    height: 366px;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--color4);
+    border-radius: 0 0 0 20px;
+    transition: all 0.7s !important;
+    background-color: var(--color5);
+    box-shadow: 0 0 30px 10px var(--color4);
+  }
+  header .header-items nav #menuNav #menu #closeMenu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    transition: all 0.7s ease-in-out;
+  }
+  header .header-items nav #menuNav #menu #closeMenu i:hover {
+    color: var(--color1) !important;
+  }
+  header .header-items nav #menuNav #menu ul {
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+  header .header-items nav #menuNav #menu ul .active {
+    color: var(--color4) !important;
+  }
+  .about::before {
+    display: none;
+  }
+  .skills .prog-item span::after {
+    left: 63px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 576px) {
+  .skills .prog-items {
+    gap: 50px 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .projects .projects-items {
+    gap: 55px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero .img {
+    width: 426px !important;
+  }
+}
+@media screen and (max-width: 419px) {
+  .hero .hero-items {
+    height: 385px;
+  }
+  .hero .hero-items > div {
+    text-align: center;
+  }
+  .hero .hero-items h1 {
+    font-size: 1.5em !important;
+  }
+  .contact .social-media {
+    gap: 0 30px;
+  }
+  .contact .social-media i {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 6vw !important;
+  }
+  h5 {
+    font-size: 7vw !important;
+  }
+  header .logo {
+    font-size: 8.5vw !important;
+    text-align: center;
+  }
+  .skills h1 {
+    font-size: 17vw !important;
+  }
+  .skills .prog-items {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .skills .prog-items h5 {
+    font-size: 7vw;
+  }
+  .skills .prog-items .prog {
+    width: 8vw !important;
+  }
+  .skills .prog-items .prog span::after {
+    font-size: 5vw;
+  }
+  footer p {
+    font-size: 5vw !important;
+  }
+}
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*//*# sourceMappingURL=style.css.map */
