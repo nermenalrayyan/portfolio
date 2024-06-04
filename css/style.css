@@ -751,13 +751,14 @@ body {
   .contact .social-media i {
     font-size: 30px !important;
   }
+  footer p {
+    line-height: 23px;
+    font-size: 12px !important;
+  }
 }
 @media screen and (max-width: 320px) {
-  p {
-    font-size: 6vw !important;
-  }
-  h5 {
-    font-size: 7vw !important;
+  h2 {
+    width: 100%;
   }
   header .logo {
     font-size: 8.5vw !important;
@@ -771,17 +772,14 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .skills .prog-items h5 {
-    font-size: 7vw;
-  }
   .skills .prog-items .prog {
     width: 8vw !important;
   }
   .skills .prog-items .prog span::after {
     font-size: 5vw;
   }
-  footer p {
-    font-size: 5vw !important;
+  .projects img {
+    width: 85% !important;
   }
 }
 /*

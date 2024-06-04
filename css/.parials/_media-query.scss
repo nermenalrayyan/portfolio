@@ -274,17 +274,29 @@
         }
     }
   }
+
+  footer {
+    p {
+      line-height: 23px;
+      font-size: 12px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 320px)
 {
-  p {
-      font-size: 6vw !important;
+  // p {
+  //     font-size: 6vw !important;
+  // }
+
+  h2 {
+    width: 100%;
+    // margin: 0 auto 70px auto !important;
   }
 
-  h5 {
-      font-size: 7vw !important;
-  }
+  // h5 {
+  //     font-size: 7vw !important;
+  // }
 
   header
   {
@@ -307,9 +319,9 @@
           grid-template-columns: 1fr;
           justify-items: center;
 
-          h5 {
-              font-size: 7vw ;
-          }
+          // h5 {
+          //     font-size: 7vw ;
+          // }
 
           .prog {
               width: 8vw  !important;
@@ -322,12 +334,18 @@
       }
   }
 
-  footer
-  {
-      p {
-          font-size: 5vw !important;
-      }
+  .projects {
+    img {
+      width: 85% !important;
+    }
   }
+
+  // footer
+  // {
+  //     p {
+  //         font-size: 5vw !important;
+  //     }
+  // }
 }
 
 /*
