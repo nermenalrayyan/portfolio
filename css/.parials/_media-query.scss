@@ -229,12 +229,6 @@
             justify-items: center;
         }
     }
-
-    .projects .projects-items {
-      gap: 55px;
-      width: 90%;
-      margin: auto;
-    }
 }
 // End Small Screens (Smaller Smartphones)
 
@@ -245,7 +239,13 @@
     .img {
       width: 426px !important;
     }
+  }
 
+  
+  .projects .projects-items {
+    // gap: 55px;
+    // width: 90%;
+    margin: auto;
   }
 }
 
@@ -315,9 +315,10 @@
       }
       
       .prog-items {
-          display: grid !important;
-          grid-template-columns: 1fr;
-          justify-items: center;
+        gap: 45px 0 !important;
+          // display: grid !important;
+          // grid-template-columns: 1fr;
+          // justify-items: center;
 
           // h5 {
           //     font-size: 7vw ;
@@ -335,8 +336,14 @@
   }
 
   .projects {
-    img {
-      width: 85% !important;
+
+    .project-items {
+      // width: 100% !important;
+      margin: 0 auto;
+    }
+    
+    .project-item {
+      height: 165px !important;
     }
   }
 

@@ -265,7 +265,7 @@ header .header-items nav #openMenu:hover {
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 150px;
+  width: 147px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -504,6 +504,8 @@ header .header-items nav #openMenu:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 380px;
 }
 .projects .projects-items .project-item img {
   width: 100%;
@@ -724,15 +726,13 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-  .projects .projects-items {
-    gap: 55px;
-    width: 90%;
-    margin: auto;
-  }
 }
 @media screen and (max-width: 576px) {
   .hero .img {
     width: 426px !important;
+  }
+  .projects .projects-items {
+    margin: auto;
   }
 }
 @media screen and (max-width: 419px) {
@@ -768,9 +768,7 @@ body {
     font-size: 17vw !important;
   }
   .skills .prog-items {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    gap: 45px 0 !important;
   }
   .skills .prog-items .prog {
     width: 8vw !important;
@@ -778,8 +776,11 @@ body {
   .skills .prog-items .prog span::after {
     font-size: 5vw;
   }
-  .projects img {
-    width: 85% !important;
+  .projects .project-items {
+    margin: 0 auto;
+  }
+  .projects .project-item {
+    height: 165px !important;
   }
 }
 /*

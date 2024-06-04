@@ -9,7 +9,7 @@
   gap: 50px;
 }
 .skills .skills-items .prog-items .prog-item {
-  width: 150px;
+  width: 147px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -247,6 +247,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
+  width: 380px;
 }
 .projects .projects-items .project-item img {
   width: 100%;

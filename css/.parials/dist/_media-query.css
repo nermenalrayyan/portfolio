@@ -102,16 +102,14 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-
-  .projects .projects-items {
-    gap: 55px;
-    width: 90%;
-    margin: auto;
-  }
 }
 @media screen and (max-width: 576px) {
   .hero .img {
     width: 426px !important;
+  }
+
+  .projects .projects-items {
+    margin: auto;
   }
 }
 @media screen and (max-width: 419px) {
@@ -151,9 +149,7 @@
     font-size: 17vw !important;
   }
   .skills .prog-items {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    gap: 45px 0 !important;
   }
   .skills .prog-items .prog {
     width: 8vw !important;
@@ -162,8 +158,11 @@
     font-size: 5vw;
   }
 
-  .projects img {
-    width: 85% !important;
+  .projects .project-items {
+    margin: 0 auto;
+  }
+  .projects .project-item {
+    height: 165px !important;
   }
 }
 /*
