@@ -216,7 +216,7 @@ header .header-items nav #openMenu:hover {
 }
 
 .hero {
-  padding: 60px 20px 120px;
+  padding: 60px 20px;
 }
 .hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color1);
