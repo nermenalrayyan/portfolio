@@ -100,8 +100,7 @@ ul li {
 }
 
 section {
-  padding: 70px 0;
-  padding: 25px;
+  padding: 65px 25px 25px 25px;
   height: auto;
   width: 100%;
 }

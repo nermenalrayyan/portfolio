@@ -100,8 +100,7 @@ ul li {
 }
 
 section {
-  padding: 70px 0;
-  padding: 25px;
+  padding: 65px 25px 25px 25px;
   height: auto;
   width: 100%;
 }
@@ -748,6 +747,11 @@ body {
   }
   .projects .projects-items {
     margin: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 419px) {

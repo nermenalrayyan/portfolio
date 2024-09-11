@@ -3,7 +3,6 @@
 {
   .hero { 
     .hero-items {
-      // height: 365px;
       justify-content: center !important;
     }
   }
@@ -24,7 +23,6 @@
 
 @media screen and (max-width: 991px){
   .hero {
-      // padding-top: 60px !important;
       
     .hero-items {
       flex-direction: column-reverse;
@@ -46,7 +44,6 @@
           position: relative !important;
           display: flex !important;
           justify-content: center;
-          // gap: 50px;
           padding-left: 0 !important;
       }
   }
@@ -183,26 +180,6 @@
         }
       }
     }
-
-    // .contact
-    // {
-    //     .myinfo {
-    //         flex-direction: column;
-    //         align-items: center;
-    //         padding-left: 0 !important;
-    //     }
-
-    //     .social-media 
-    //     {
-    //         top: 0 !important;
-    //         left: 0 !important;
-    //         position: relative !important;
-    //         display: flex !important;
-    //         justify-content: center;
-    //         gap: 50px;
-    //         padding-left: 0 !important;
-    //     }
-    // }
 }
 
 // Start Small Screens (Smaller Smartphones)
@@ -243,10 +220,15 @@
 
   
   .projects .projects-items {
-    // gap: 55px;
-    // width: 90%;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 425px) {
+
+  h2 {
+    width: 100% !important;
+  }  
 }
 
 @media screen and (max-width: 419px){
@@ -285,18 +267,10 @@
 
 @media screen and (max-width: 320px)
 {
-  // p {
-  //     font-size: 6vw !important;
-  // }
 
   h2 {
     width: 100%;
-    // margin: 0 auto 70px auto !important;
   }
-
-  // h5 {
-  //     font-size: 7vw !important;
-  // }
 
   header
   {
@@ -316,13 +290,6 @@
       
       .prog-items {
         gap: 45px 0 !important;
-          // display: grid !important;
-          // grid-template-columns: 1fr;
-          // justify-items: center;
-
-          // h5 {
-          //     font-size: 7vw ;
-          // }
 
           .prog {
               width: 8vw  !important;
@@ -338,7 +305,6 @@
   .projects {
 
     .project-items {
-      // width: 100% !important;
       margin: 0 auto;
     }
     
@@ -346,13 +312,6 @@
       height: 165px !important;
     }
   }
-
-  // footer
-  // {
-  //     p {
-  //         font-size: 5vw !important;
-  //     }
-  // }
 }
 
 /*

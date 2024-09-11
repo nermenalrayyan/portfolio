@@ -111,6 +111,11 @@
     margin: auto;
   }
 }
+@media screen and (max-width: 425px) {
+  h2 {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 419px) {
   .hero .hero-items {
     height: 385px;
