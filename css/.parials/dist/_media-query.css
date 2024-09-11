@@ -1,6 +1,5 @@
 @media (max-width: 1326px) and (min-width: 1200px) {
   .hero .hero-items {
-    height: 365px;
     justify-content: center !important;
   }
 }

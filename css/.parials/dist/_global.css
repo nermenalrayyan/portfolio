@@ -1,5 +1,11 @@
-html, body {
+html {
   overflow-x: hidden !important;
+}
+
+html, body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
 }
 
 *, body, html {
@@ -12,7 +18,6 @@ body {
   font-weight: bold !important;
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
-  scroll-behavior: smooth;
   background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +100,16 @@ ul li {
 }
 
 section {
-  padding-top: 100px;
+  padding: 70px 0;
+  padding: 25px;
+  height: auto;
+  width: 100%;
+}
+
+.fixed-header + .page-content {
+  height: 100vh;
+  width: 100hw;
+  padding-top: 8rem;
 }
 
 .social-links {

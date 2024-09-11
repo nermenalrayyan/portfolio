@@ -1,5 +1,11 @@
-html, body {
+html {
   overflow-x: hidden !important;
+}
+
+html, body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
 }
 
 *, body, html {
@@ -12,7 +18,6 @@ body {
   font-weight: bold !important;
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
-  scroll-behavior: smooth;
   background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +100,16 @@ ul li {
 }
 
 section {
-  padding-top: 100px;
+  padding: 70px 0;
+  padding: 25px;
+  height: auto;
+  width: 100%;
+}
+
+.fixed-header + .page-content {
+  height: 100vh;
+  width: 100hw;
+  padding-top: 8rem;
 }
 
 .social-links {
@@ -118,16 +132,19 @@ header {
   background-color: var(--color5);
   height: 70px;
   box-shadow: 0px 3px 10px 3px var(--color5);
+  position: relative;
+  margin-bottom: 45px;
 }
 header.fixed-header {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 100;
+  transition: height 0.5s ease-in-out;
 }
 header.fixed-header .header-items {
   height: 90px !important;
-  transition: width 0.9s linear;
 }
 header.fixed-header .header-items .logo {
   height: 80px;
@@ -139,8 +156,6 @@ header.fixed-header .header-items nav {
   padding-bottom: 17px !important;
 }
 header .header-items {
-  position: relative;
-  z-index: 100;
   height: 117px;
 }
 header .header-items .logo {
@@ -160,7 +175,7 @@ header .header-items nav {
   padding-bottom: 45px;
 }
 header .header-items nav #menuNav {
-  z-index: 99999;
+  z-index: 100;
 }
 header .header-items nav #menuNav #closeMenu {
   display: none;
@@ -201,8 +216,8 @@ header .header-items nav #openMenu:hover {
   --color5: #EC7929;
 }
 
-.hero .hero-items {
-  height: 455px;
+.hero {
+  padding: 60px 20px 120px;
 }
 .hero .hero-items .text-items h1, .hero .hero-items .text-items h4, .hero .hero-items .text-items h6 {
   color: var(--color1);
@@ -498,7 +513,6 @@ header .header-items nav #openMenu:hover {
   gap: 55px;
 }
 .projects .projects-items .project-item {
-  position: relative;
   padding: 0;
   justify-content: center;
   display: flex;
@@ -506,32 +520,34 @@ header .header-items nav #openMenu:hover {
   align-items: center;
   height: 200px;
   width: 380px;
+  position: relative;
 }
 .projects .projects-items .project-item img {
   width: 100%;
   height: 100%;
   border-radius: 50px 0 50px 0;
-  box-shadow: 0px 3px 10px 3px;
+  box-shadow: 0px 3px 10px 3px var(--color5);
 }
-.projects .projects-items .project-item i {
+.projects .projects-items .project-item .hover {
+  background-color: var(--color5);
+  border-radius: 50px 0 50px 0;
   opacity: 0;
   width: 100%;
   height: 100%;
+  transition: all 0.7s ease-in-out;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
   margin: auto;
-  color: var(--color1);
-  background-color: var(--color5);
-  transition: all 0.7s ease-in-out;
-  border-radius: 50px 0 50px 0;
 }
-.projects .projects-items .project-item i:hover {
+.projects .projects-items .project-item .hover:hover {
   opacity: 0.7;
   border: 1px solid var(--color5);
-  box-shadow: 0px 3px 10px 3px var(--color5);
+}
+.projects .projects-items .project-item .hover:hover a {
+  font-size: 50px;
+  color: var(--color1);
 }
 
 footer {
@@ -627,7 +643,6 @@ body {
 
 @media (max-width: 1326px) and (min-width: 1200px) {
   .hero .hero-items {
-    height: 365px;
     justify-content: center !important;
   }
 }

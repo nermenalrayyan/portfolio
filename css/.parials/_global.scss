@@ -1,6 +1,13 @@
-html, body
+html
 {
     overflow-x: hidden !important;
+    
+}
+
+html, body {
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
 *, body, html
@@ -15,7 +22,7 @@ body
     font-weight: bold !important;
     font-family: "Playfair Display", serif;
     text-transform: capitalize;
-    scroll-behavior: smooth; // يحعل الحركه في الموقع ناعمه وليست سريعه
+    // scroll-behavior: smooth; // يحعل الحركه في الموقع ناعمه وليست سريعه
     background-image: url(../images/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,9 +121,38 @@ ul
     }
 }
 
-section
+section {
+    // padding: 15px;
+    padding: 70px 0;
+    padding: 25px;
+    // position: relative;
+    height: auto;
+    width: 100%;
+}
+
+// .about-items, .skills-items, .projects-items{
+//     display: flex;
+//     justify-content: space-between;
+//     gap: 120px;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
+
+.fixed-header + .page-content
 {
-    padding-top: 100px;
+    height: 100vh;
+    width: 100hw;
+    padding-top: 8rem;
+    // height: 95vh;
+
+    // position: relative;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // overflow: hidden;
+    // height: 100vh;
+    // width: 100vw;
 }
 
 
